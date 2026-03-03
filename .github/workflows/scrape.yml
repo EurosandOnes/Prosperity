@@ -1,0 +1,55 @@
+# .github/workflows/scrape.yml
+# ─────────────────────────────────────────────
+# Runs the job scraping pipeline every 6 hours.
+# Reads funds_registry.json, scrapes ATS APIs
+# and social sources, outputs roles.json.
+# ─────────────────────────────────────────────
+
+name: Scrape Jobs
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # Every 6 hours: midnight, 06:00, 12:00, 18:00 UTC
+  workflow_dispatch: {}      # Manual trigger via GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run pipeline
+        env:
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          PROXYCURL_API_KEY: ${{ secrets.PROXYCURL_API_KEY }}
+          REGISTRY_FILE: ./public/data/funds_registry.json
+          OUTPUT_DIR: ./public/data
+        run: python pipeline/pipeline.py
+
+      - name: Commit roles
+        run: |
+          git config user.name "prosperity-bot"
+          git config user.email "bot@prosperity.dev"
+          git add public/data/roles.json
+          if git diff --staged --quiet; then
+            echo "No new roles"
+          else
+            git commit -m "data: update roles [$(date -u +%Y-%m-%dT%H:%M)]"
+            git push
+          fi

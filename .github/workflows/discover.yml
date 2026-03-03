@@ -1,0 +1,52 @@
+# .github/workflows/discover.yml
+# ─────────────────────────────────────────────
+# Runs the auto-discovery engine weekly.
+# Scrapes VC directories, probes ATS endpoints,
+# and commits funds_registry.json to the repo.
+# ─────────────────────────────────────────────
+
+name: Fund Discovery
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"  # Every Monday at 03:00 UTC
+  workflow_dispatch: {}   # Manual trigger via GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run discovery
+        env:
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
+          DISCOVERY_OUTPUT_DIR: ./public/data
+        run: python pipeline/discovery.py
+
+      - name: Commit registry
+        run: |
+          git config user.name "prosperity-bot"
+          git config user.email "bot@prosperity.dev"
+          git add public/data/funds_registry.json public/data/discovery_report.json
+          if git diff --staged --quiet; then
+            echo "No changes to registry"
+          else
+            git commit -m "chore: update fund registry [$(date -u +%Y-%m-%d)]"
+            git push
+          fi
