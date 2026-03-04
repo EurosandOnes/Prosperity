@@ -1,24 +1,24 @@
-# .github/workflows/scrape.yml
+# .github/workflows/people.yml
 # ─────────────────────────────────────────────
-# Runs the job scraping pipeline every 6 hours.
-# Reads funds_registry.json, scrapes ATS APIs
-# and social sources, outputs roles.json.
+# Builds the people registry monthly.
+# Scrapes fund team pages, extracts people via LLM,
+# finds LinkedIn profiles via Google.
 # ─────────────────────────────────────────────
 
-name: Scrape Jobs
+name: Build People Registry
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Every 6 hours: midnight, 06:00, 12:00, 18:00 UTC
-  workflow_dispatch: {}      # Manual trigger via GitHub UI
+    - cron: "0 4 1 * *"  # 1st of every month at 04:00 UTC
+  workflow_dispatch: {}   # Manual trigger
 
 permissions:
   contents: write
 
 jobs:
-  scrape:
+  build-people:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -32,26 +32,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r pipeline/requirements.txt
 
-      - name: Run pipeline
+      - name: Build people registry
         env:
           GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
           GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
-          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
-          PROXYCURL_API_KEY: ${{ secrets.PROXYCURL_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REGISTRY_FILE: ./public/data/funds_registry.json
-          PEOPLE_FILE: ./public/data/people_registry.json
-          OUTPUT_DIR: ./public/data
-        run: python pipeline/pipeline.py
+          PEOPLE_OUTPUT_DIR: ./public/data
+        run: python pipeline/people_registry.py
 
-      - name: Commit roles
+      - name: Commit people registry
         run: |
           git config user.name "prosperity-bot"
           git config user.email "bot@prosperity.dev"
-          git add public/data/roles.json
+          git add public/data/people_registry.json
           if git diff --staged --quiet; then
-            echo "No new roles"
+            echo "No changes to people registry"
           else
-            git commit -m "data: update roles [$(date -u +%Y-%m-%dT%H:%M)]"
+            git commit -m "data: update people registry [$(date -u +%Y-%m-%d)]"
             git push
           fi

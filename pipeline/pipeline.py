@@ -39,6 +39,10 @@ from datetime import datetime, timedelta, timezone
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 from pathlib import Path
+import time
+
+# Ensure pipeline modules can import each other regardless of working directory
+sys.path.insert(0, str(Path(__file__).parent))
 
 try:
     import requests
@@ -74,6 +78,18 @@ GOOGLE_CSE_API_KEY = os.getenv("GOOGLE_CSE_API_KEY", "")      # Google Custom Se
 GOOGLE_CSE_CX = os.getenv("GOOGLE_CSE_CX", "")                # Custom Search Engine ID
 PROXYCURL_API_KEY = os.getenv("PROXYCURL_API_KEY", "")         # Optional paid LinkedIn API
 TWITTER_BEARER = os.getenv("TWITTER_BEARER_TOKEN", "")         # X API v2
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")         # Claude Haiku for NLP
+
+# LLM classifier (imported from same directory)
+try:
+    import llm_classifier
+    HAS_LLM = True
+except ImportError:
+    HAS_LLM = False
+    log.info("[Pipeline] llm_classifier not available — using regex-only extraction")
+
+# People registry for social monitoring
+PEOPLE_FILE = Path(os.getenv("PEOPLE_FILE", "./public/data/people_registry.json"))
 
 # Freshness thresholds
 DAYS_HOT = 7       # < 1 week → "HOT"
@@ -622,13 +638,370 @@ def scrape_linkedin_proxycurl(fund: FundConfig) -> list[Role]:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# SCRAPER 6: CAREER PAGE SCRAPING (free, LLM-assisted)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def scrape_career_page(fund: FundConfig) -> list[Role]:
+    """
+    Scrape a fund's career/jobs page directly.
+    Uses LLM to extract structured roles from raw HTML.
+    Falls back to regex extraction if LLM unavailable.
+    
+    Skips funds that have Lever/Greenhouse (already covered by ATS scrapers).
+    """
+    # Skip if we already scrape this fund via ATS
+    if fund.lever_slug or fund.greenhouse_slug or fund.ashby_slug:
+        return []
+
+    if not fund.careers_url:
+        return []
+
+    log.info(f"[Career] Scraping {fund.name} → {fund.careers_url}")
+
+    resp = safe_get(fund.careers_url)
+    if not resp:
+        return []
+
+    # Parse HTML → clean text
+    if BeautifulSoup:
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
+            tag.decompose()
+        page_text = soup.get_text(separator="\n", strip=True)
+
+        # Also grab any job-specific links
+        job_links = []
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            text = a.get_text(strip=True)
+            if any(kw in text.lower() or kw in href.lower() 
+                   for kw in ["apply", "job", "role", "position", "career"]):
+                job_links.append(f"{text}: {href}")
+
+        if job_links:
+            page_text += "\n\nJOB LINKS FOUND:\n" + "\n".join(job_links[:20])
+    else:
+        page_text = resp.text[:5000]
+
+    if len(page_text) < 30:
+        return []
+
+    roles = []
+
+    # Try LLM extraction first
+    if HAS_LLM:
+        result = llm_classifier.extract_roles_from_career_page(page_text, fund.name)
+        if result and result.get("has_roles") and result.get("roles"):
+            for r in result["roles"]:
+                title = r.get("title", "")
+                if not title or not is_relevant_vc_role(title, ""):
+                    continue
+
+                role = Role(
+                    fund_id=fund.id,
+                    fund_name=fund.name,
+                    title=title,
+                    description=r.get("description", "")[:500],
+                    source="website",
+                    source_url=r.get("apply_url") or fund.careers_url,
+                    posted_date="",  # Career pages rarely show dates
+                    location=r.get("location", "London"),
+                )
+                roles.append(role)
+
+            log.info(f"[Career] {fund.name}: LLM extracted {len(roles)} roles")
+            return roles
+
+    # Regex fallback: look for role titles in the text
+    for line in page_text.split("\n"):
+        line = line.strip()
+        if len(line) < 5 or len(line) > 120:
+            continue
+        # Check if this line looks like a job title
+        if any(kw in line.lower() for kw in VC_ROLE_TITLES):
+            if not any(skip in line.lower() for skip in ["cookie", "privacy", "terms", "subscribe"]):
+                role = Role(
+                    fund_id=fund.id,
+                    fund_name=fund.name,
+                    title=line.strip(),
+                    description="",
+                    source="website",
+                    source_url=fund.careers_url,
+                )
+                roles.append(role)
+
+    log.info(f"[Career] {fund.name}: regex extracted {len(roles)} roles")
+    return roles
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# SCRAPER 7: PEOPLE-BASED LINKEDIN MONITORING (free via Google CSE)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def load_people_registry() -> list[dict]:
+    """Load the people registry built by people_registry.py."""
+    if not PEOPLE_FILE.exists():
+        return []
+    try:
+        data = json.loads(PEOPLE_FILE.read_text())
+        return data.get("people", [])
+    except (json.JSONDecodeError, KeyError):
+        return []
+
+
+def scrape_linkedin_by_people(fund: FundConfig) -> list[Role]:
+    """
+    Search Google for LinkedIn posts by SPECIFIC PEOPLE at a fund.
+    This catches posts where someone says 'we're hiring' without naming the fund.
+    
+    Uses the people_registry.json built by people_registry.py.
+    Complementary to scrape_linkedin_via_google() which searches by fund name.
+    """
+    if not GOOGLE_CSE_API_KEY or not GOOGLE_CSE_CX:
+        return []
+
+    # Load people for this fund
+    all_people = load_people_registry()
+    fund_people = [p for p in all_people
+                   if p.get("fund_id") == fund.id
+                   and p.get("is_investment_team", False)]
+
+    if not fund_people:
+        return []
+
+    # Pick the most likely posters: partners, talent leads, senior team
+    priority_roles = ["partner", "principal", "talent", "people", "head"]
+    high_priority = [p for p in fund_people 
+                     if any(r in p.get("role", "").lower() for r in priority_roles)]
+    others = [p for p in fund_people if p not in high_priority]
+    
+    # Search partners first, then others; cap at 5 people per fund
+    to_search = (high_priority + others)[:5]
+
+    roles = []
+    for person in to_search:
+        name = person.get("name", "")
+        if not name:
+            continue
+
+        # Search by person name + hiring keywords
+        query = f'site:linkedin.com/posts "{name}" ("hiring" OR "join" OR "role" OR "open position" OR "team")'
+        
+        url = "https://www.googleapis.com/customsearch/v1"
+        params = {
+            "key": GOOGLE_CSE_API_KEY,
+            "cx": GOOGLE_CSE_CX,
+            "q": query,
+            "dateRestrict": "m1",  # Last month
+            "num": 5,
+        }
+
+        log.info(f"[People→LinkedIn] Searching posts by {name} ({fund.name})")
+        resp = safe_get(url, params=params)
+        if not resp:
+            continue
+
+        try:
+            items = resp.json().get("items", [])
+        except json.JSONDecodeError:
+            continue
+
+        for item in items:
+            title_text = item.get("title", "")
+            snippet = item.get("snippet", "")
+            link = item.get("link", "")
+            combined_text = f"{title_text} {snippet}"
+
+            # Use LLM to classify if available
+            if HAS_LLM:
+                classification = llm_classifier.classify_hiring_signal(
+                    combined_text,
+                    source_context=f"LinkedIn post by {name}, {person.get('role', '')} at {fund.name}"
+                )
+                if classification and classification.get("is_hiring_signal"):
+                    for llm_role in classification.get("roles", []):
+                        role_title = llm_role.get("title", "")
+                        if not role_title:
+                            role_title = f"Open Role at {fund.name}"
+                        
+                        role = Role(
+                            fund_id=fund.id,
+                            fund_name=fund.name,
+                            title=role_title,
+                            description=llm_role.get("description", snippet[:500]),
+                            source="linkedin",
+                            source_url=link,
+                            posted_date="",  # Google snippets don't always have dates
+                        )
+                        roles.append(role)
+                    
+                    # Even if LLM found no specific roles, create a generic signal
+                    if not classification.get("roles") and classification.get("confidence", 0) > 0.7:
+                        role = Role(
+                            fund_id=fund.id,
+                            fund_name=fund.name,
+                            title=f"Hiring Signal — {fund.name}",
+                            description=f"Post by {name}: {snippet[:400]}",
+                            source="linkedin",
+                            source_url=link,
+                        )
+                        roles.append(role)
+                continue
+
+            # Regex fallback
+            extracted_title = extract_role_title_from_text(combined_text, fund.name)
+            if extracted_title:
+                role = Role(
+                    fund_id=fund.id,
+                    fund_name=fund.name,
+                    title=extracted_title,
+                    description=snippet[:500],
+                    source="linkedin",
+                    source_url=link,
+                )
+                roles.append(role)
+
+        time.sleep(0.5)  # Rate limit between people
+
+    log.info(f"[People→LinkedIn] {fund.name}: found {len(roles)} roles from {len(to_search)} people")
+    return roles
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# SCRAPER 8: FUND-NAME SOCIAL SCANNER (catches outsider posts)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def scrape_social_mentions(fund: FundConfig) -> list[Role]:
+    """
+    Search Google for ANY LinkedIn post mentioning a fund + hiring signal.
+    This catches: recruiters, portfolio founders, ecosystem chatter.
+    Complementary to people-based search (catches outsider posts).
+    
+    Enhanced with LLM classification to reduce false positives.
+    """
+    if not GOOGLE_CSE_API_KEY or not GOOGLE_CSE_CX:
+        return []
+
+    # Broader keyword set than the original google scraper
+    hiring_phrases = [
+        "hiring", "open role", "looking for", "join",
+        "growing the team", "searching for", "recruiting",
+        "DMs open", "know someone", "opportunity",
+    ]
+    role_phrases = [
+        "analyst", "associate", "principal", "partner",
+        "fellow", "investment", "venture", "platform",
+    ]
+
+    # Build 2 complementary queries
+    hire_or = " OR ".join(f'"{p}"' for p in hiring_phrases[:5])
+    role_or = " OR ".join(f'"{p}"' for p in role_phrases[:5])
+    queries = [
+        f'site:linkedin.com "{fund.name}" ({hire_or})',
+        f'site:linkedin.com "{fund.name}" ({role_or})',
+    ]
+
+    roles = []
+    seen_links = set()
+
+    for query in queries:
+        url = "https://www.googleapis.com/customsearch/v1"
+        params = {
+            "key": GOOGLE_CSE_API_KEY,
+            "cx": GOOGLE_CSE_CX,
+            "q": query,
+            "dateRestrict": "m1",
+            "num": 5,
+        }
+
+        log.info(f"[Social] Searching: {fund.name} mentions")
+        resp = safe_get(url, params=params)
+        if not resp:
+            continue
+
+        try:
+            items = resp.json().get("items", [])
+        except json.JSONDecodeError:
+            continue
+
+        for item in items:
+            link = item.get("link", "")
+            if link in seen_links:
+                continue
+            seen_links.add(link)
+
+            title_text = item.get("title", "")
+            snippet = item.get("snippet", "")
+            combined = f"{title_text} {snippet}"
+
+            # LLM classification
+            if HAS_LLM:
+                classification = llm_classifier.classify_hiring_signal(
+                    combined,
+                    source_context=f"LinkedIn post/article mentioning {fund.name}"
+                )
+                if not classification or not classification.get("is_hiring_signal"):
+                    continue
+                
+                for llm_role in classification.get("roles", []):
+                    role = Role(
+                        fund_id=fund.id,
+                        fund_name=fund.name,
+                        title=llm_role.get("title") or f"Open Role at {fund.name}",
+                        description=llm_role.get("description", snippet[:500]),
+                        source="linkedin",
+                        source_url=link,
+                    )
+                    roles.append(role)
+
+                if not classification.get("roles") and classification.get("confidence", 0) > 0.7:
+                    roles.append(Role(
+                        fund_id=fund.id,
+                        fund_name=fund.name,
+                        title=f"Hiring Signal — {fund.name}",
+                        description=snippet[:500],
+                        source="linkedin",
+                        source_url=link,
+                    ))
+                continue
+
+            # Regex fallback
+            extracted = extract_role_title_from_text(combined, fund.name)
+            if extracted:
+                roles.append(Role(
+                    fund_id=fund.id,
+                    fund_name=fund.name,
+                    title=extracted,
+                    description=snippet[:500],
+                    source="linkedin",
+                    source_url=link,
+                ))
+
+        time.sleep(0.5)
+
+    log.info(f"[Social] {fund.name}: found {len(roles)} roles from mentions")
+    return roles
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # NLP UTILITIES — Role title extraction from unstructured text
 # ═══════════════════════════════════════════════════════════════════════════════
 
 HIRING_KEYWORDS = [
+    # Direct hiring signals
     "hiring", "looking for", "join our team", "open role", "we're recruiting",
     "job opening", "position available", "come work with", "apply now",
     "seeking a", "searching for", "opportunity at",
+    # Softer signals (how partners actually talk)
+    "building out", "expanding", "strengthening the team", "adding to",
+    "scaling our team", "first hire", "founding team member", "come join",
+    "excited to share", "who wants to", "growing the team", "we're adding",
+    # Referral language (how VC roles circulate)
+    "know anyone", "send them my way", "tag someone", "spread the word",
+    "help me find", "would love intros", "share this",
+    # Recruiter / headhunter language
+    "mandate", "retained search", "exclusive role", "confidential search",
+    "working with a leading", "on behalf of",
 ]
 
 ROLE_PATTERNS = [
@@ -645,9 +1018,15 @@ ROLE_PATTERNS = [
 ]
 
 VC_ROLE_TITLES = [
+    # Core investment track
     "analyst", "associate", "principal", "partner", "fellow", "intern",
-    "investment manager", "venture fellow", "platform", "portfolio",
-    "head of", "director", "vice president", "vp",
+    "investment manager", "venture fellow",
+    # Platform / ops
+    "platform", "portfolio", "head of", "director", "vice president", "vp",
+    # European VC specific
+    "eir", "entrepreneur in residence", "venture partner", "operating partner",
+    "scout", "deal team", "investment team", "talent partner",
+    "portfolio services", "operating advisor",
 ]
 
 
@@ -739,14 +1118,17 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
                  Options: "lever", "greenhouse", "google", "twitter", "proxycurl"
         dry_run: If True, scrape but don't write output file.
     """
-    all_sources = sources or ["lever", "greenhouse", "google", "twitter", "proxycurl"]
+    all_sources = sources or ["lever", "greenhouse", "career", "google", "people", "social", "twitter", "proxycurl"]
     all_roles = []
     errors = []
 
     scrapers = {
         "lever": scrape_lever,
         "greenhouse": scrape_greenhouse,
+        "career": scrape_career_page,
         "google": scrape_linkedin_via_google,
+        "people": scrape_linkedin_by_people,
+        "social": scrape_social_mentions,
         "twitter": scrape_twitter,
         "proxycurl": scrape_linkedin_proxycurl,
     }
@@ -866,7 +1248,7 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Prosperity VC Hiring Pipeline")
     parser.add_argument("--source", nargs="+",
-                        choices=["lever", "greenhouse", "google", "twitter", "proxycurl"],
+                        choices=["lever", "greenhouse", "career", "google", "people", "social", "twitter", "proxycurl"],
                         help="Run specific scrapers only")
     parser.add_argument("--dry-run", action="store_true",
                         help="Scrape but don't write output file")

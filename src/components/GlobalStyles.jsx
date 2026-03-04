@@ -1,11 +1,10 @@
 /**
  * GlobalStyles.jsx — Keyframes, font imports, and global CSS.
- * Accepts `light` prop to transition body-level colors.
  */
 
 import { FONTS } from "../config/theme";
 
-export default function GlobalStyles({ light }) {
+export default function GlobalStyles() {
   return (
     <style>{`
       @import url('${FONTS.import}');
@@ -14,17 +13,24 @@ export default function GlobalStyles({ light }) {
 
       html, body, #root {
         width: 100%; height: 100%; overflow: hidden;
-        background: ${light ? "#f0f0f0" : "#000"};
-        color: ${light ? "#222" : "#999"};
+        background: #000; color: #999;
         font-family: ${FONTS.body};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        transition: background 0.6s ease, color 0.6s ease;
+        cursor: url('/hitmarker.svg') 16 16, crosshair;
+      }
+
+      a, button, [role="button"] {
+        cursor: url('/hitmarker.svg') 16 16, crosshair;
+      }
+
+      * {
+        cursor: url('/hitmarker.svg') 16 16, crosshair !important;
       }
 
       ::-webkit-scrollbar { width: 4px; }
       ::-webkit-scrollbar-track { background: transparent; }
-      ::-webkit-scrollbar-thumb { background: rgba(${light ? "0,0,0" : "255,255,255"},0.08); border-radius: 2px; }
+      ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
 
       @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
       @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
@@ -35,6 +41,21 @@ export default function GlobalStyles({ light }) {
       @keyframes scan {
         from { transform: translateY(-100%); }
         to { transform: translateY(100vh); }
+      }
+
+      /* Click feedback — sonar ping */
+      @keyframes sonarPing {
+        0% { width: 0px; height: 0px; opacity: 0.3; border-width: 1px; }
+        100% { width: 40px; height: 40px; opacity: 0; border-width: 0.5px; }
+      }
+      .click-ping {
+        position: fixed;
+        border: 1px solid rgba(255,255,255,0.4);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 99999;
+        transform: translate(-50%, -50%);
+        animation: sonarPing 0.35s ease-out forwards;
       }
 
       @keyframes ebbHot {

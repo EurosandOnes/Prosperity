@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- MW2-style hitmarker: 4 short lines radiating from center with gap -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="square">
+    <!-- Top-left -->
+    <line x1="6" y1="6" x2="12" y2="12"/>
+    <!-- Top-right -->
+    <line x1="26" y1="6" x2="20" y2="12"/>
+    <!-- Bottom-left -->
+    <line x1="6" y1="26" x2="12" y2="20"/>
+    <!-- Bottom-right -->
+    <line x1="26" y1="26" x2="20" y2="20"/>
+  </g>
+</svg>

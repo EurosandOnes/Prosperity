@@ -1,13 +1,12 @@
 {
-  "generated_at": "2026-03-04T19:52:26.353179+00:00",
-  "stats": {
-    "total_roles": 0,
-    "hot_roles": 0,
-    "warm_roles": 0,
-    "funds_hiring": 0,
-    "sources_used": [],
-    "errors": []
-  },
+  "generated_at": "2026-01-01T00:00:00Z",
   "funds": {},
-  "roles": []
+  "roles": [],
+  "stats": {
+    "total_funds": 0,
+    "funds_hiring": 0,
+    "total_roles": 0,
+    "hot_roles": 0
+  },
+  "_note": "This is a placeholder. Run the pipeline to populate with real data: python pipeline/pipeline.py"
 }

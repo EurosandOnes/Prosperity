@@ -1,357 +1,457 @@
 /**
- * CityMap.jsx — London city view with fund markers over a dark map.
- * Positions are computed from lat/lng via Mercator projection matching the tile grid.
- * Includes collision avoidance for overlapping clusters (e.g., Soho).
+ * CityMap.jsx — Interactive London map using Leaflet.
+ * Full pinch/zoom/drag, crisp tiles at every level, marker clustering.
  */
 
-import { useState, useEffect, useCallback } from "react";
-import { FOCUS_COLORS, FONTS } from "../config/theme";
-import FundNode from "./FundNode";
-import FundSheet from "./FundSheet";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { FONTS } from "../config/theme";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import "leaflet.markercluster";
+import "leaflet.markercluster/dist/MarkerCluster.css";
 
-/* ── Tile grid constants ── */
-const TILE_Z = 12;
-const TILE_SIZE = 256;
-const GRID_COLS = 7;
-const GRID_ROWS = 5;
-const TILE_START_X = 2043;
-const TILE_START_Y = 1360;
-const TOTAL_W = GRID_COLS * TILE_SIZE; // 1792
-const TOTAL_H = GRID_ROWS * TILE_SIZE; // 1280
-const N = Math.pow(2, TILE_Z); // 4096
+/* ── Constants ── */
+const LONDON_CENTER = [51.518, -0.130];
+const DEFAULT_ZOOM = 13;
+const MIN_ZOOM = 11;
+const MAX_ZOOM = 18;
 
-// Geographic bounds of the tile grid
-const WEST_LNG = (TILE_START_X / N) * 360 - 180;
-const EAST_LNG = ((TILE_START_X + GRID_COLS) / N) * 360 - 180;
-const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360));
-const tileToLat = (ty) => Math.atan(Math.sinh(Math.PI * (1 - (2 * ty) / N))) * (180 / Math.PI);
-const NORTH_LAT = tileToLat(TILE_START_Y);
-const SOUTH_LAT = tileToLat(TILE_START_Y + GRID_ROWS);
-const MERC_NORTH = mercY(NORTH_LAT);
-const MERC_SOUTH = mercY(SOUTH_LAT);
-
-/* ── Geo → viewport % conversion ── */
-function useGeoProjection() {
-  const [dims, setDims] = useState({ w: window.innerWidth, h: window.innerHeight });
-
-  useEffect(() => {
-    const onResize = () => setDims({ w: window.innerWidth, h: window.innerHeight });
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
-
-  const project = useCallback((lat, lng) => {
-    // Position within tile grid (0..1)
-    const gx = (lng - WEST_LNG) / (EAST_LNG - WEST_LNG);
-    const gy = (MERC_NORTH - mercY(lat)) / (MERC_NORTH - MERC_SOUTH);
-
-    // Pixel in unscaled tile grid
-    const px = gx * TOTAL_W;
-    const py = gy * TOTAL_H;
-
-    // Scale factor (same as MapBackground)
-    const scale = Math.max(dims.w / TOTAL_W, dims.h / TOTAL_H) * 1.2;
-
-    // Viewport position (tile grid is centered via translate(-50%,-50%) at 50%,50%)
-    const vpx = dims.w / 2 + (px - TOTAL_W / 2) * scale;
-    const vpy = dims.h / 2 + (py - TOTAL_H / 2) * scale;
-
-    return { x: (vpx / dims.w) * 100, y: (vpy / dims.h) * 100 };
-  }, [dims]);
-
-  return project;
+/* ── Helpers ── */
+function getFaviconUrl(fund) {
+  if (!fund.website) return null;
+  try {
+    const host = new URL(fund.website).hostname;
+    return `https://www.google.com/s2/favicons?domain=${host}&sz=64`;
+  } catch { return null; }
 }
 
-/* ── Collision avoidance ── */
-function deconflict(funds, project, minDist = 5) {
-  const positioned = funds.map(f => {
-    const { x, y } = project(f.lat, f.lng);
-    return { ...f, x, y };
+function getBestFreshness(fund) {
+  if (!fund.hiring || !fund.roles?.length) return "QUIET";
+  if (fund.roles.some(r => r.freshness === "HOT")) return "HOT";
+  if (fund.roles.some(r => r.freshness === "WARM")) return "WARM";
+  return "QUIET";
+}
+
+function getUniqueFocuses(funds) {
+  const s = new Set(funds.map(f => f.focus));
+  return ["All", ...Array.from(s).sort()];
+}
+
+/* ── Custom marker HTML ── */
+function createFundIcon(fund) {
+  const freshness = getBestFreshness(fund);
+  const logo = getFaviconUrl(fund);
+  const sz = 38;
+
+  const borderColor =
+    freshness === "HOT" ? "rgba(255,255,255,0.7)" :
+    freshness === "WARM" ? "rgba(255,255,255,0.35)" :
+    "rgba(255,255,255,0.12)";
+
+  const animation =
+    freshness === "HOT" ? "ebbHot 3s ease-in-out infinite" :
+    freshness === "WARM" ? "ebbWarm 4s ease-in-out infinite" :
+    "none";
+
+  const nameOpacity = freshness === "QUIET" ? "0.4" : "0.9";
+
+  const imgHtml = logo
+    ? `<img src="${logo}" style="width:${sz-6}px;height:${sz-6}px;border-radius:50%;object-fit:cover;" onerror="this.style.display='none';this.nextSibling.style.display='block'"/><span style="display:none;font-size:11px;font-weight:700;color:#fff;letter-spacing:0.04em">${fund.initials}</span>`
+    : `<span style="font-size:11px;font-weight:700;color:#fff;letter-spacing:0.04em">${fund.initials}</span>`;
+
+  const html = `
+    <div style="display:flex;flex-direction:column;align-items:center;cursor:pointer;">
+      <div style="
+        width:${sz}px;height:${sz}px;border-radius:50%;
+        border:2px solid ${borderColor};
+        background:rgba(15,15,18,0.92);
+        display:flex;align-items:center;justify-content:center;
+        overflow:hidden;animation:${animation};
+      ">${imgHtml}</div>
+      <div style="
+        margin-top:3px;font-family:'Space Mono',monospace;font-size:10px;font-weight:600;
+        color:rgba(255,255,255,${nameOpacity});letter-spacing:0.03em;white-space:nowrap;
+        text-shadow:0 1px 4px rgba(0,0,0,0.9),0 0 8px rgba(0,0,0,0.7);
+        max-width:110px;overflow:hidden;text-overflow:ellipsis;text-align:center;
+      ">${fund.name}</div>
+    </div>`;
+
+  return L.divIcon({
+    html,
+    className: "fund-marker",
+    iconSize: [110, 60],
+    iconAnchor: [55, 25],
   });
-
-  // Simple repulsion pass — push overlapping nodes apart
-  for (let pass = 0; pass < 4; pass++) {
-    for (let i = 0; i < positioned.length; i++) {
-      for (let j = i + 1; j < positioned.length; j++) {
-        const dx = positioned[j].x - positioned[i].x;
-        const dy = positioned[j].y - positioned[i].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < minDist && dist > 0) {
-          const push = (minDist - dist) / 2;
-          const angle = Math.atan2(dy, dx);
-          positioned[j].x += Math.cos(angle) * push;
-          positioned[j].y += Math.sin(angle) * push;
-          positioned[i].x -= Math.cos(angle) * push;
-          positioned[i].y -= Math.sin(angle) * push;
-        } else if (dist === 0) {
-          // Identical positions — nudge randomly
-          positioned[j].x += (Math.random() - 0.5) * minDist;
-          positioned[j].y += (Math.random() - 0.5) * minDist;
-        }
-      }
-    }
-  }
-
-  return positioned;
 }
 
-/* ── Map Background ── */
-function MapBackground() {
-  const [scale, setScale] = useState(1);
-
-  const tiles = [];
-  for (let row = 0; row < GRID_ROWS; row++) {
-    for (let col = 0; col < GRID_COLS; col++) {
-      tiles.push({
-        tx: TILE_START_X + col, ty: TILE_START_Y + row,
-        col, row, key: `${TILE_START_X + col}-${TILE_START_Y + row}`,
-      });
-    }
-  }
-
-  useEffect(() => {
-    const update = () => setScale(Math.max(window.innerWidth / TOTAL_W, window.innerHeight / TOTAL_H) * 1.2);
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
-
-  return (
-    <div style={{ position: "absolute", inset: 0, zIndex: 0, overflow: "hidden" }}>
-      <div style={{
-        position: "absolute", top: "50%", left: "50%",
-        width: TOTAL_W, height: TOTAL_H,
-        transform: `translate(-50%, -50%) scale(${scale})`,
-        transformOrigin: "center center",
-        opacity: 0.85,
-        filter: "brightness(1.3) contrast(1.1) saturate(0.15)",
-      }}>
-        {tiles.map(t => (
-          <img key={t.key} alt="" loading="eager" draggable={false}
-            src={`https://basemaps.cartocdn.com/dark_nolabels/${TILE_Z}/${t.tx}/${t.ty}.png`}
-            style={{
-              position: "absolute",
-              left: t.col * TILE_SIZE, top: t.row * TILE_SIZE,
-              width: TILE_SIZE, height: TILE_SIZE, display: "block",
-            }}
-          />
-        ))}
-      </div>
-      <div style={{
-        position: "absolute", inset: 0,
-        background: "radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.45) 100%)",
-        pointerEvents: "none",
-      }} />
-    </div>
-  );
-}
-
-/* ── Focus Dropdown ── */
-function FocusDropdown({ value, onChange, options }) {
-  const [open, setOpen] = useState(false);
-  const label = value || "All focuses";
-  const color = value ? FOCUS_COLORS[value] || "#fff" : "#888";
-
-  return (
-    <div style={{ position: "relative", zIndex: 25 }}>
-      <button onClick={() => setOpen(!open)} style={{
-        display: "flex", alignItems: "center", gap: 10,
-        padding: "9px 16px", minWidth: 180,
-        background: "rgba(0,0,0,0.6)", backdropFilter: "blur(12px)",
-        border: `1px solid ${value ? color + "40" : "rgba(255,255,255,0.1)"}`,
-        borderRadius: 0, cursor: "pointer",
-        fontFamily: FONTS.mono, fontSize: 12, fontWeight: 600,
-        color: value ? color : "#999", letterSpacing: "0.04em",
-        transition: "all 0.2s",
-      }}>
-        {value && <span style={{ width: 7, height: 7, borderRadius: "50%", background: color, flexShrink: 0 }} />}
-        <span style={{ flex: 1, textAlign: "left" }}>{label}</span>
-        <span style={{
-          fontSize: 8, color: "#555", marginLeft: 4,
-          transform: open ? "rotate(180deg)" : "rotate(0deg)",
-          transition: "transform 0.2s",
-        }}>▼</span>
-      </button>
-
-      {open && (
-        <div style={{
-          position: "absolute", top: "calc(100% + 4px)", left: 0, right: 0,
-          background: "rgba(6,6,8,0.95)", backdropFilter: "blur(16px)",
-          border: "1px solid rgba(255,255,255,0.08)",
-          maxHeight: 280, overflowY: "auto",
-          animation: "fadeIn 0.15s ease-out",
-        }}>
-          <div onClick={() => { onChange(null); setOpen(false); }} style={{
-            padding: "10px 16px", cursor: "pointer",
-            fontFamily: FONTS.mono, fontSize: 12,
-            color: !value ? "#fff" : "#666",
-            background: !value ? "rgba(255,255,255,0.04)" : "transparent",
-            letterSpacing: "0.04em", transition: "background 0.15s",
-          }}
-          onMouseEnter={e => e.target.style.background = "rgba(255,255,255,0.06)"}
-          onMouseLeave={e => e.target.style.background = !value ? "rgba(255,255,255,0.04)" : "transparent"}>
-            All focuses
-          </div>
-          {options.map(f => {
-            const fc = FOCUS_COLORS[f] || "#666";
-            const active = value === f;
-            return (
-              <div key={f}
-                onClick={() => { onChange(active ? null : f); setOpen(false); }}
-                style={{
-                  padding: "10px 16px", cursor: "pointer",
-                  display: "flex", alignItems: "center", gap: 10,
-                  fontFamily: FONTS.mono, fontSize: 12,
-                  color: active ? fc : "#888",
-                  background: active ? `${fc}10` : "transparent",
-                  letterSpacing: "0.04em",
-                  transition: "background 0.15s, color 0.15s",
-                }}
-                onMouseEnter={e => { e.currentTarget.style.background = `${fc}15`; e.currentTarget.style.color = fc; }}
-                onMouseLeave={e => { e.currentTarget.style.background = active ? `${fc}10` : "transparent"; e.currentTarget.style.color = active ? fc : "#888"; }}>
-                <span style={{ width: 7, height: 7, borderRadius: "50%", background: fc, flexShrink: 0 }} />
-                {f}
-              </div>
-            );
-          })}
-        </div>
-      )}
-      {open && <div onClick={() => setOpen(false)} style={{ position: "fixed", inset: 0, zIndex: -1 }} />}
-    </div>
-  );
-}
-
-/* ── Main ── */
 export default function CityMap({ funds, onBack }) {
-  const [filter, setFilter] = useState(null);
-  const [showHiring, setShowHiring] = useState(false);
+  const mapRef = useRef(null);
+  const leafletRef = useRef(null);
+  const clusterRef = useRef(null);
+  const markersRef = useRef({});
+
   const [selected, setSelected] = useState(null);
-  const [sheetFund, setSheetFund] = useState(null);
+  const [focusFilter, setFocusFilter] = useState("All");
+  const [hiringOnly, setHiringOnly] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
 
-  const project = useGeoProjection();
+  const focuses = getUniqueFocuses(funds);
 
-  const visible = funds.filter(f => {
-    if (showHiring && (!f.hiring || !f.roles?.length)) return false;
-    if (filter && f.focus !== filter) return false;
+  /* ── Filter funds ── */
+  const filtered = funds.filter(f => {
+    if (focusFilter !== "All" && f.focus !== focusFilter) return false;
+    if (hiringOnly && !f.hiring) return false;
     return true;
   });
 
-  // Compute positions with collision avoidance
-  const positioned = deconflict(visible, project, 5.5);
+  /* ── Initialize Leaflet map ── */
+  useEffect(() => {
+    if (leafletRef.current) return; // Already initialized
 
-  const focusAreas = [...new Set(funds.map(f => f.focus))].sort();
-  const hiringCount = funds.filter(f => f.hiring && f.roles?.length).length;
+    const map = L.map(mapRef.current, {
+      center: LONDON_CENTER,
+      zoom: DEFAULT_ZOOM,
+      minZoom: MIN_ZOOM,
+      maxZoom: MAX_ZOOM,
+      zoomControl: false,
+      attributionControl: false,
+    });
+
+    // Dark tile layer — crisp at all zoom levels
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+      maxZoom: MAX_ZOOM,
+      subdomains: "abcd",
+    }).addTo(map);
+
+    // Create marker cluster group
+    const cluster = L.markerClusterGroup({
+      maxClusterRadius: 45,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      disableClusteringAtZoom: 16,
+      iconCreateFunction: (clstr) => {
+        const count = clstr.getChildCount();
+        const childMarkers = clstr.getAllChildMarkers();
+        const hasHot = childMarkers.some(m => m.options.freshness === "HOT");
+        const hasWarm = childMarkers.some(m => m.options.freshness === "WARM");
+
+        const borderColor = hasHot
+          ? "rgba(255,255,255,0.6)"
+          : hasWarm ? "rgba(255,255,255,0.3)" : "rgba(255,255,255,0.15)";
+        const glow = hasHot
+          ? "box-shadow:0 0 14px rgba(255,255,255,0.25),0 0 30px rgba(255,255,255,0.1);"
+          : hasWarm ? "box-shadow:0 0 8px rgba(255,255,255,0.1);" : "";
+        const animation = hasHot ? "animation:ebbHot 3s ease-in-out infinite;" : "";
+
+        return L.divIcon({
+          html: `<div style="
+            width:48px;height:48px;border-radius:50%;
+            border:2px solid ${borderColor};
+            background:rgba(15,15,18,0.92);
+            display:flex;align-items:center;justify-content:center;
+            font-family:'Space Mono',monospace;font-size:14px;font-weight:700;
+            color:rgba(255,255,255,0.85);cursor:pointer;
+            ${glow}${animation}
+          ">${count}</div>`,
+          className: "fund-cluster",
+          iconSize: [48, 48],
+          iconAnchor: [24, 24],
+        });
+      },
+    });
+
+    map.addLayer(cluster);
+    leafletRef.current = map;
+    clusterRef.current = cluster;
+
+    return () => {
+      map.remove();
+      leafletRef.current = null;
+      clusterRef.current = null;
+    };
+  }, []);
+
+  /* ── Update markers when filters change ── */
+  useEffect(() => {
+    const cluster = clusterRef.current;
+    if (!cluster) return;
+
+    // Clear existing markers
+    cluster.clearLayers();
+    markersRef.current = {};
+
+    // Add filtered fund markers
+    filtered.forEach(fund => {
+      if (!fund.lat || !fund.lng) return;
+
+      const marker = L.marker([fund.lat, fund.lng], {
+        icon: createFundIcon(fund),
+        freshness: getBestFreshness(fund),
+      });
+
+      marker.on("click", () => {
+        setSelected(prev => prev === fund.id ? null : fund.id);
+      });
+
+      cluster.addLayer(marker);
+      markersRef.current[fund.id] = marker;
+    });
+  }, [filtered]);
+
+  /* ── Zoom to fund when selected ── */
+  useEffect(() => {
+    if (!selected || !leafletRef.current) return;
+    const marker = markersRef.current[selected];
+    if (marker) {
+      leafletRef.current.setView(marker.getLatLng(), 15, { animate: true });
+    }
+  }, [selected]);
+
+  const selectedFund = selected ? funds.find(f => f.id === selected) : null;
+  const resetView = () => {
+    if (leafletRef.current) {
+      leafletRef.current.setView(LONDON_CENTER, DEFAULT_ZOOM, { animate: true });
+    }
+    setSelected(null);
+  };
 
   return (
     <div style={{
-      width: "100%", height: "100%", position: "relative", overflow: "hidden",
-      animation: "fadeIn .5s ease-out", background: "#000",
+      width: "100%", height: "100%", position: "relative",
+      background: "#0a0a0a", animation: "fadeIn 0.5s ease-out",
     }}>
-      <MapBackground />
+      {/* Map container */}
+      <div ref={mapRef} style={{ width: "100%", height: "100%", zIndex: 1 }} />
 
-      {/* Header */}
+      {/* Top bar */}
       <div style={{
-        position: "relative", zIndex: 10, padding: "20px 24px 0",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
+        position: "absolute", top: 0, left: 0, right: 0, zIndex: 1000,
+        padding: "max(env(safe-area-inset-top,12px),12px) 16px 12px",
+        background: "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 70%, transparent 100%)",
+        display: "flex", alignItems: "flex-start", justifyContent: "space-between",
+        pointerEvents: "none",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <button onClick={onBack} style={{
-            background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.12)",
-            borderRadius: 0, padding: "8px 14px", cursor: "pointer",
-            fontFamily: FONTS.mono, fontSize: 16, color: "#888", fontWeight: 700,
-            transition: "all 0.2s",
-          }}
-          onMouseEnter={e => { e.target.style.color = "#fff"; e.target.style.borderColor = "rgba(255,255,255,0.3)"; }}
-          onMouseLeave={e => { e.target.style.color = "#888"; e.target.style.borderColor = "rgba(255,255,255,0.12)"; }}>
-            ←
-          </button>
-          <h1 style={{
-            margin: 0, fontSize: 28, fontWeight: 800, color: "#fff",
-            fontFamily: FONTS.heading, letterSpacing: "0.04em", lineHeight: 1,
-          }}>
-            LONDON
-            <span style={{ fontSize: 13, color: "#666", fontWeight: 400, fontFamily: FONTS.mono, marginLeft: 12 }}>
-              {hiringCount} HIRING
-            </span>
-          </h1>
-        </div>
-
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <FocusDropdown value={filter} onChange={setFilter} options={focusAreas} />
-          <button onClick={() => setShowHiring(!showHiring)} style={{
-            padding: "9px 18px",
-            background: showHiring ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.6)",
-            backdropFilter: "blur(12px)",
-            border: `1px solid ${showHiring ? "rgba(255,255,255,0.25)" : "rgba(255,255,255,0.1)"}`,
-            borderRadius: 0, cursor: "pointer",
-            fontFamily: FONTS.mono, fontSize: 12, fontWeight: 700,
-            color: showHiring ? "#fff" : "#999",
-            letterSpacing: "0.06em", transition: "all 0.2s",
-          }}>
-            {showHiring ? "● LIVE ONLY" : "LIVE ONLY"}
-          </button>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, pointerEvents: "auto" }}>
+          <button onClick={onBack} style={backBtnStyle}>←</button>
+          <div>
+            <div style={{
+              fontSize: 22, fontWeight: 700, letterSpacing: "0.08em",
+              fontFamily: "'Space Mono', monospace", color: "#fff",
+            }}>LONDON</div>
+            <div style={{
+              fontSize: 11, color: "rgba(255,255,255,0.5)", letterSpacing: "0.06em",
+              fontFamily: "'Space Mono', monospace",
+            }}>
+              {filtered.filter(f => f.hiring).length} HIRING · {filtered.length} FUNDS
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Signal legend */}
       <div style={{
-        position: "relative", zIndex: 10, padding: "12px 24px 0",
-        display: "flex", gap: 24, alignItems: "center",
+        position: "absolute", top: 80, left: 16, zIndex: 1000,
+        display: "flex", gap: 12, fontFamily: "'Space Mono', monospace", fontSize: 10,
+        color: "rgba(255,255,255,0.6)", letterSpacing: "0.06em",
+        pointerEvents: "none",
       }}>
-        <span style={{ fontSize: 10, color: "#555", fontFamily: FONTS.mono, letterSpacing: "0.08em", fontWeight: 700 }}>SIGNAL</span>
-        <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{
-            display: "inline-block", width: 12, height: 12, borderRadius: "50%",
-            background: "rgba(0,0,0,0.6)", border: "2px solid rgba(255,255,255,0.55)",
-            boxShadow: "0 0 10px rgba(255,255,255,0.25), 0 0 20px rgba(255,255,255,0.1)",
-            animation: "ebbHot 2.2s ease-in-out infinite",
-          }} />
-          <span style={{ fontSize: 11, color: "#bbb", fontFamily: FONTS.mono }}>Hot</span>
-        </span>
-        <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{
-            display: "inline-block", width: 12, height: 12, borderRadius: "50%",
-            background: "rgba(0,0,0,0.6)", border: "2px solid rgba(255,255,255,0.3)",
-            boxShadow: "0 0 6px rgba(255,255,255,0.08)",
-            animation: "ebbWarm 3s ease-in-out infinite",
-          }} />
-          <span style={{ fontSize: 11, color: "#999", fontFamily: FONTS.mono }}>Warm</span>
-        </span>
-        <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{
-            display: "inline-block", width: 12, height: 12, borderRadius: "50%",
-            background: "rgba(0,0,0,0.6)", border: "2px solid rgba(255,255,255,0.12)",
-          }} />
-          <span style={{ fontSize: 11, color: "#666", fontFamily: FONTS.mono }}>Quiet</span>
-        </span>
+        {[
+          { label: "HOT", border: "1.5px solid rgba(255,255,255,0.7)", shadow: "0 0 6px rgba(255,255,255,0.3)" },
+          { label: "WARM", border: "1.5px solid rgba(255,255,255,0.35)", shadow: "none" },
+          { label: "QUIET", border: "1.5px solid rgba(255,255,255,0.12)", shadow: "none" },
+        ].map(s => (
+          <span key={s.label} style={{ display: "flex", alignItems: "center", gap: 4 }}>
+            <span style={{
+              width: 8, height: 8, borderRadius: "50%", display: "inline-block",
+              border: s.border, boxShadow: s.shadow,
+            }} /> {s.label}
+          </span>
+        ))}
       </div>
 
-      {/* Fund nodes */}
-      <div style={{ position: "absolute", inset: 0, zIndex: 5, pointerEvents: "none" }}>
-        <div style={{ position: "relative", width: "100%", height: "100%", pointerEvents: "auto" }}>
-          {positioned.map(f => (
-            <FundNode key={f.id} fund={f} selected={selected === f.id}
-              onClick={() => {
-                setSelected(selected === f.id ? null : f.id);
-                setSheetFund(selected === f.id ? null : f);
-              }}
-            />
-          ))}
+      {/* Bottom controls */}
+      {!selectedFund && (
+        <div style={{
+          position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000,
+          padding: "0 12px max(env(safe-area-inset-bottom,12px),12px)",
+          background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 70%, transparent 100%)",
+          pointerEvents: "none",
+        }}>
+          <div style={{
+            display: "flex", gap: 8, marginBottom: 8, flexWrap: "wrap",
+            justifyContent: "center", pointerEvents: "auto",
+          }}>
+            <button onClick={() => setHiringOnly(!hiringOnly)} style={{
+              ...filterBtnStyle,
+              background: hiringOnly ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.05)",
+              borderColor: hiringOnly ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.12)",
+              color: hiringOnly ? "#fff" : "rgba(255,255,255,0.6)",
+            }}>
+              {hiringOnly ? "● " : ""}HIRING ONLY
+            </button>
+            <button onClick={() => setShowFilters(!showFilters)} style={{
+              ...filterBtnStyle,
+              background: focusFilter !== "All" ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.05)",
+              borderColor: focusFilter !== "All" ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.12)",
+              color: focusFilter !== "All" ? "#fff" : "rgba(255,255,255,0.6)",
+            }}>
+              {focusFilter === "All" ? "FOCUS ▾" : focusFilter.toUpperCase() + " ✕"}
+            </button>
+            <button onClick={resetView} style={filterBtnStyle}>⊙ RESET</button>
+          </div>
+
+          {showFilters && (
+            <div style={{
+              display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "center",
+              marginBottom: 8, padding: "8px 0", pointerEvents: "auto",
+            }}>
+              {focuses.map(f => (
+                <button key={f} onClick={() => { setFocusFilter(f); setShowFilters(false); }} style={{
+                  ...filterBtnStyle, fontSize: 10, padding: "5px 12px",
+                  background: focusFilter === f ? "rgba(255,255,255,0.2)" : "rgba(255,255,255,0.05)",
+                  borderColor: focusFilter === f ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.1)",
+                  color: focusFilter === f ? "#fff" : "rgba(255,255,255,0.5)",
+                }}>
+                  {f.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <div style={{
+            display: "flex", justifyContent: "space-between", paddingBottom: 4,
+            fontFamily: "'Space Mono', monospace", fontSize: 10,
+            color: "rgba(255,255,255,0.3)", letterSpacing: "0.06em",
+          }}>
+            <span>51.5074°N, 0.1278°W</span>
+            <span>{filtered.length} FUNDS</span>
+          </div>
         </div>
-      </div>
-
-      {sheetFund && (
-        <FundSheet fund={sheetFund} onClose={() => { setSheetFund(null); setSelected(null); }} />
       )}
 
-      <div style={{
-        position: "absolute", bottom: 20, left: 24, zIndex: 10,
-        fontSize: 10, color: "#444", fontFamily: FONTS.mono,
-        letterSpacing: "0.1em", lineHeight: 1.8,
-      }}>
-        <div>51.5074°N, 0.1278°W</div>
-        <div>{positioned.length} FUNDS VISIBLE</div>
-      </div>
+      {/* Bottom sheet — fund detail */}
+      {selectedFund && (
+        <div style={{
+          position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1001,
+          background: "rgba(10,10,12,0.95)", backdropFilter: "blur(12px)",
+          borderTop: "1px solid rgba(255,255,255,0.1)",
+          padding: "20px 20px max(env(safe-area-inset-bottom,20px),20px)",
+          animation: "slideUp 0.3s ease-out",
+          maxHeight: "55vh", overflowY: "auto",
+        }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
+            <div>
+              <div style={{
+                fontFamily: "'Space Mono', monospace", fontSize: 16, fontWeight: 700,
+                color: "#fff", letterSpacing: "0.04em",
+              }}>{selectedFund.name}</div>
+              <div style={{
+                fontFamily: "'Space Mono', monospace", fontSize: 11,
+                color: "rgba(255,255,255,0.45)", marginTop: 2,
+              }}>
+                {selectedFund.neighborhood} · {selectedFund.focus} · {selectedFund.aum}
+              </div>
+            </div>
+            <button onClick={() => setSelected(null)} style={closeBtnStyle}>✕</button>
+          </div>
+
+          {selectedFund.hiring && selectedFund.roles.length > 0 ? (
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {selectedFund.roles.map((r, i) => (
+                <div key={i} style={{
+                  padding: "12px 14px", border: "1px solid rgba(255,255,255,0.1)",
+                  borderRadius: 6, background: "rgba(255,255,255,0.03)",
+                }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{
+                      fontFamily: "'Space Mono', monospace", fontSize: 13, fontWeight: 600, color: "#fff",
+                    }}>{r.title}</span>
+                    <span style={{
+                      fontFamily: "'Space Mono', monospace", fontSize: 9, fontWeight: 700,
+                      padding: "2px 8px", borderRadius: 3, letterSpacing: "0.08em",
+                      background: r.freshness === "HOT" ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.06)",
+                      color: r.freshness === "HOT" ? "#fff" : "rgba(255,255,255,0.5)",
+                      border: `1px solid ${r.freshness === "HOT" ? "rgba(255,255,255,0.3)" : "rgba(255,255,255,0.1)"}`,
+                    }}>{r.freshness}</span>
+                  </div>
+                  <div style={{
+                    fontFamily: "'Space Mono', monospace", fontSize: 11,
+                    color: "rgba(255,255,255,0.4)", marginTop: 6, lineHeight: 1.5,
+                  }}>{r.description}</div>
+                  <div style={{
+                    fontFamily: "'Space Mono', monospace", fontSize: 10,
+                    color: "rgba(255,255,255,0.25)", marginTop: 6,
+                  }}>{r.posted} · {r.source}</div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div style={{
+              fontFamily: "'Space Mono', monospace", fontSize: 12,
+              color: "rgba(255,255,255,0.3)", padding: "12px 0",
+            }}>No open roles detected.</div>
+          )}
+        </div>
+      )}
+
+      {/* Custom styles for Leaflet overrides */}
+      <style>{`
+        .fund-marker, .fund-cluster {
+          background: none !important;
+          border: none !important;
+        }
+        .leaflet-container {
+          background: #0a0a0a !important;
+          font-family: 'Space Mono', monospace !important;
+          cursor: url('/hitmarker.svg') 16 16, crosshair !important;
+        }
+        .leaflet-interactive {
+          cursor: url('/hitmarker.svg') 16 16, crosshair !important;
+        }
+        .leaflet-grab {
+          cursor: url('/hitmarker.svg') 16 16, crosshair !important;
+        }
+        .leaflet-dragging .leaflet-grab {
+          cursor: url('/hitmarker.svg') 16 16, crosshair !important;
+        }
+        .leaflet-container * {
+          cursor: url('/hitmarker.svg') 16 16, crosshair !important;
+        }
+        .fund-marker *, .fund-cluster * {
+          cursor: url('/hitmarker.svg') 16 16, crosshair !important;
+        }
+        .leaflet-control-attribution { display: none !important; }
+        .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
+          background: none !important;
+        }
+        .leaflet-tile {
+          filter: brightness(1.3) contrast(1.05) saturate(0.15);
+        }
+      `}</style>
     </div>
   );
 }
+
+/* ── Shared button styles ── */
+const backBtnStyle = {
+  background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)",
+  color: "#fff", width: 36, height: 36, borderRadius: 6,
+  display: "flex", alignItems: "center", justifyContent: "center",
+  cursor: "pointer", fontSize: 18, fontFamily: "'Space Mono', monospace",
+};
+
+const closeBtnStyle = {
+  background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)",
+  color: "#fff", width: 32, height: 32, borderRadius: 6,
+  cursor: "pointer", fontSize: 16, fontFamily: "'Space Mono', monospace",
+  display: "flex", alignItems: "center", justifyContent: "center",
+};
+
+const filterBtnStyle = {
+  background: "rgba(255,255,255,0.05)",
+  border: "1px solid rgba(255,255,255,0.12)",
+  color: "rgba(255,255,255,0.6)",
+  padding: "6px 14px", borderRadius: 4, cursor: "pointer",
+  fontFamily: "'Space Mono', monospace", fontSize: 11, letterSpacing: "0.06em",
+};
