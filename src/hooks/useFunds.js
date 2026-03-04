@@ -15,7 +15,7 @@ import { useState, useEffect, useMemo } from "react";
 import MOCK_FUNDS from "../data/mockFunds";
 
 // ── Toggle this to switch data sources ──
-const USE_LIVE_DATA = true;
+const USE_LIVE_DATA = false;
 const LIVE_DATA_URL = "/data/roles.json"; // Served from public/data/ in the repo
 
 export default function useFunds() {
@@ -36,26 +36,42 @@ export default function useFunds() {
 
         // Pipeline outputs { funds: { id: {...} }, roles: [...], stats: {...} }
         // Transform to array format the components expect
-        const fundList = Object.values(data.funds || {}).map(f => ({
-          id: f.id,
-          name: f.name,
-          initials: f.initials,
-          focus: f.focus,
-          neighborhood: f.neighborhood,
-          x: f.map_x,
-          y: f.map_y,
-          aum: f.aum,
-          founded: f.founded,
-          hiring: f.hiring,
-          roles: (f.roles || []).map(r => ({
-            title: r.title,
-            freshness: r.freshness,
-            source: r.source,
-            url: r.source_url,
-            description: r.description,
-            posted: r.posted_ago || "recently",
-          })),
-        }));
+        const fundList = Object.values(data.funds || {}).map((f, i) => {
+          // Assign lat/lng: use real coords if available, otherwise
+          // distribute across central London so funds appear on the map
+          let lat = f.lat;
+          let lng = f.lng;
+          if (!lat || !lng) {
+            // Spread funds across central London (51.50-51.54°N, -0.08 to -0.16°W)
+            // Use a deterministic spread based on index to avoid overlap
+            const angle = i * 2.399; // golden angle for even distribution
+            const radius = 0.003 + (i * 0.0004);
+            lat = 51.518 + Math.sin(angle) * Math.min(radius, 0.015);
+            lng = -0.130 + Math.cos(angle) * Math.min(radius, 0.020);
+          }
+
+          return {
+            id: f.id,
+            name: f.name,
+            initials: f.initials,
+            focus: f.focus,
+            neighborhood: f.neighborhood || "London",
+            lat,
+            lng,
+            website: f.website || "",
+            aum: f.aum || "",
+            founded: f.founded || 0,
+            hiring: f.hiring,
+            roles: (f.roles || []).map(r => ({
+              title: r.title,
+              freshness: r.freshness,
+              source: r.source,
+              url: r.source_url,
+              description: r.description,
+              posted: r.posted_ago || "recently",
+            })),
+          };
+        });
 
         setRawFunds(fundList);
         setLastUpdated(data.generated_at || new Date().toISOString());
