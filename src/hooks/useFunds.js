@@ -13,6 +13,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import MOCK_FUNDS from "../data/mockFunds";
+import { lookupFundCoords } from "../data/fundCoordinates";
 
 // ── Toggle this to switch data sources ──
 const USE_LIVE_DATA = false;
@@ -37,17 +38,22 @@ export default function useFunds() {
         // Pipeline outputs { funds: { id: {...} }, roles: [...], stats: {...} }
         // Transform to array format the components expect
         const fundList = Object.values(data.funds || {}).map((f, i) => {
-          // Assign lat/lng: use real coords if available, otherwise
-          // distribute across central London so funds appear on the map
-          let lat = f.lat;
-          let lng = f.lng;
-          if (!lat || !lng) {
-            // Spread funds across central London (51.50-51.54°N, -0.08 to -0.16°W)
-            // Use a deterministic spread based on index to avoid overlap
-            const angle = i * 2.399; // golden angle for even distribution
+          // Look up real coordinates from our verified database
+          const coords = lookupFundCoords(f.id);
+
+          let lat, lng, neighborhood;
+          if (coords) {
+            lat = coords.lat;
+            lng = coords.lng;
+            neighborhood = coords.neighborhood;
+          } else {
+            // Fund not in our database — place in central London
+            // using golden angle distribution to avoid overlap
+            const angle = i * 2.399;
             const radius = 0.003 + (i * 0.0004);
-            lat = 51.518 + Math.sin(angle) * Math.min(radius, 0.015);
-            lng = -0.130 + Math.cos(angle) * Math.min(radius, 0.020);
+            lat = 51.518 + Math.sin(angle) * Math.min(radius, 0.012);
+            lng = -0.130 + Math.cos(angle) * Math.min(radius, 0.016);
+            neighborhood = f.neighborhood || "London";
           }
 
           return {
@@ -55,7 +61,7 @@ export default function useFunds() {
             name: f.name,
             initials: f.initials,
             focus: f.focus,
-            neighborhood: f.neighborhood || "London",
+            neighborhood: neighborhood,
             lat,
             lng,
             website: f.website || "",
