@@ -16,7 +16,7 @@ import MOCK_FUNDS from "../data/mockFunds";
 import { lookupFundCoords } from "../data/fundCoordinates";
 
 // ── Toggle this to switch data sources ──
-const USE_LIVE_DATA = false;
+const USE_LIVE_DATA = true;
 const LIVE_DATA_URL = "/data/roles.json"; // Served from public/data/ in the repo
 
 export default function useFunds() {
