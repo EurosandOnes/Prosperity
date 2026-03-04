@@ -1,0 +1,191 @@
+{
+  "run_at": "2026-03-04T22:19:43.935907+00:00",
+  "total_funds_discovered": 68,
+  "with_ats_detected": 16,
+  "with_linkedin": 0,
+  "with_careers_url": 36,
+  "sources_scraped": [
+    "gilion",
+    "seedtable",
+    "google"
+  ],
+  "errors": [],
+  "top_confidence": [
+    {
+      "name": "LocalGlobe",
+      "sources": [
+        "seedtable",
+        "seed_list",
+        "gilion"
+      ],
+      "confidence": 1.0,
+      "ats": "none"
+    },
+    {
+      "name": "Index Ventures",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "indexventures"
+    },
+    {
+      "name": "Atomico",
+      "sources": [
+        "seed_list",
+        "gilion"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "atomico"
+    },
+    {
+      "name": "Balderton Capital",
+      "sources": [
+        "seed_list",
+        "gilion"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Northzone",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Seedcamp",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Accel",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Octopus Ventures",
+      "sources": [
+        "seed_list",
+        "gilion"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "octopus"
+    },
+    {
+      "name": "Felix Capital",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "felix"
+    },
+    {
+      "name": "Dawn Capital",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Creandum",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "83North",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Hoxton Ventures",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Augmentum Fintech",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "Talis Capital",
+      "sources": [
+        "seed_list",
+        "seedtable"
+      ],
+      "confidence": 0.6666666666666666,
+      "ats": "none"
+    },
+    {
+      "name": "EQT Ventures",
+      "sources": [
+        "seed_list"
+      ],
+      "confidence": 0.3333333333333333,
+      "ats": "none"
+    },
+    {
+      "name": "Notion Capital",
+      "sources": [
+        "seed_list"
+      ],
+      "confidence": 0.3333333333333333,
+      "ats": "notion"
+    },
+    {
+      "name": "Blossom Capital",
+      "sources": [
+        "seed_list"
+      ],
+      "confidence": 0.3333333333333333,
+      "ats": "none"
+    },
+    {
+      "name": "Molten Ventures",
+      "sources": [
+        "seed_list"
+      ],
+      "confidence": 0.3333333333333333,
+      "ats": "none"
+    },
+    {
+      "name": "Mosaic Ventures",
+      "sources": [
+        "seed_list"
+      ],
+      "confidence": 0.3333333333333333,
+      "ats": "mosaic"
+    }
+  ]
+}
