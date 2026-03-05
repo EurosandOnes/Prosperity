@@ -50,5 +50,5 @@ jobs:
             echo "No changes to people registry"
           else
             git commit -m "data: update people registry [$(date -u +%Y-%m-%d)]"
-            git push
+            git pull --rebase && git push
           fi
