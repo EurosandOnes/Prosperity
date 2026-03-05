@@ -13,17 +13,17 @@ const FUND_COORDINATES = {
   // ═══════════════════════════════════════════════════════
 
   // Soho cluster
-  "index":          { lat: 51.5127, lng: -0.1371, address: "5-8 Lower John Street, W1F 9DY", neighborhood: "Soho" },
-  "index-ventures": { lat: 51.5127, lng: -0.1371, address: "5-8 Lower John Street, W1F 9DY", neighborhood: "Soho" },
-  "felix":          { lat: 51.5130, lng: -0.1380, address: "27 Beak Street, W1F 9RU", neighborhood: "Soho" },
-  "felix-capital":  { lat: 51.5130, lng: -0.1380, address: "27 Beak Street, W1F 9RU", neighborhood: "Soho" },
-  "dawn":           { lat: 51.5142, lng: -0.1310, address: "Ilona Rose House, Manette Street, W1D 4AL", neighborhood: "Soho" },
-  "dawn-capital":   { lat: 51.5142, lng: -0.1310, address: "Ilona Rose House, Manette Street, W1D 4AL", neighborhood: "Soho" },
-  "eqt":            { lat: 51.5140, lng: -0.1368, address: "30 Broadwick Street, W1F 8JB", neighborhood: "Soho" },
-  "eqt-ventures":   { lat: 51.5140, lng: -0.1368, address: "30 Broadwick Street, W1F 8JB", neighborhood: "Soho" },
-  "mosaic":         { lat: 51.5125, lng: -0.1373, address: "2-3 Golden Square, W1F", neighborhood: "Soho" },
-  "mosaic-ventures": { lat: 51.5125, lng: -0.1373, address: "2-3 Golden Square, W1F", neighborhood: "Soho" },
-  "anthemis":       { lat: 51.5155, lng: -0.1320, address: "25 Soho Square, W1D 3QR", neighborhood: "Soho" },
+  "index":          { lat: 51.5127, lng: -0.1371, address: "5-8 Lower John Street, W1F 9DY", neighborhood: "Soho", website: "https://www.indexventures.com" },
+  "index-ventures": { lat: 51.5127, lng: -0.1371, address: "5-8 Lower John Street, W1F 9DY", neighborhood: "Soho", website: "https://www.indexventures.com" },
+  "felix":          { lat: 51.5130, lng: -0.1380, address: "27 Beak Street, W1F 9RU", neighborhood: "Soho", website: "https://www.felixcap.com" },
+  "felix-capital":  { lat: 51.5130, lng: -0.1380, address: "27 Beak Street, W1F 9RU", neighborhood: "Soho", website: "https://www.felixcap.com" },
+  "dawn":           { lat: 51.5142, lng: -0.1310, address: "Ilona Rose House, Manette Street, W1D 4AL", neighborhood: "Soho", website: "https://dawncapital.com" },
+  "dawn-capital":   { lat: 51.5142, lng: -0.1310, address: "Ilona Rose House, Manette Street, W1D 4AL", neighborhood: "Soho", website: "https://dawncapital.com" },
+  "eqt":            { lat: 51.5140, lng: -0.1368, address: "30 Broadwick Street, W1F 8JB", neighborhood: "Soho", website: "https://eqtventures.com" },
+  "eqt-ventures":   { lat: 51.5140, lng: -0.1368, address: "30 Broadwick Street, W1F 8JB", neighborhood: "Soho", website: "https://eqtventures.com" },
+  "mosaic":         { lat: 51.5125, lng: -0.1373, address: "2-3 Golden Square, W1F", neighborhood: "Soho", website: "https://www.mosaicventures.com" },
+  "mosaic-ventures": { lat: 51.5125, lng: -0.1373, address: "2-3 Golden Square, W1F", neighborhood: "Soho", website: "https://www.mosaicventures.com" },
+  "anthemis":       { lat: 51.5155, lng: -0.1320, address: "25 Soho Square, W1D 3QR", neighborhood: "Soho", website: "https://www.anthemis.com" },
 
   // St James's / Piccadilly
   "accel":          { lat: 51.5068, lng: -0.1395, address: "16 St James's Street, SW1A 1ER", neighborhood: "St James's" },

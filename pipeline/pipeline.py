@@ -1063,14 +1063,27 @@ def extract_role_title_from_text(text: str, fund_name: str = "") -> Optional[str
 
 def is_relevant_vc_role(title: str, department: str = "") -> bool:
     """
-    Filter for investment-track and platform roles.
-    Exclude: legal, accounting, IT, admin, HR, marketing (unless it's platform).
+    Filter for investment-track and platform roles AT THE VC FUND ITSELF.
+    Excludes: portfolio company roles, legal, accounting, IT, admin.
     """
     combined = f"{title} {department}".lower()
 
     # Exclude non-investment roles
     exclude = ["legal", "counsel", "accountant", "accounting", "receptionist",
-               "office manager", "it support", "graphic design", "payroll"]
+               "office manager", "it support", "graphic design", "payroll",
+               # Portfolio company signals — these are NOT fund roles
+               "portfolio company", "our portfolio", "backed by", "invested in",
+               "startup", "series a", "series b", "seed round",
+               "product manager", "software engineer", "frontend", "backend",
+               "full stack", "devops", "data scientist", "machine learning engineer",
+               "marketing manager", "sales manager", "customer success",
+               "cto", "cfo", "coo", "chief technology", "chief financial",
+               "gold and silver", "trading platform", "banking platform",
+               "investment platform", "fintech platform",
+               "discover exciting career opportunities across our portfolio",
+               "join the teams shaping",
+               "can you spot outliers",
+               ]
     if any(ex in combined for ex in exclude):
         return False
 

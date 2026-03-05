@@ -14,6 +14,7 @@
 import { useState, useEffect, useMemo } from "react";
 import MOCK_FUNDS from "../data/mockFunds";
 import { lookupFundCoords } from "../data/fundCoordinates";
+import { lookupFundWebsite } from "../data/fundWebsites";
 
 // ── Toggle this to switch data sources ──
 const USE_LIVE_DATA = true;
@@ -64,15 +65,16 @@ export default function useFunds() {
             neighborhood: neighborhood,
             lat,
             lng,
-            website: f.website || "",
+            website: f.website || lookupFundWebsite(f.id) || "",
             aum: f.aum || "",
             founded: f.founded || 0,
             hiring: f.hiring,
             roles: (f.roles || []).map(r => ({
               title: r.title,
               freshness: r.freshness,
+              seniority: r.seniority || "",
               source: r.source,
-              url: r.source_url,
+              url: r.source_url || "",
               description: r.description,
               posted: r.posted_ago || "recently",
             })),
