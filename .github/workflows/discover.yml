@@ -48,5 +48,5 @@ jobs:
             echo "No changes to registry"
           else
             git commit -m "chore: update fund registry [$(date -u +%Y-%m-%d)]"
-            git push
+            git pull --rebase && git push
           fi
