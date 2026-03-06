@@ -647,7 +647,8 @@ def scrape_career_page(fund: FundConfig) -> list[Role]:
     Uses LLM to extract structured roles from raw HTML.
     Falls back to regex extraction if LLM unavailable.
     
-    Skips funds that have Lever/Greenhouse (already covered by ATS scrapers).
+    CRITICAL: Detects and skips team/about pages that list team members
+    (not job openings). Only processes actual careers/jobs pages.
     """
     # Skip if we already scrape this fund via ATS
     if fund.lever_slug or fund.greenhouse_slug or fund.ashby_slug:
@@ -655,6 +656,13 @@ def scrape_career_page(fund: FundConfig) -> list[Role]:
 
     if not fund.careers_url:
         return []
+
+    # Skip URLs that are clearly team pages, not careers pages
+    url_lower = fund.careers_url.lower()
+    if any(p in url_lower for p in ["/team", "/people", "/about/team", "/meet-the-team"]):
+        if "/careers" not in url_lower and "/jobs" not in url_lower:
+            log.info(f"[Career] Skipping {fund.name} — URL looks like team page: {fund.careers_url}")
+            return []
 
     log.info(f"[Career] Scraping {fund.name} → {fund.careers_url}")
 
@@ -669,17 +677,34 @@ def scrape_career_page(fund: FundConfig) -> list[Role]:
             tag.decompose()
         page_text = soup.get_text(separator="\n", strip=True)
 
-        # Also grab any job-specific links
-        job_links = []
+        # ── Detect if this is a team page, not a careers page ──
+        text_lower = page_text.lower()
+        team_signals = ["meet the team", "our team", "our people", "leadership team",
+                        "managing partner", "general partner", "venture partner",
+                        "advisory board", "board of directors"]
+        career_signals = ["apply now", "job opening", "open position", "current openings",
+                          "we're hiring", "join us", "career opportunities", "open roles",
+                          "submit your application", "apply here"]
+        
+        team_score = sum(1 for s in team_signals if s in text_lower)
+        career_score = sum(1 for s in career_signals if s in text_lower)
+        
+        if team_score > career_score and career_score < 2:
+            log.info(f"[Career] Skipping {fund.name} — page content looks like team page (team:{team_score} career:{career_score})")
+            return []
+
+        # Grab job-specific links for proper apply URLs
+        job_links = {}
         for a in soup.find_all("a", href=True):
             href = a["href"]
             text = a.get_text(strip=True)
             if any(kw in text.lower() or kw in href.lower() 
-                   for kw in ["apply", "job", "role", "position", "career"]):
-                job_links.append(f"{text}: {href}")
+                   for kw in ["apply", "job", "role", "position", "career", "lever.co", "greenhouse.io"]):
+                if text and len(text) > 3:
+                    job_links[text] = href
 
         if job_links:
-            page_text += "\n\nJOB LINKS FOUND:\n" + "\n".join(job_links[:20])
+            page_text += "\n\nJOB LINKS FOUND:\n" + "\n".join(f"{k}: {v}" for k, v in list(job_links.items())[:20])
     else:
         page_text = resp.text[:5000]
 
@@ -687,6 +712,8 @@ def scrape_career_page(fund: FundConfig) -> list[Role]:
         return []
 
     roles = []
+    if not BeautifulSoup:
+        job_links = {}
 
     # Try LLM extraction first
     if HAS_LLM:
@@ -697,14 +724,26 @@ def scrape_career_page(fund: FundConfig) -> list[Role]:
                 if not title or not is_relevant_vc_role(title, ""):
                     continue
 
+                # Try to find a specific apply URL for this role
+                apply_url = r.get("apply_url") or ""
+                if not apply_url or apply_url == fund.careers_url:
+                    # Look for a matching link from the page
+                    for link_text, link_url in (job_links.items() if BeautifulSoup else []):
+                        if any(word in link_text.lower() for word in title.lower().split() if len(word) > 3):
+                            apply_url = link_url
+                            break
+                
+                if not apply_url:
+                    apply_url = fund.careers_url
+
                 role = Role(
                     fund_id=fund.id,
                     fund_name=fund.name,
                     title=title,
                     description=r.get("description", "")[:500],
                     source="website",
-                    source_url=r.get("apply_url") or fund.careers_url,
-                    posted_date="",  # Career pages rarely show dates
+                    source_url=apply_url,
+                    posted_date="",
                     location=r.get("location", "London"),
                 )
                 roles.append(role)
@@ -712,23 +751,32 @@ def scrape_career_page(fund: FundConfig) -> list[Role]:
             log.info(f"[Career] {fund.name}: LLM extracted {len(roles)} roles")
             return roles
 
-    # Regex fallback: look for role titles in the text
+    # Regex fallback: ONLY look for lines that look like actual job postings
+    # Must have action words nearby, not just role keywords
+    job_listing_patterns = [
+        r"(?:apply|open|hiring|vacancy|position).*?([\w\s/\-]+(?:analyst|associate|principal|partner|fellow|intern|manager|director|VP))",
+        r"([\w\s/\-]+(?:analyst|associate|principal|partner|fellow|manager|director))[\s—\-:]+(?:apply|london|remote|full.time|open)",
+    ]
+    
     for line in page_text.split("\n"):
         line = line.strip()
-        if len(line) < 5 or len(line) > 120:
+        if len(line) < 10 or len(line) > 120:
             continue
-        # Check if this line looks like a job title
-        if any(kw in line.lower() for kw in VC_ROLE_TITLES):
-            if not any(skip in line.lower() for skip in ["cookie", "privacy", "terms", "subscribe"]):
-                role = Role(
-                    fund_id=fund.id,
-                    fund_name=fund.name,
-                    title=line.strip(),
-                    description="",
-                    source="website",
-                    source_url=fund.careers_url,
-                )
-                roles.append(role)
+        for pattern in job_listing_patterns:
+            match = re.search(pattern, line, re.IGNORECASE)
+            if match:
+                title = match.group(1).strip()
+                if is_relevant_vc_role(title, ""):
+                    role = Role(
+                        fund_id=fund.id,
+                        fund_name=fund.name,
+                        title=title,
+                        description="",
+                        source="website",
+                        source_url=fund.careers_url,
+                    )
+                    roles.append(role)
+                break
 
     log.info(f"[Career] {fund.name}: regex extracted {len(roles)} roles")
     return roles
@@ -1063,31 +1111,84 @@ def extract_role_title_from_text(text: str, fund_name: str = "") -> Optional[str
 
 def is_relevant_vc_role(title: str, department: str = "") -> bool:
     """
-    Filter for investment-track and platform roles AT THE VC FUND ITSELF.
-    Excludes: portfolio company roles, legal, accounting, IT, admin.
+    Filter for ACTUAL JOB LISTINGS at the VC fund itself.
+    Must look like a real job title, not a team page bio or portfolio description.
     """
     combined = f"{title} {department}".lower()
+    title_lower = title.lower().strip()
+    title_stripped = title.strip()
+    words = title_stripped.split()
 
-    # Exclude non-investment roles
+    # ── Reject if too short or too long for a job title ──
+    if len(title_lower) < 5 or len(title_lower) > 100:
+        return False
+
+    # ── Reject person names ──
+    # Names like "Marianne Burgum Oliveira" or "John Smith"
+    vc_keywords_set = {"analyst", "associate", "principal", "partner", "fellow",
+        "intern", "investment", "venture", "platform", "portfolio", "head",
+        "director", "vice", "president", "vp", "manager", "managing", "general",
+        "operating", "senior", "junior", "research", "scout", "eir", "deal",
+        "talent", "growth", "data", "of"}
+    if len(words) >= 2:
+        non_keyword_caps = [w for w in words
+            if w[0].isupper() and w.lower() not in vc_keywords_set
+            and len(w) > 2 and w.isalpha()]
+        if len(non_keyword_caps) >= 2 and len(non_keyword_caps) >= len(words) * 0.5:
+            return False
+
+    # ── Reject bare role designations (team member labels, NOT job posts) ──
+    bare_titles = {
+        "managing partner", "general partner", "investment partner",
+        "operating partner", "venture partner", "founding partner",
+        "senior partner", "junior partner", "partner", "partners",
+        "managing director", "co-founder", "founder",
+        "chairman", "chairwoman", "board member",
+        "advisory board", "board of directors",
+        "team", "people", "about", "leadership",
+        "our team", "meet the team", "who we are", "portfolio",
+        "portfolio growth", "portfolio jobs",
+    }
+    if title_lower in bare_titles:
+        return False
+
+    # ── Reject descriptions/sentences ──
+    if len(words) > 12:
+        return False
+
+    sentence_signals = ["investing in", "focused on", "partnering with",
+                        "limited partner", "we invest", "our focus",
+                        "backed by", "portfolio of", "companies at",
+                        "shaping the future", "discover exciting",
+                        "can you spot", "exceptional early-stage",
+                        "nexus of", "at the intersection",
+                        "gold and silver", "trading platform",
+                        "banking platform", "investment platform",
+                        "fintech platform", "coreless banking",
+                        "direct-to-consumer", "financial crimes",
+                        "internet services", "district of columbia"]
+    if any(s in combined for s in sentence_signals):
+        return False
+
+    # ── Reject portfolio company roles ──
+    portfolio_signals = ["portfolio company", "our portfolio",
+                         "startup", "series a", "series b", "seed round",
+                         "product manager", "software engineer", "frontend",
+                         "backend", "full stack", "devops", "data scientist",
+                         "machine learning engineer", "marketing manager",
+                         "sales manager", "customer success", "account executive",
+                         "cto", "cfo", "coo", "chief technology", "chief financial"]
+    if any(s in combined for s in portfolio_signals):
+        return False
+
+    # ── Reject generic non-investment roles ──
     exclude = ["legal", "counsel", "accountant", "accounting", "receptionist",
                "office manager", "it support", "graphic design", "payroll",
-               # Portfolio company signals — these are NOT fund roles
-               "portfolio company", "our portfolio", "backed by", "invested in",
-               "startup", "series a", "series b", "seed round",
-               "product manager", "software engineer", "frontend", "backend",
-               "full stack", "devops", "data scientist", "machine learning engineer",
-               "marketing manager", "sales manager", "customer success",
-               "cto", "cfo", "coo", "chief technology", "chief financial",
-               "gold and silver", "trading platform", "banking platform",
-               "investment platform", "fintech platform",
-               "discover exciting career opportunities across our portfolio",
-               "join the teams shaping",
-               "can you spot outliers",
-               ]
+               "cookie", "privacy", "terms", "subscribe", "newsletter"]
     if any(ex in combined for ex in exclude):
         return False
 
-    # Include: investment roles, platform roles, research
+    # ── Must contain at least one VC role keyword to be included ──
     include = VC_ROLE_TITLES + ["platform", "research", "data", "operating"]
     return any(inc in combined for inc in include)
 
@@ -1131,6 +1232,9 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
                  Options: "lever", "greenhouse", "google", "twitter", "proxycurl"
         dry_run: If True, scrape but don't write output file.
     """
+    # SOURCES: ATS scrapers are auto-approved (structured, reliable).
+    # All other scrapers produce "pending" roles that require manual review.
+    AUTO_APPROVED_SOURCES = {"lever", "greenhouse"}
     all_sources = sources or ["lever", "greenhouse", "career", "google", "people", "social", "twitter", "proxycurl"]
     all_roles = []
     errors = []
@@ -1169,31 +1273,57 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
     fresh = [r for r in deduped if r.freshness != "EXPIRED"]
     log.info(f"[Pipeline] After freshness filter (excluding >30d): {len(fresh)}")
 
-    # Sort: HOT first, then WARM; within each, newest first
-    fresh.sort(key=lambda r: (0 if r.freshness == "HOT" else 1, r.posted_date or ""), reverse=False)
-    fresh.sort(key=lambda r: (0 if r.freshness == "HOT" else 1))
+    # ── Split into auto-approved and pending ──
+    # Load previously approved roles (persists across runs)
+    APPROVED_FILE = OUTPUT_DIR / "approved_roles.json"
+    approved_hashes = set()
+    if APPROVED_FILE.exists():
+        try:
+            approved_data = json.loads(APPROVED_FILE.read_text())
+            approved_hashes = set(approved_data.get("hashes", []))
+        except (json.JSONDecodeError, KeyError):
+            pass
 
-    # Build output
+    auto_approved = []
+    pending = []
+    for role in fresh:
+        if role.source in AUTO_APPROVED_SOURCES:
+            auto_approved.append(role)
+        elif role.dedup_hash in approved_hashes:
+            auto_approved.append(role)  # Previously approved by user
+        else:
+            pending.append(role)
+
+    log.info(f"[Pipeline] Auto-approved: {len(auto_approved)}, Pending review: {len(pending)}, Previously approved: {len(approved_hashes)}")
+
+    # Sort: HOT first, then WARM; within each, newest first
+    auto_approved.sort(key=lambda r: (0 if r.freshness == "HOT" else 1, r.posted_date or ""), reverse=False)
+    auto_approved.sort(key=lambda r: (0 if r.freshness == "HOT" else 1))
+
+    # Build output (only auto-approved roles go live)
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "stats": {
-            "total_roles": len(fresh),
-            "hot_roles": sum(1 for r in fresh if r.freshness == "HOT"),
-            "warm_roles": sum(1 for r in fresh if r.freshness == "WARM"),
-            "funds_hiring": len(set(r.fund_id for r in fresh)),
-            "sources_used": list(set(r.source for r in fresh)),
+            "total_roles": len(auto_approved),
+            "hot_roles": sum(1 for r in auto_approved if r.freshness == "HOT"),
+            "warm_roles": sum(1 for r in auto_approved if r.freshness == "WARM"),
+            "funds_hiring": len(set(r.fund_id for r in auto_approved)),
+            "sources_used": list(set(r.source for r in auto_approved)),
+            "pending_review": len(pending),
             "errors": errors,
         },
         # Group roles by fund for frontend consumption
         "funds": {},
         # Also provide flat list
-        "roles": [asdict(r) for r in fresh],
+        "roles": [asdict(r) for r in auto_approved],
     }
 
     # Group by fund
-    for role in fresh:
+    for role in auto_approved:
         if role.fund_id not in output["funds"]:
-            fund = FUND_MAP[role.fund_id]
+            fund = FUND_MAP.get(role.fund_id)
+            if not fund:
+                continue
             output["funds"][role.fund_id] = {
                 "id": fund.id,
                 "name": fund.name,
@@ -1204,6 +1334,7 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
                 "founded": fund.founded,
                 "map_x": fund.map_x,
                 "map_y": fund.map_y,
+                "website": getattr(fund, 'careers_url', '') or '',
                 "hiring": True,
                 "roles": [],
             }
@@ -1231,20 +1362,34 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
                 "founded": fund.founded,
                 "map_x": fund.map_x,
                 "map_y": fund.map_y,
+                "website": getattr(fund, 'careers_url', '') or '',
                 "hiring": False,
                 "roles": [],
             }
 
-    # Write output
+    # Write outputs
     if not dry_run:
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+        # Main roles file (auto-approved only)
         OUTPUT_FILE.write_text(json.dumps(output, indent=2, ensure_ascii=False))
-        log.info(f"[Pipeline] Output written to {OUTPUT_FILE}")
+        log.info(f"[Pipeline] Roles written to {OUTPUT_FILE}")
+
+        # Pending roles file (for email digest / admin review)
+        PENDING_FILE = OUTPUT_DIR / "pending_roles.json"
+        pending_output = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "total_pending": len(pending),
+            "roles": [asdict(r) for r in pending],
+        }
+        PENDING_FILE.write_text(json.dumps(pending_output, indent=2, ensure_ascii=False))
+        log.info(f"[Pipeline] Pending roles written to {PENDING_FILE}")
 
     # Print summary
     log.info("=" * 60)
     log.info(f"  PROSPERITY PIPELINE — RUN COMPLETE")
-    log.info(f"  Total roles:    {output['stats']['total_roles']}")
+    log.info(f"  Live roles:     {output['stats']['total_roles']}")
+    log.info(f"  Pending review: {len(pending)}")
     log.info(f"  HOT (< 1 week): {output['stats']['hot_roles']}")
     log.info(f"  WARM (< 1 mo):  {output['stats']['warm_roles']}")
     log.info(f"  Funds hiring:   {output['stats']['funds_hiring']}")

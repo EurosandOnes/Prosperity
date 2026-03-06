@@ -91,10 +91,15 @@ export default function CityMap({ funds, onBack }) {
   const allFocuses = getUniqueFocuses(funds);
   const allSeniorities = getUniqueSeniorities(funds);
 
-  // Filter funds
+  // Filter funds — also filters by seniority (hides funds with no matching roles)
   const filtered = funds.filter(f => {
     if (focusFilters.length > 0 && !focusFilters.includes(f.focus)) return false;
     if (hiringOnly && !f.hiring) return false;
+    if (seniorityFilter !== "All" && f.hiring) {
+      const hasMatchingRole = f.roles?.some(r => r.seniority === seniorityFilter);
+      if (!hasMatchingRole) return false;
+    }
+    if (seniorityFilter !== "All" && !f.hiring) return false;
     return true;
   });
 

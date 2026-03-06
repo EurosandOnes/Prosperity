@@ -169,7 +169,17 @@ TEXT:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 CAREER_PAGE_SYSTEM = """You are a job listing extractor for venture capital firm career pages.
-Given raw text from a VC fund's career/jobs page, extract all open positions.
+Given raw text from a VC fund's career/jobs page, extract all ACTUAL OPEN JOB POSITIONS.
+
+CRITICAL DISTINCTION:
+- OPEN JOBS = positions the fund is actively hiring for (e.g., "Investment Analyst - Apply Now")
+- NOT JOBS = team member names/bios (e.g., "John Smith, Partner" on a /team page)
+- NOT JOBS = portfolio company descriptions or portfolio company job listings
+- NOT JOBS = general fund descriptions like "we invest in early-stage companies"
+- NOT JOBS = page navigation items like "Partners", "Team", "Portfolio"
+
+If the page appears to be a TEAM page listing current employees rather than open positions,
+return has_roles: false. Team pages list who already works there; career pages list who they want to hire.
 
 RESPOND WITH ONLY valid JSON, no markdown. Format:
 {
@@ -187,7 +197,9 @@ RESPOND WITH ONLY valid JSON, no markdown. Format:
 }
 
 RULES:
-- Extract ALL roles, not just investment roles (the pipeline will filter later)
+- ONLY extract roles that are clearly OPEN POSITIONS being recruited for
+- Do NOT extract team member names or titles from team/about pages
+- Do NOT extract portfolio company roles
 - If the page says "no current openings" or similar, return has_roles: false
 - If the page has a general "careers@fund.com" email, note it
 - Be precise with titles — don't invent roles that aren't listed

@@ -1,0 +1,33 @@
+# .github/workflows/digest.yml
+# Sends daily email digest of pending roles for review.
+
+name: Email Digest
+
+on:
+  schedule:
+    - cron: "0 8 * * *"  # Daily at 08:00 UTC
+  workflow_dispatch: {}   # Manual trigger
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send email digest
+        env:
+          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          PENDING_FILE: ./public/data/pending_roles.json
+          APPROVED_FILE: ./public/data/approved_roles.json
+          REPO_URL: https://github.com/EurosandOnes/Prosperity
+        run: python pipeline/email_digest.py

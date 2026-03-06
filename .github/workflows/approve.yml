@@ -1,0 +1,53 @@
+# .github/workflows/approve.yml
+# Processes role approvals from email digest.
+# Triggered manually via GitHub Actions UI.
+
+name: Approve Roles
+
+on:
+  workflow_dispatch:
+    inputs:
+      hashes:
+        description: 'Enter "all" to approve everything, or paste comma-separated hashes'
+        required: true
+        default: 'all'
+
+permissions:
+  contents: write
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Process approvals
+        run: |
+          cd pipeline
+          INPUT="${{ github.event.inputs.hashes }}"
+          if [ "$INPUT" = "all" ]; then
+            python approve_roles.py --approve-all
+          else
+            # Split comma-separated hashes into arguments
+            python approve_roles.py --approve $(echo "$INPUT" | tr ',' ' ')
+          fi
+
+      - name: Commit approvals
+        run: |
+          git config user.name "prosperity-bot"
+          git config user.email "bot@prosperity.dev"
+          git add public/data/approved_roles.json
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "approve roles [$(date -u +%Y-%m-%dT%H:%M)]"
+            git push --force
+          fi

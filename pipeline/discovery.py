@@ -498,8 +498,9 @@ def detect_careers_url(website):
         f"{website.rstrip('/')}/careers",
         f"{website.rstrip('/')}/jobs",
         f"{website.rstrip('/')}/join",
-        f"{website.rstrip('/')}/team#careers",
+        f"{website.rstrip('/')}/join-us",
         f"{website.rstrip('/')}/about/careers",
+        f"{website.rstrip('/')}/work-with-us",
     ]
 
     for url in candidates:
