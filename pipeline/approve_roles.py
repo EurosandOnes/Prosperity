@@ -48,27 +48,45 @@ def load_pending():
         return []
 
 
-def approve(hashes):
+def approve(hashes, role_metadata=None):
     data = load_approved()
     now = datetime.now(timezone.utc).isoformat()
+    if "decision_history" not in data:
+        data["decision_history"] = []
     added = 0
     for h in hashes:
         if h not in data["hashes"]:
             data["hashes"].append(h)
             data["approved_at"][h] = now
+            # Store metadata for learning engine
+            if role_metadata and h in role_metadata:
+                data["decision_history"].append({
+                    **role_metadata[h],
+                    "decision": "approved",
+                    "decided_at": now,
+                })
             added += 1
     save_approved(data)
     print(f"Approved {added} new roles ({len(data['hashes'])} total approved)")
 
 
-def reject(hashes):
-    """Rejecting = just don't approve. We track rejections to avoid re-showing."""
+def reject(hashes, role_metadata=None):
+    """Rejecting = don't approve. Track rejections to avoid re-showing and for learning."""
     data = load_approved()
     if "rejected" not in data:
         data["rejected"] = []
+    if "decision_history" not in data:
+        data["decision_history"] = []
+    now = datetime.now(timezone.utc).isoformat()
     for h in hashes:
         if h not in data["rejected"]:
             data["rejected"].append(h)
+            if role_metadata and h in role_metadata:
+                data["decision_history"].append({
+                    **role_metadata[h],
+                    "decision": "rejected",
+                    "decided_at": now,
+                })
     save_approved(data)
     print(f"Rejected {len(hashes)} roles")
 

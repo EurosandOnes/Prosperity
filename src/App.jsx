@@ -8,10 +8,15 @@ import useFunds from "./hooks/useFunds";
 import GlobalStyles from "./components/GlobalStyles";
 import WorldView from "./components/WorldView";
 import CityMap from "./components/CityMap";
+import ReviewPage from "./components/ReviewPage";
 
 export default function App() {
   const { funds, stats } = useFunds();
-  const [view, setView] = useState("world");
+  const [view, setView] = useState(() => {
+    // Check URL for /review route
+    if (window.location.pathname === "/review") return "review";
+    return "world";
+  });
   const [transitioning, setTransitioning] = useState(false);
 
   /* ── Click feedback — sonar ping ── */
@@ -66,6 +71,9 @@ export default function App() {
       )}
       {view === "city" && (
         <CityMap funds={funds} onBack={exitCity} />
+      )}
+      {view === "review" && (
+        <ReviewPage onBack={() => { setView("world"); window.history.pushState({}, "", "/"); }} />
       )}
     </div>
   );

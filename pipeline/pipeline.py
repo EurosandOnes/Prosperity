@@ -89,6 +89,13 @@ except ImportError:
     HAS_LLM = False
     log.info("[Pipeline] llm_classifier not available — using regex-only extraction")
 
+try:
+    import learning_engine
+    HAS_LEARNING = True
+except ImportError:
+    HAS_LEARNING = False
+    log.info("[Pipeline] learning_engine not available — all non-ATS roles go to pending")
+
 # People registry for social monitoring
 PEOPLE_FILE = Path(os.getenv("PEOPLE_FILE", "./public/data/people_registry.json"))
 
@@ -1291,15 +1298,28 @@ def run_pipeline(sources: list[str] = None, dry_run: bool = False) -> dict:
 
     auto_approved = []
     pending = []
+    auto_rejected = 0
     for role in fresh:
         if role.source in AUTO_APPROVED_SOURCES:
             auto_approved.append(role)
         elif role.dedup_hash in approved_hashes:
             auto_approved.append(role)  # Previously approved by user
         else:
+            # Check learning engine for auto-classification
+            if HAS_LEARNING:
+                recommendation = learning_engine.classify_role(
+                    role.title, role.source, role.fund_name
+                )
+                if recommendation == "auto_approve":
+                    auto_approved.append(role)
+                    continue
+                elif recommendation == "auto_reject":
+                    auto_rejected += 1
+                    continue  # Skip entirely — learned to reject this pattern
+            
             pending.append(role)
 
-    log.info(f"[Pipeline] Auto-approved: {len(auto_approved)}, Pending review: {len(pending)}, Previously approved: {len(approved_hashes)}")
+    log.info(f"[Pipeline] Auto-approved: {len(auto_approved)}, Pending review: {len(pending)}, Auto-rejected: {auto_rejected}, Previously approved: {len(approved_hashes)}")
 
     # Sort: HOT first, then WARM; within each, newest first
     auto_approved.sort(key=lambda r: (0 if r.freshness == "HOT" else 1, r.posted_date or ""), reverse=False)

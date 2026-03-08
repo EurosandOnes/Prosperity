@@ -1,7 +1,3 @@
-# .github/workflows/approve.yml
-# Processes role approvals from email digest.
-# Triggered manually via GitHub Actions UI.
-
 name: Approve Roles
 
 on:
@@ -11,6 +7,8 @@ on:
         description: 'Enter "all" to approve everything, or paste comma-separated hashes'
         required: true
         default: 'all'
+  repository_dispatch:
+    types: [approve_roles]
 
 permissions:
   contents: write
@@ -31,20 +29,40 @@ jobs:
 
       - name: Process approvals
         run: |
-          cd pipeline
-          INPUT="${{ github.event.inputs.hashes }}"
-          if [ "$INPUT" = "all" ]; then
-            python approve_roles.py --approve-all
+          # Handle both manual (workflow_dispatch) and API (repository_dispatch) triggers
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            APPROVED="${{ github.event.client_payload.approved }}"
+            REJECTED="${{ github.event.client_payload.rejected }}"
+            DECISIONS='${{ github.event.client_payload.decisions }}'
+            
+            # Save decision history for learning engine
+            if [ "$DECISIONS" != "" ] && [ "$DECISIONS" != "null" ]; then
+              echo "$DECISIONS" > public/data/latest_decisions.json
+            fi
+            
+            # Process approved
+            if [ "$APPROVED" != "none" ] && [ "$APPROVED" != "" ]; then
+              python pipeline/approve_roles.py --approve $(echo "$APPROVED" | tr ',' ' ')
+            fi
+            
+            # Process rejected
+            if [ "$REJECTED" != "none" ] && [ "$REJECTED" != "" ]; then
+              python pipeline/approve_roles.py --reject $(echo "$REJECTED" | tr ',' ' ')
+            fi
           else
-            # Split comma-separated hashes into arguments
-            python approve_roles.py --approve $(echo "$INPUT" | tr ',' ' ')
+            INPUT="${{ github.event.inputs.hashes }}"
+            if [ "$INPUT" = "all" ]; then
+              python pipeline/approve_roles.py --approve-all
+            else
+              python pipeline/approve_roles.py --approve $(echo "$INPUT" | tr ',' ' ')
+            fi
           fi
 
       - name: Commit approvals
         run: |
           git config user.name "prosperity-bot"
           git config user.email "bot@prosperity.dev"
-          git add public/data/approved_roles.json
+          git add public/data/approved_roles.json public/data/latest_decisions.json
           if git diff --staged --quiet; then
             echo "No changes"
           else
