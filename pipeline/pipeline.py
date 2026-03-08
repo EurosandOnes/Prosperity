@@ -74,8 +74,9 @@ log = logging.getLogger("prosperity")
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # API keys — set as environment variables
-GOOGLE_CSE_API_KEY = os.getenv("GOOGLE_CSE_API_KEY", "")      # Google Custom Search
-GOOGLE_CSE_CX = os.getenv("GOOGLE_CSE_CX", "")                # Custom Search Engine ID
+GOOGLE_CSE_API_KEY = os.getenv("GOOGLE_CSE_API_KEY", "")      # Google Custom Search (legacy)
+GOOGLE_CSE_CX = os.getenv("GOOGLE_CSE_CX", "")                # Custom Search Engine ID (legacy)
+SERPER_API_KEY = os.getenv("SERPER_API_KEY", "")               # Serper.dev (preferred, free 2500 queries)
 PROXYCURL_API_KEY = os.getenv("PROXYCURL_API_KEY", "")         # Optional paid LinkedIn API
 TWITTER_BEARER = os.getenv("TWITTER_BEARER_TOKEN", "")         # X API v2
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")         # Claude Haiku for NLP
@@ -323,6 +324,66 @@ def safe_get(url: str, **kwargs) -> Optional[requests.Response]:
         return None
 
 
+def web_search(query: str, num_results: int = 5) -> list[dict]:
+    """
+    Universal web search. Uses Serper.dev (preferred) or Google CSE (fallback).
+    Returns list of {title, snippet, link} dicts.
+    """
+    # Try Serper first (free, reliable, no setup hassle)
+    if SERPER_API_KEY:
+        try:
+            resp = requests.post(
+                "https://google.serper.dev/search",
+                headers={"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"},
+                json={"q": query, "num": num_results},
+                timeout=REQUEST_TIMEOUT,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            results = []
+            for item in data.get("organic", [])[:num_results]:
+                results.append({
+                    "title": item.get("title", ""),
+                    "snippet": item.get("snippet", ""),
+                    "link": item.get("link", ""),
+                })
+            return results
+        except Exception as e:
+            log.warning(f"[Serper] Search failed: {e}")
+
+    # Fallback to Google CSE
+    if GOOGLE_CSE_API_KEY and GOOGLE_CSE_CX:
+        try:
+            resp = requests.get(
+                "https://www.googleapis.com/customsearch/v1",
+                params={
+                    "key": GOOGLE_CSE_API_KEY,
+                    "cx": GOOGLE_CSE_CX,
+                    "q": query,
+                    "num": num_results,
+                },
+                timeout=REQUEST_TIMEOUT,
+            )
+            resp.raise_for_status()
+            results = []
+            for item in resp.json().get("items", [])[:num_results]:
+                results.append({
+                    "title": item.get("title", ""),
+                    "snippet": item.get("snippet", ""),
+                    "link": item.get("link", ""),
+                })
+            return results
+        except Exception as e:
+            log.warning(f"[Google CSE] Search failed: {e}")
+
+    return []
+
+
+def has_search_api() -> bool:
+    """Check if any search API is configured."""
+    return bool(SERPER_API_KEY or (GOOGLE_CSE_API_KEY and GOOGLE_CSE_CX))
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # SCRAPER 1: LEVER ATS API (free, reliable)
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -450,58 +511,30 @@ def scrape_greenhouse(fund: FundConfig) -> list[Role]:
 
 def scrape_linkedin_via_google(fund: FundConfig) -> list[Role]:
     """
-    Use Google Custom Search API to find recent LinkedIn posts about hiring.
-    Free tier: 100 queries/day (enough for 50 funds × 2 queries each).
-
-    Setup required:
-    1. Create a Google Custom Search Engine at https://programmablesearchengine.google.com
-    2. Configure it to search linkedin.com/posts and linkedin.com/feed
-    3. Get API key from Google Cloud Console
-    4. Set GOOGLE_CSE_API_KEY and GOOGLE_CSE_CX env vars
+    Search for recent LinkedIn posts about hiring at this fund.
+    Uses Serper.dev (preferred) or Google CSE (fallback).
     """
-    if not GOOGLE_CSE_API_KEY or not GOOGLE_CSE_CX:
+    if not has_search_api():
         return []
 
     queries = [
-        f'site:linkedin.com/posts "{fund.name}" ("hiring" OR "join" OR "role" OR "looking for")',
-        f'site:linkedin.com/feed "{fund.name}" ("analyst" OR "associate" OR "principal" OR "fellow")',
+        f'site:linkedin.com "{fund.name}" ("hiring" OR "join" OR "role" OR "looking for")',
+        f'site:linkedin.com "{fund.name}" ("analyst" OR "associate" OR "principal" OR "fellow")',
     ]
 
     roles = []
     for query in queries:
-        url = "https://www.googleapis.com/customsearch/v1"
-        params = {
-            "key": GOOGLE_CSE_API_KEY,
-            "cx": GOOGLE_CSE_CX,
-            "q": query,
-            "dateRestrict": "m1",  # Last month only
-            "num": 5,
-        }
-
-        log.info(f"[Google→LinkedIn] Searching: {query[:80]}...")
-        resp = safe_get(url, params=params)
-        if not resp:
-            continue
-
-        try:
-            results = resp.json().get("items", [])
-        except json.JSONDecodeError:
-            continue
+        log.info(f"[LinkedIn Search] Searching: {query[:80]}...")
+        results = web_search(query, num_results=5)
 
         for item in results:
             title_text = item.get("title", "")
             snippet = item.get("snippet", "")
             link = item.get("link", "")
 
-            # Extract role title from post content
             extracted_title = extract_role_title_from_text(f"{title_text} {snippet}", fund.name)
             if not extracted_title:
                 continue
-
-            # Approximate date from Google metadata
-            page_map = item.get("pagemap", {})
-            metatags = page_map.get("metatags", [{}])[0]
-            posted = metatags.get("article:published_time", "")
 
             role = Role(
                 fund_id=fund.id,
@@ -510,9 +543,14 @@ def scrape_linkedin_via_google(fund: FundConfig) -> list[Role]:
                 description=snippet[:500],
                 source="linkedin",
                 source_url=link,
-                posted_date=posted,
+                posted_date="",
             )
             roles.append(role)
+
+        time.sleep(0.3)
+
+    log.info(f"[LinkedIn Search] {fund.name}: found {len(roles)} potential roles")
+    return roles
 
     log.info(f"[Google→LinkedIn] {fund.name}: found {len(roles)} potential roles")
     return roles
@@ -805,7 +843,7 @@ def scrape_linkedin_by_people(fund: FundConfig) -> list[Role]:
     Uses the people_registry.json built by people_registry.py.
     Complementary to scrape_linkedin_via_google() which searches by fund name.
     """
-    if not GOOGLE_CSE_API_KEY or not GOOGLE_CSE_CX:
+    if not has_search_api():
         return []
 
     # Load people for this fund
@@ -832,27 +870,10 @@ def scrape_linkedin_by_people(fund: FundConfig) -> list[Role]:
         if not name:
             continue
 
-        # Search by person name + hiring keywords
-        query = f'site:linkedin.com/posts "{name}" ("hiring" OR "join" OR "role" OR "open position" OR "team")'
-        
-        url = "https://www.googleapis.com/customsearch/v1"
-        params = {
-            "key": GOOGLE_CSE_API_KEY,
-            "cx": GOOGLE_CSE_CX,
-            "q": query,
-            "dateRestrict": "m1",  # Last month
-            "num": 5,
-        }
+        query = f'site:linkedin.com "{name}" ("hiring" OR "join" OR "role" OR "open position" OR "team")'
 
         log.info(f"[People→LinkedIn] Searching posts by {name} ({fund.name})")
-        resp = safe_get(url, params=params)
-        if not resp:
-            continue
-
-        try:
-            items = resp.json().get("items", [])
-        except json.JSONDecodeError:
-            continue
+        items = web_search(query, num_results=5)
 
         for item in items:
             title_text = item.get("title", "")
@@ -927,7 +948,7 @@ def scrape_social_mentions(fund: FundConfig) -> list[Role]:
     
     Enhanced with LLM classification to reduce false positives.
     """
-    if not GOOGLE_CSE_API_KEY or not GOOGLE_CSE_CX:
+    if not has_search_api():
         return []
 
     # Broader keyword set than the original google scraper
@@ -953,24 +974,8 @@ def scrape_social_mentions(fund: FundConfig) -> list[Role]:
     seen_links = set()
 
     for query in queries:
-        url = "https://www.googleapis.com/customsearch/v1"
-        params = {
-            "key": GOOGLE_CSE_API_KEY,
-            "cx": GOOGLE_CSE_CX,
-            "q": query,
-            "dateRestrict": "m1",
-            "num": 5,
-        }
-
         log.info(f"[Social] Searching: {fund.name} mentions")
-        resp = safe_get(url, params=params)
-        if not resp:
-            continue
-
-        try:
-            items = resp.json().get("items", [])
-        except json.JSONDecodeError:
-            continue
+        items = web_search(query, num_results=5)
 
         for item in items:
             link = item.get("link", "")
