@@ -22,23 +22,23 @@ export default function ReviewPage({ onBack }) {
   // Load pending roles
   useEffect(() => {
     if (!authed) return;
-    fetch("/data/pending_roles.json")
+    
+    // Clear any stale session data on fresh load
+    sessionStorage.removeItem("prosperity_decisions");
+    
+    fetch("/data/pending_roles.json?" + Date.now()) // cache bust
       .then(r => r.json())
       .then(data => {
-        // Load any previously saved decisions from sessionStorage
-        const saved = sessionStorage.getItem("prosperity_decisions");
-        const savedDecisions = saved ? JSON.parse(saved) : {};
-        
-        // Filter out already-decided roles
-        const roles = (data.roles || []).filter(r => !savedDecisions[r.dedup_hash]);
+        const roles = data.roles || [];
         setPending(roles);
-        setDecisions(savedDecisions);
+        setDecisions({});
+        setCurrentIndex(0);
         setLoading(false);
       })
       .catch(() => setLoading(false));
   }, [authed]);
 
-  // Save decisions to sessionStorage on change
+  // Save decisions to sessionStorage as backup during review
   useEffect(() => {
     if (Object.keys(decisions).length > 0) {
       sessionStorage.setItem("prosperity_decisions", JSON.stringify(decisions));
