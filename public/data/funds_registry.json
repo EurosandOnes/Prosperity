@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-04T22:19:43.932952+00:00",
+  "generated_at": "2026-03-09T06:19:19.510983+00:00",
   "total_funds": 68,
   "funds": [
     {
@@ -16,16 +16,16 @@
       "lever_slug": "indexventures",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.indexventures.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822388+00:00",
-      "last_verified": "2026-03-04T22:13:49.822402+00:00",
+      "first_seen": "2026-03-09T06:13:01.883129+00:00",
+      "last_verified": "2026-03-09T06:13:01.883147+00:00",
       "map_x": 58.0,
       "map_y": 50.0
     },
@@ -47,12 +47,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "gilion"
+        "gilion",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822425+00:00",
-      "last_verified": "2026-03-04T22:13:49.822429+00:00",
+      "first_seen": "2026-03-09T06:13:01.883172+00:00",
+      "last_verified": "2026-03-09T06:13:01.883177+00:00",
       "map_x": 42.8,
       "map_y": 56.6
     },
@@ -70,16 +70,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.balderton.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "gilion"
+        "gilion",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822447+00:00",
-      "last_verified": "2026-03-04T22:13:49.822451+00:00",
+      "first_seen": "2026-03-09T06:13:01.883196+00:00",
+      "last_verified": "2026-03-09T06:13:01.883199+00:00",
       "map_x": 51.0,
       "map_y": 38.4
     },
@@ -97,16 +97,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://northzone.com/join",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822463+00:00",
-      "last_verified": "2026-03-04T22:13:49.822466+00:00",
+      "first_seen": "2026-03-09T06:13:01.883212+00:00",
+      "last_verified": "2026-03-09T06:13:01.883215+00:00",
       "map_x": 58.2,
       "map_y": 60.6
     },
@@ -128,13 +128,13 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
+        "gilion",
         "seedtable",
-        "seed_list",
-        "gilion"
+        "seed_list"
       ],
       "confidence": 1.0,
-      "first_seen": "2026-03-04T22:13:49.822480+00:00",
-      "last_verified": "2026-03-04T22:13:49.822485+00:00",
+      "first_seen": "2026-03-09T06:13:01.883229+00:00",
+      "last_verified": "2026-03-09T06:13:01.883232+00:00",
       "map_x": 35.0,
       "map_y": 47.4
     },
@@ -156,12 +156,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822496+00:00",
-      "last_verified": "2026-03-04T22:13:49.822498+00:00",
+      "first_seen": "2026-03-09T06:13:01.883244+00:00",
+      "last_verified": "2026-03-09T06:13:01.883248+00:00",
       "map_x": 64.3,
       "map_y": 40.8
     },
@@ -179,16 +179,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.accel.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822504+00:00",
-      "last_verified": "2026-03-04T22:13:49.822506+00:00",
+      "first_seen": "2026-03-09T06:13:01.883259+00:00",
+      "last_verified": "2026-03-09T06:13:01.883262+00:00",
       "map_x": 45.2,
       "map_y": 68.2
     },
@@ -206,16 +206,16 @@
       "lever_slug": "octopus",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://octopusventures.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "gilion"
+        "gilion",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822514+00:00",
-      "last_verified": "2026-03-04T22:13:49.822516+00:00",
+      "first_seen": "2026-03-09T06:13:01.883278+00:00",
+      "last_verified": "2026-03-09T06:13:01.883280+00:00",
       "map_x": 40.4,
       "map_y": 31.8
     },
@@ -233,15 +233,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://eqtventures.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822523+00:00",
-      "last_verified": "2026-03-04T22:13:49.822524+00:00",
+      "first_seen": "2026-03-09T06:13:01.883293+00:00",
+      "last_verified": "2026-03-09T06:13:01.883295+00:00",
       "map_x": 71.1,
       "map_y": 57.5
     },
@@ -263,12 +263,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822532+00:00",
-      "last_verified": "2026-03-04T22:13:49.822533+00:00",
+      "first_seen": "2026-03-09T06:13:01.883302+00:00",
+      "last_verified": "2026-03-09T06:13:01.883304+00:00",
       "map_x": 27.7,
       "map_y": 59.4
     },
@@ -286,16 +286,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://dawncapital.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822540+00:00",
-      "last_verified": "2026-03-04T22:13:49.822541+00:00",
+      "first_seen": "2026-03-09T06:13:01.883313+00:00",
+      "last_verified": "2026-03-09T06:13:01.883315+00:00",
       "map_x": 60.8,
       "map_y": 26.3
     },
@@ -320,8 +320,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822549+00:00",
-      "last_verified": "2026-03-04T22:13:49.822551+00:00",
+      "first_seen": "2026-03-09T06:13:01.883325+00:00",
+      "last_verified": "2026-03-09T06:13:01.883326+00:00",
       "map_x": 58.6,
       "map_y": 76.4
     },
@@ -339,15 +339,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.blossomcap.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822558+00:00",
-      "last_verified": "2026-03-04T22:13:49.822559+00:00",
+      "first_seen": "2026-03-09T06:13:01.883334+00:00",
+      "last_verified": "2026-03-09T06:13:01.883335+00:00",
       "map_x": 24.2,
       "map_y": 35.5
     },
@@ -365,16 +365,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.creandum.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822566+00:00",
-      "last_verified": "2026-03-04T22:13:49.822568+00:00",
+      "first_seen": "2026-03-09T06:13:01.883343+00:00",
+      "last_verified": "2026-03-09T06:13:01.883345+00:00",
       "map_x": 80.6,
       "map_y": 42.9
     },
@@ -399,8 +399,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822574+00:00",
-      "last_verified": "2026-03-04T22:13:49.822576+00:00",
+      "first_seen": "2026-03-09T06:13:01.883352+00:00",
+      "last_verified": "2026-03-09T06:13:01.883355+00:00",
       "map_x": 31.3,
       "map_y": 77.4
     },
@@ -418,16 +418,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.83north.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822582+00:00",
-      "last_verified": "2026-03-04T22:13:49.822583+00:00",
+      "first_seen": "2026-03-09T06:13:01.883362+00:00",
+      "last_verified": "2026-03-09T06:13:01.883363+00:00",
       "map_x": 45.0,
       "map_y": 15.4
     },
@@ -452,8 +452,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822590+00:00",
-      "last_verified": "2026-03-04T22:13:49.822592+00:00",
+      "first_seen": "2026-03-09T06:13:01.883394+00:00",
+      "last_verified": "2026-03-09T06:13:01.883398+00:00",
       "map_x": 77.1,
       "map_y": 72.1
     },
@@ -471,15 +471,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://mmc.vc/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822598+00:00",
-      "last_verified": "2026-03-04T22:13:49.822600+00:00",
+      "first_seen": "2026-03-09T06:13:01.883417+00:00",
+      "last_verified": "2026-03-09T06:13:01.883419+00:00",
       "map_x": 15.1,
       "map_y": 52.0
     },
@@ -501,12 +501,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822607+00:00",
-      "last_verified": "2026-03-04T22:13:49.822608+00:00",
+      "first_seen": "2026-03-09T06:13:01.883437+00:00",
+      "last_verified": "2026-03-09T06:13:01.883439+00:00",
       "map_x": 74.4,
       "map_y": 24.9
     },
@@ -531,8 +531,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822615+00:00",
-      "last_verified": "2026-03-04T22:13:49.822617+00:00",
+      "first_seen": "2026-03-09T06:13:01.883448+00:00",
+      "last_verified": "2026-03-09T06:13:01.883449+00:00",
       "map_x": 49.0,
       "map_y": 85.0
     },
@@ -557,8 +557,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822623+00:00",
-      "last_verified": "2026-03-04T22:13:49.822625+00:00",
+      "first_seen": "2026-03-09T06:13:01.883456+00:00",
+      "last_verified": "2026-03-09T06:13:01.883458+00:00",
       "map_x": 27.1,
       "map_y": 23.6
     },
@@ -583,8 +583,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822633+00:00",
-      "last_verified": "2026-03-04T22:13:49.822634+00:00",
+      "first_seen": "2026-03-09T06:13:01.883466+00:00",
+      "last_verified": "2026-03-09T06:13:01.883468+00:00",
       "map_x": 84.8,
       "map_y": 54.0
     },
@@ -609,8 +609,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822641+00:00",
-      "last_verified": "2026-03-04T22:13:49.822643+00:00",
+      "first_seen": "2026-03-09T06:13:01.883474+00:00",
+      "last_verified": "2026-03-09T06:13:01.883476+00:00",
       "map_x": 21.7,
       "map_y": 70.6
     },
@@ -628,15 +628,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "air",
-      "careers_url": "https://www.airstreet.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822651+00:00",
-      "last_verified": "2026-03-04T22:13:49.822652+00:00",
+      "first_seen": "2026-03-09T06:13:01.883484+00:00",
+      "last_verified": "2026-03-09T06:13:01.883486+00:00",
       "map_x": 56.9,
       "map_y": 15.7
     },
@@ -661,8 +661,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822660+00:00",
-      "last_verified": "2026-03-04T22:13:49.822661+00:00",
+      "first_seen": "2026-03-09T06:13:01.883493+00:00",
+      "last_verified": "2026-03-09T06:13:01.883495+00:00",
       "map_x": 68.1,
       "map_y": 80.0
     },
@@ -687,8 +687,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822669+00:00",
-      "last_verified": "2026-03-04T22:13:49.822670+00:00",
+      "first_seen": "2026-03-09T06:13:01.883504+00:00",
+      "last_verified": "2026-03-09T06:13:01.883506+00:00",
       "map_x": 16.4,
       "map_y": 40.2
     },
@@ -706,15 +706,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://firstminute.capital/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822678+00:00",
-      "last_verified": "2026-03-04T22:13:49.822680+00:00",
+      "first_seen": "2026-03-09T06:13:01.883514+00:00",
+      "last_verified": "2026-03-09T06:13:01.883516+00:00",
       "map_x": 81.4,
       "map_y": 34.5
     },
@@ -736,12 +736,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822687+00:00",
-      "last_verified": "2026-03-04T22:13:49.822689+00:00",
+      "first_seen": "2026-03-09T06:13:01.883523+00:00",
+      "last_verified": "2026-03-09T06:13:01.883525+00:00",
       "map_x": 37.3,
       "map_y": 82.6
     },
@@ -759,16 +759,16 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://taliscapital.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-03-04T22:13:49.822695+00:00",
-      "last_verified": "2026-03-04T22:13:49.822697+00:00",
+      "first_seen": "2026-03-09T06:13:01.883532+00:00",
+      "last_verified": "2026-03-09T06:13:01.883533+00:00",
       "map_x": 37.3,
       "map_y": 17.4
     },
@@ -793,8 +793,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822703+00:00",
-      "last_verified": "2026-03-04T22:13:49.822705+00:00",
+      "first_seen": "2026-03-09T06:13:01.883540+00:00",
+      "last_verified": "2026-03-09T06:13:01.883542+00:00",
       "map_x": 81.4,
       "map_y": 65.4
     },
@@ -812,15 +812,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.conceptventures.vc/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822712+00:00",
-      "last_verified": "2026-03-04T22:13:49.822713+00:00",
+      "first_seen": "2026-03-09T06:13:01.883549+00:00",
+      "last_verified": "2026-03-09T06:13:01.883550+00:00",
       "map_x": 16.4,
       "map_y": 59.9
     },
@@ -845,8 +845,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822720+00:00",
-      "last_verified": "2026-03-04T22:13:49.822722+00:00",
+      "first_seen": "2026-03-09T06:13:01.883558+00:00",
+      "last_verified": "2026-03-09T06:13:01.883559+00:00",
       "map_x": 68.0,
       "map_y": 20.0
     },
@@ -864,15 +864,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://episode1.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822728+00:00",
-      "last_verified": "2026-03-04T22:13:49.822730+00:00",
+      "first_seen": "2026-03-09T06:13:01.883566+00:00",
+      "last_verified": "2026-03-09T06:13:01.883568+00:00",
       "map_x": 57.0,
       "map_y": 84.3
     },
@@ -890,15 +890,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://bethnalgreenventures.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822738+00:00",
-      "last_verified": "2026-03-04T22:13:49.822739+00:00",
+      "first_seen": "2026-03-09T06:13:01.883576+00:00",
+      "last_verified": "2026-03-09T06:13:01.883577+00:00",
       "map_x": 21.7,
       "map_y": 29.5
     },
@@ -923,8 +923,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822746+00:00",
-      "last_verified": "2026-03-04T22:13:49.822748+00:00",
+      "first_seen": "2026-03-09T06:13:01.883584+00:00",
+      "last_verified": "2026-03-09T06:13:01.883586+00:00",
       "map_x": 84.8,
       "map_y": 46.0
     },
@@ -949,8 +949,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822754+00:00",
-      "last_verified": "2026-03-04T22:13:49.822756+00:00",
+      "first_seen": "2026-03-09T06:13:01.883593+00:00",
+      "last_verified": "2026-03-09T06:13:01.883594+00:00",
       "map_x": 27.1,
       "map_y": 76.5
     },
@@ -975,8 +975,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822762+00:00",
-      "last_verified": "2026-03-04T22:13:49.822764+00:00",
+      "first_seen": "2026-03-09T06:13:01.883601+00:00",
+      "last_verified": "2026-03-09T06:13:01.883603+00:00",
       "map_x": 49.0,
       "map_y": 15.0
     },
@@ -1001,8 +1001,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822770+00:00",
-      "last_verified": "2026-03-04T22:13:49.822772+00:00",
+      "first_seen": "2026-03-09T06:13:01.883610+00:00",
+      "last_verified": "2026-03-09T06:13:01.883611+00:00",
       "map_x": 74.4,
       "map_y": 75.1
     },
@@ -1027,8 +1027,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822778+00:00",
-      "last_verified": "2026-03-04T22:13:49.822780+00:00",
+      "first_seen": "2026-03-09T06:13:01.883618+00:00",
+      "last_verified": "2026-03-09T06:13:01.883620+00:00",
       "map_x": 15.1,
       "map_y": 48.0
     },
@@ -1046,15 +1046,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://iqcapital.vc/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822787+00:00",
-      "last_verified": "2026-03-04T22:13:49.822788+00:00",
+      "first_seen": "2026-03-09T06:13:01.883627+00:00",
+      "last_verified": "2026-03-09T06:13:01.883628+00:00",
       "map_x": 77.1,
       "map_y": 27.8
     },
@@ -1079,8 +1079,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822795+00:00",
-      "last_verified": "2026-03-04T22:13:49.822797+00:00",
+      "first_seen": "2026-03-09T06:13:01.883636+00:00",
+      "last_verified": "2026-03-09T06:13:01.883637+00:00",
       "map_x": 45.1,
       "map_y": 84.7
     },
@@ -1105,8 +1105,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822804+00:00",
-      "last_verified": "2026-03-04T22:13:49.822806+00:00",
+      "first_seen": "2026-03-09T06:13:01.883644+00:00",
+      "last_verified": "2026-03-09T06:13:01.883646+00:00",
       "map_x": 30.2,
       "map_y": 21.1
     },
@@ -1124,15 +1124,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.adaventures.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822813+00:00",
-      "last_verified": "2026-03-04T22:13:49.822815+00:00",
+      "first_seen": "2026-03-09T06:13:01.883653+00:00",
+      "last_verified": "2026-03-09T06:13:01.883655+00:00",
       "map_x": 84.1,
       "map_y": 57.9
     },
@@ -1150,15 +1150,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.pitchdrive.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822821+00:00",
-      "last_verified": "2026-03-04T22:13:49.822822+00:00",
+      "first_seen": "2026-03-09T06:13:01.883661+00:00",
+      "last_verified": "2026-03-09T06:13:01.883663+00:00",
       "map_x": 19.5,
       "map_y": 67.3
     },
@@ -1183,8 +1183,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822829+00:00",
-      "last_verified": "2026-03-04T22:13:49.822831+00:00",
+      "first_seen": "2026-03-09T06:13:01.883670+00:00",
+      "last_verified": "2026-03-09T06:13:01.883672+00:00",
       "map_x": 60.8,
       "map_y": 16.7
     },
@@ -1202,15 +1202,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.lakestar.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822836+00:00",
-      "last_verified": "2026-03-04T22:13:49.822838+00:00",
+      "first_seen": "2026-03-09T06:13:01.883678+00:00",
+      "last_verified": "2026-03-09T06:13:01.883680+00:00",
       "map_x": 64.6,
       "map_y": 81.8
     },
@@ -1228,15 +1228,15 @@
       "lever_slug": "",
       "greenhouse_slug": "general",
       "ashby_slug": "",
-      "careers_url": "https://www.generalcatalyst.com/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822844+00:00",
-      "last_verified": "2026-03-04T22:13:49.822846+00:00",
+      "first_seen": "2026-03-09T06:13:01.883687+00:00",
+      "last_verified": "2026-03-09T06:13:01.883689+00:00",
       "map_x": 17.7,
       "map_y": 36.4
     },
@@ -1261,8 +1261,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822852+00:00",
-      "last_verified": "2026-03-04T22:13:49.822853+00:00",
+      "first_seen": "2026-03-09T06:13:01.883695+00:00",
+      "last_verified": "2026-03-09T06:13:01.883697+00:00",
       "map_x": 82.9,
       "map_y": 38.2
     },
@@ -1280,15 +1280,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://lsvp.com/team#careers",
+      "careers_url": "https://lsvp.com/work-with-us",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822861+00:00",
-      "last_verified": "2026-03-04T22:13:49.822862+00:00",
+      "first_seen": "2026-03-09T06:13:01.883704+00:00",
+      "last_verified": "2026-03-09T06:13:01.883706+00:00",
       "map_x": 33.7,
       "map_y": 81.0
     },
@@ -1313,8 +1313,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822869+00:00",
-      "last_verified": "2026-03-04T22:13:49.822871+00:00",
+      "first_seen": "2026-03-09T06:13:01.883713+00:00",
+      "last_verified": "2026-03-09T06:13:01.883715+00:00",
       "map_x": 41.0,
       "map_y": 16.2
     },
@@ -1339,8 +1339,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822877+00:00",
-      "last_verified": "2026-03-04T22:13:49.822879+00:00",
+      "first_seen": "2026-03-09T06:13:01.883721+00:00",
+      "last_verified": "2026-03-09T06:13:01.883723+00:00",
       "map_x": 79.5,
       "map_y": 68.9
     },
@@ -1358,15 +1358,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://backed.vc/team#careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822885+00:00",
-      "last_verified": "2026-03-04T22:13:49.822887+00:00",
+      "first_seen": "2026-03-09T06:13:01.883730+00:00",
+      "last_verified": "2026-03-09T06:13:01.883732+00:00",
       "map_x": 15.5,
       "map_y": 56.0
     },
@@ -1391,8 +1391,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:49.822894+00:00",
-      "last_verified": "2026-03-04T22:13:49.822895+00:00",
+      "first_seen": "2026-03-09T06:13:01.883739+00:00",
+      "last_verified": "2026-03-09T06:13:01.883741+00:00",
       "map_x": 71.3,
       "map_y": 22.2
     },
@@ -1417,8 +1417,8 @@
         "gilion"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.116074+00:00",
-      "last_verified": "2026-03-04T22:13:50.116088+00:00",
+      "first_seen": "2026-03-09T06:13:02.187482+00:00",
+      "last_verified": "2026-03-09T06:13:02.187497+00:00",
       "map_x": 53.1,
       "map_y": 84.9
     },
@@ -1443,8 +1443,8 @@
         "gilion"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.116107+00:00",
-      "last_verified": "2026-03-04T22:13:50.116109+00:00",
+      "first_seen": "2026-03-09T06:13:02.187516+00:00",
+      "last_verified": "2026-03-09T06:13:02.187519+00:00",
       "map_x": 24.2,
       "map_y": 26.4
     },
@@ -1469,8 +1469,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.816160+00:00",
-      "last_verified": "2026-03-04T22:13:50.816174+00:00",
+      "first_seen": "2026-03-09T06:13:02.845430+00:00",
+      "last_verified": "2026-03-09T06:13:02.845443+00:00",
       "map_x": 85.0,
       "map_y": 49.9
     },
@@ -1495,8 +1495,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.816885+00:00",
-      "last_verified": "2026-03-04T22:13:50.816888+00:00",
+      "first_seen": "2026-03-09T06:13:02.846139+00:00",
+      "last_verified": "2026-03-09T06:13:02.846142+00:00",
       "map_x": 24.3,
       "map_y": 73.7
     },
@@ -1521,8 +1521,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.820490+00:00",
-      "last_verified": "2026-03-04T22:13:50.820493+00:00",
+      "first_seen": "2026-03-09T06:13:02.849688+00:00",
+      "last_verified": "2026-03-09T06:13:02.849690+00:00",
       "map_x": 52.9,
       "map_y": 15.1
     },
@@ -1547,8 +1547,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.821050+00:00",
-      "last_verified": "2026-03-04T22:13:50.821053+00:00",
+      "first_seen": "2026-03-09T06:13:02.850258+00:00",
+      "last_verified": "2026-03-09T06:13:02.850261+00:00",
       "map_x": 71.4,
       "map_y": 77.7
     },
@@ -1573,8 +1573,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.824247+00:00",
-      "last_verified": "2026-03-04T22:13:50.824251+00:00",
+      "first_seen": "2026-03-09T06:13:02.853452+00:00",
+      "last_verified": "2026-03-09T06:13:02.853456+00:00",
       "map_x": 15.5,
       "map_y": 44.1
     },
@@ -1599,8 +1599,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.828337+00:00",
-      "last_verified": "2026-03-04T22:13:50.828341+00:00",
+      "first_seen": "2026-03-09T06:13:02.857448+00:00",
+      "last_verified": "2026-03-09T06:13:02.857452+00:00",
       "map_x": 79.4,
       "map_y": 31.0
     },
@@ -1625,8 +1625,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.829869+00:00",
-      "last_verified": "2026-03-04T22:13:50.829874+00:00",
+      "first_seen": "2026-03-09T06:13:02.858959+00:00",
+      "last_verified": "2026-03-09T06:13:02.858963+00:00",
       "map_x": 41.2,
       "map_y": 83.9
     },
@@ -1651,8 +1651,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.834205+00:00",
-      "last_verified": "2026-03-04T22:13:50.834209+00:00",
+      "first_seen": "2026-03-09T06:13:02.863050+00:00",
+      "last_verified": "2026-03-09T06:13:02.863053+00:00",
       "map_x": 33.6,
       "map_y": 19.1
     },
@@ -1677,8 +1677,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.838492+00:00",
-      "last_verified": "2026-03-04T22:13:50.838498+00:00",
+      "first_seen": "2026-03-09T06:13:02.867181+00:00",
+      "last_verified": "2026-03-09T06:13:02.867185+00:00",
       "map_x": 83.0,
       "map_y": 61.7
     },
@@ -1703,8 +1703,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.839389+00:00",
-      "last_verified": "2026-03-04T22:13:50.839393+00:00",
+      "first_seen": "2026-03-09T06:13:02.868041+00:00",
+      "last_verified": "2026-03-09T06:13:02.868044+00:00",
       "map_x": 17.8,
       "map_y": 63.7
     },
@@ -1729,8 +1729,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.841148+00:00",
-      "last_verified": "2026-03-04T22:13:50.841151+00:00",
+      "first_seen": "2026-03-09T06:13:02.869784+00:00",
+      "last_verified": "2026-03-09T06:13:02.869788+00:00",
       "map_x": 64.5,
       "map_y": 18.1
     },
@@ -1755,8 +1755,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.844835+00:00",
-      "last_verified": "2026-03-04T22:13:50.844839+00:00",
+      "first_seen": "2026-03-09T06:13:02.873337+00:00",
+      "last_verified": "2026-03-09T06:13:02.873340+00:00",
       "map_x": 60.9,
       "map_y": 83.3
     },
@@ -1781,8 +1781,8 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-03-04T22:13:50.845783+00:00",
-      "last_verified": "2026-03-04T22:13:50.845788+00:00",
+      "first_seen": "2026-03-09T06:13:02.874244+00:00",
+      "last_verified": "2026-03-09T06:13:02.874247+00:00",
       "map_x": 19.5,
       "map_y": 32.9
     }
