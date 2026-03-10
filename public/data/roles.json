@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T20:14:04.206396+00:00",
+  "generated_at": "2026-03-10T05:19:14.303988+00:00",
   "stats": {
     "total_roles": 2,
     "hot_roles": 0,
@@ -8,7 +8,7 @@
     "sources_used": [
       "greenhouse"
     ],
-    "pending_review": 281,
+    "pending_review": 305,
     "errors": []
   },
   "funds": {
@@ -1006,7 +1006,7 @@
       "fund_map_x": 42.8,
       "fund_map_y": 56.6,
       "fund_initials": "AT",
-      "scraped_at": "2026-03-09T19:54:41.262926+00:00",
+      "scraped_at": "2026-03-10T05:00:56.383949+00:00",
       "dedup_hash": "8cfa21125a04"
     },
     {
@@ -1028,7 +1028,7 @@
       "fund_map_x": 42.8,
       "fund_map_y": 56.6,
       "fund_initials": "AT",
-      "scraped_at": "2026-03-09T19:54:41.264122+00:00",
+      "scraped_at": "2026-03-10T05:00:56.385143+00:00",
       "dedup_hash": "b42376b399d9"
     }
   ]
