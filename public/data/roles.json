@@ -1,52 +1,15 @@
 {
-  "generated_at": "2026-03-10T19:58:06.219010+00:00",
+  "generated_at": "2026-03-11T05:06:25.724507+00:00",
   "stats": {
-    "total_roles": 2,
+    "total_roles": 0,
     "hot_roles": 0,
-    "warm_roles": 2,
-    "funds_hiring": 1,
-    "sources_used": [
-      "greenhouse"
-    ],
+    "warm_roles": 0,
+    "funds_hiring": 0,
+    "sources_used": [],
     "pending_review": 3,
     "errors": []
   },
   "funds": {
-    "atomico": {
-      "id": "atomico",
-      "name": "Atomico",
-      "initials": "AT",
-      "focus": "Growth",
-      "neighborhood": "London",
-      "aum": "€4.5B",
-      "founded": 2006,
-      "map_x": 42.8,
-      "map_y": 56.6,
-      "website": "",
-      "hiring": true,
-      "roles": [
-        {
-          "title": "Analyst, Insights",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "4 weeks ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/atomico/jobs/8381428002",
-          "description": "<h1>Analyst, Insights</h1>\n<p><span style=\"font-size: 10pt; color: rgb(0, 0, 0);\"><strong>Location:</strong><strong> </strong><strong> </strong>London</span></p>\n<p><span style=\"font-size: 10pt; color: rgb(0, 0, 0);\"><strong>Mobility:</strong><strong> </strong><strong> </strong><strong> </strong>Office based with occasional travel as required, and flexibility to work part of the week remotely.&nbsp;</span></p>\n<p><span style=\"font-size: 10pt; color: rgb(0, 0, 0);\"><strong>Hours:</strong><strong>",
-          "seniority": "Analyst"
-        },
-        {
-          "title": "Venture Team - Visiting Analyst",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "4 weeks ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/atomico/jobs/8413069002",
-          "description": "<h1>Venture Team - Visiting Analyst</h1>\n<p><strong>Location:</strong><strong> </strong><strong> </strong>Berlin</p>\n<p><strong>Mobility:</strong><strong> </strong><strong> </strong><strong> </strong>Office based with occasional travel as required, and flexibility to work part of the week remotely.&nbsp;</p>\n<p><strong>Hours:</strong><strong> </strong><strong> </strong><strong> </strong>Full time, with full flexibility to meet the demands of the role, whether in or out of core office hours</p>\n<",
-          "seniority": "Analyst"
-        }
-      ]
-    },
     "index": {
       "id": "index",
       "name": "Index Ventures",
@@ -57,6 +20,20 @@
       "founded": 1996,
       "map_x": 58.0,
       "map_y": 50.0,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
+    "atomico": {
+      "id": "atomico",
+      "name": "Atomico",
+      "initials": "AT",
+      "focus": "Growth",
+      "neighborhood": "London",
+      "aum": "€4.5B",
+      "founded": 2006,
+      "map_x": 42.8,
+      "map_y": 56.6,
       "website": "",
       "hiring": false,
       "roles": []
@@ -986,50 +963,5 @@
       "roles": []
     }
   },
-  "roles": [
-    {
-      "fund_id": "atomico",
-      "fund_name": "Atomico",
-      "title": "Analyst, Insights",
-      "description": "<h1>Analyst, Insights</h1>\n<p><span style=\"font-size: 10pt; color: rgb(0, 0, 0);\"><strong>Location:</strong><strong> </strong><strong> </strong>London</span></p>\n<p><span style=\"font-size: 10pt; color: rgb(0, 0, 0);\"><strong>Mobility:</strong><strong> </strong><strong> </strong><strong> </strong>Office based with occasional travel as required, and flexibility to work part of the week remotely.&nbsp;</span></p>\n<p><span style=\"font-size: 10pt; color: rgb(0, 0, 0);\"><strong>Hours:</strong><strong>",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/atomico/jobs/8381428002",
-      "posted_date": "2026-02-08T16:14:10-05:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "4 weeks ago",
-      "location": "London",
-      "seniority": "Analyst",
-      "fund_focus": "Growth",
-      "fund_neighborhood": "London",
-      "fund_aum": "€4.5B",
-      "fund_map_x": 42.8,
-      "fund_map_y": 56.6,
-      "fund_initials": "AT",
-      "scraped_at": "2026-03-10T19:54:25.324758+00:00",
-      "dedup_hash": "8cfa21125a04"
-    },
-    {
-      "fund_id": "atomico",
-      "fund_name": "Atomico",
-      "title": "Venture Team - Visiting Analyst",
-      "description": "<h1>Venture Team - Visiting Analyst</h1>\n<p><strong>Location:</strong><strong> </strong><strong> </strong>Berlin</p>\n<p><strong>Mobility:</strong><strong> </strong><strong> </strong><strong> </strong>Office based with occasional travel as required, and flexibility to work part of the week remotely.&nbsp;</p>\n<p><strong>Hours:</strong><strong> </strong><strong> </strong><strong> </strong>Full time, with full flexibility to meet the demands of the role, whether in or out of core office hours</p>\n<",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/atomico/jobs/8413069002",
-      "posted_date": "2026-02-08T16:20:46-05:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "4 weeks ago",
-      "location": "Berlin",
-      "seniority": "Analyst",
-      "fund_focus": "Growth",
-      "fund_neighborhood": "London",
-      "fund_aum": "€4.5B",
-      "fund_map_x": 42.8,
-      "fund_map_y": 56.6,
-      "fund_initials": "AT",
-      "scraped_at": "2026-03-10T19:54:25.325944+00:00",
-      "dedup_hash": "b42376b399d9"
-    }
-  ]
+  "roles": []
 }
