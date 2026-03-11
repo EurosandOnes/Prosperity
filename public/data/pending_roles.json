@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-11T14:41:25.082018+00:00",
+  "generated_at": "2026-03-11T19:57:10.149097+00:00",
   "total_pending": 3,
   "roles": [
     {
       "fund_id": "entrepreneur-first",
       "fund_name": "Entrepreneur First",
       "title": "U.S. Talent Investor, Senior Associate",
-      "description": "Support founders throughout their journey from initial meeting to exit. Identify exceptional individuals, advise founders on forming teams and ideas, and facilitate fundraising with investors during the LAUNCH phase. Develop personal network of investors and specialists.",
+      "description": "Support founders throughout their journey from initial coffee meetings to exit. Identify exceptional individuals, advise founders on forming teams and refining ideas, and facilitate fundraising with founders during LAUNCH phase.",
       "source": "website",
       "source_url": "https://www.joinef.com/careers",
       "posted_date": "",
@@ -21,14 +21,14 @@
       "fund_map_x": 45.1,
       "fund_map_y": 84.7,
       "fund_initials": "EF",
-      "scraped_at": "2026-03-11T14:39:55.164103+00:00",
+      "scraped_at": "2026-03-11T19:55:49.747895+00:00",
       "dedup_hash": "4bd3475963b4"
     },
     {
       "fund_id": "entrepreneur-first",
       "fund_name": "Entrepreneur First",
       "title": "Paris Talent Investor, Senior Associate",
-      "description": "Talent Investor role based in Paris. Support founders from ideation through exit, identify exceptional talent, advise on cofounding and idea validation, and build investor networks.",
+      "description": "Talent Investor role focused on identifying and supporting founders. Interest areas include B2B, consumer, and deeptech sectors.",
       "source": "website",
       "source_url": "https://www.joinef.com/careers",
       "posted_date": "",
@@ -43,14 +43,14 @@
       "fund_map_x": 45.1,
       "fund_map_y": 84.7,
       "fund_initials": "EF",
-      "scraped_at": "2026-03-11T14:39:55.164180+00:00",
+      "scraped_at": "2026-03-11T19:55:49.747969+00:00",
       "dedup_hash": "9d59e2e9ebcd"
     },
     {
       "fund_id": "entrepreneur-first",
       "fund_name": "Entrepreneur First",
       "title": "London Talent Investor, Analyst",
-      "description": "Talent Investor role in London. Work with founders at the earliest stage, identify exceptional individuals, advise on team formation and ideas, and build networks of investors and advisors.",
+      "description": "Entry-level Talent Investor role supporting founders from idea stage through venture backing. Background in philosophy, logic, or journalism valued.",
       "source": "website",
       "source_url": "https://www.joinef.com/careers",
       "posted_date": "",
@@ -65,7 +65,7 @@
       "fund_map_x": 45.1,
       "fund_map_y": 84.7,
       "fund_initials": "EF",
-      "scraped_at": "2026-03-11T14:39:55.164224+00:00",
+      "scraped_at": "2026-03-11T19:55:49.748012+00:00",
       "dedup_hash": "47c792aaf00c"
     }
   ]
