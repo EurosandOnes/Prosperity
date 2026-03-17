@@ -1,5 +1,50 @@
 {
-  "generated_at": "2026-03-17T08:11:31.494426+00:00",
-  "total_pending": 0,
-  "roles": []
+  "generated_at": "2026-03-17T15:48:06.505850+00:00",
+  "total_pending": 2,
+  "roles": [
+    {
+      "fund_id": "sapphire",
+      "fund_name": "Sapphire Ventures",
+      "title": "x/jobs/70943743-associate-account-manager",
+      "description": "",
+      "source": "website",
+      "source_url": "https://sapphireventures.com/careers",
+      "posted_date": "",
+      "freshness": "",
+      "freshness_label": "",
+      "posted_ago": "",
+      "location": "London",
+      "seniority": "Associate",
+      "fund_focus": "Growth",
+      "fund_neighborhood": "London",
+      "fund_aum": "$9B",
+      "fund_map_x": 41.0,
+      "fund_map_y": 16.2,
+      "fund_initials": "SA",
+      "scraped_at": "2026-03-17T15:47:12.440237+00:00",
+      "dedup_hash": "98db68bef6e3"
+    },
+    {
+      "fund_id": "sapphire",
+      "fund_name": "Sapphire Ventures",
+      "title": "/companies/openx/jobs/70943743-associate-account-manager",
+      "description": "",
+      "source": "website",
+      "source_url": "https://sapphireventures.com/careers",
+      "posted_date": "",
+      "freshness": "",
+      "freshness_label": "",
+      "posted_ago": "",
+      "location": "London",
+      "seniority": "Associate",
+      "fund_focus": "Growth",
+      "fund_neighborhood": "London",
+      "fund_aum": "$9B",
+      "fund_map_x": 41.0,
+      "fund_map_y": 16.2,
+      "fund_initials": "SA",
+      "scraped_at": "2026-03-17T15:47:12.440298+00:00",
+      "dedup_hash": "8e6db5984f37"
+    }
+  ]
 }
