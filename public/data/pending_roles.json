@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-17T20:05:46.309174+00:00",
+  "generated_at": "2026-03-18T05:24:15.059819+00:00",
   "total_pending": 2,
   "roles": [
     {
@@ -21,7 +21,7 @@
       "fund_map_x": 41.0,
       "fund_map_y": 16.2,
       "fund_initials": "SA",
-      "scraped_at": "2026-03-17T20:04:55.337057+00:00",
+      "scraped_at": "2026-03-18T05:23:24.341090+00:00",
       "dedup_hash": "98db68bef6e3"
     },
     {
@@ -43,7 +43,7 @@
       "fund_map_x": 41.0,
       "fund_map_y": 16.2,
       "fund_initials": "SA",
-      "scraped_at": "2026-03-17T20:04:55.337117+00:00",
+      "scraped_at": "2026-03-18T05:23:24.341151+00:00",
       "dedup_hash": "8e6db5984f37"
     }
   ]
