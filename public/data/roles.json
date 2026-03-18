@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T08:08:41.499160+00:00",
+  "generated_at": "2026-03-18T16:00:21.469533+00:00",
   "stats": {
     "total_roles": 1,
     "hot_roles": 1,
@@ -8,7 +8,7 @@
     "sources_used": [
       "greenhouse"
     ],
-    "pending_review": 2,
+    "pending_review": 0,
     "errors": []
   },
   "funds": {
@@ -996,7 +996,7 @@
       "fund_map_x": 15.5,
       "fund_map_y": 44.1,
       "fund_initials": "BV",
-      "scraped_at": "2026-03-18T08:08:08.422296+00:00",
+      "scraped_at": "2026-03-18T15:59:59.871720+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
