@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-03-16T08:01:57.816871+00:00",
+  "run_at": "2026-03-23T06:59:23.992174+00:00",
   "total_funds_discovered": 68,
   "with_ats_detected": 16,
   "with_linkedin": 0,
-  "with_careers_url": 13,
+  "with_careers_url": 14,
   "sources_scraped": [
     "gilion",
     "seedtable",
@@ -15,8 +15,8 @@
       "name": "LocalGlobe",
       "sources": [
         "gilion",
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 1.0,
       "ats": "none"
