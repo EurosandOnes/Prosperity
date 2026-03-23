@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T05:53:02.352151+00:00",
+  "generated_at": "2026-03-23T08:42:52.026741+00:00",
   "stats": {
     "total_roles": 1,
     "hot_roles": 1,
@@ -313,7 +313,7 @@
       "founded": 2013,
       "map_x": 49.0,
       "map_y": 85.0,
-      "website": "",
+      "website": "https://www.playfaircapital.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -996,7 +996,7 @@
       "fund_map_x": 15.5,
       "fund_map_y": 44.1,
       "fund_initials": "BV",
-      "scraped_at": "2026-03-23T05:52:40.206502+00:00",
+      "scraped_at": "2026-03-23T08:42:32.419057+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
