@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-03-23T06:59:23.992174+00:00",
+  "run_at": "2026-03-30T08:21:36.700392+00:00",
   "total_funds_discovered": 68,
   "with_ats_detected": 16,
   "with_linkedin": 0,
-  "with_careers_url": 14,
+  "with_careers_url": 12,
   "sources_scraped": [
     "gilion",
     "seedtable",
@@ -14,9 +14,9 @@
     {
       "name": "LocalGlobe",
       "sources": [
+        "seed_list",
         "gilion",
-        "seedtable",
-        "seed_list"
+        "seedtable"
       ],
       "confidence": 1.0,
       "ats": "none"
@@ -24,8 +24,8 @@
     {
       "name": "Index Ventures",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "indexventures"
@@ -33,8 +33,8 @@
     {
       "name": "Atomico",
       "sources": [
-        "gilion",
-        "seed_list"
+        "seed_list",
+        "gilion"
       ],
       "confidence": 0.6666666666666666,
       "ats": "atomico"
@@ -42,8 +42,8 @@
     {
       "name": "Balderton Capital",
       "sources": [
-        "gilion",
-        "seed_list"
+        "seed_list",
+        "gilion"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -51,8 +51,8 @@
     {
       "name": "Northzone",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -60,8 +60,8 @@
     {
       "name": "Seedcamp",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -69,8 +69,8 @@
     {
       "name": "Accel",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -78,8 +78,8 @@
     {
       "name": "Octopus Ventures",
       "sources": [
-        "gilion",
-        "seed_list"
+        "seed_list",
+        "gilion"
       ],
       "confidence": 0.6666666666666666,
       "ats": "octopus"
@@ -87,8 +87,8 @@
     {
       "name": "Felix Capital",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "felix"
@@ -96,8 +96,8 @@
     {
       "name": "Dawn Capital",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -105,8 +105,8 @@
     {
       "name": "Creandum",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -114,8 +114,8 @@
     {
       "name": "83North",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -123,8 +123,8 @@
     {
       "name": "Hoxton Ventures",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -132,8 +132,8 @@
     {
       "name": "Augmentum Fintech",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -141,8 +141,8 @@
     {
       "name": "Talis Capital",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
