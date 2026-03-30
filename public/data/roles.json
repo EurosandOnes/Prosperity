@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T06:22:40.064078+00:00",
+  "generated_at": "2026-03-30T16:00:34.331387+00:00",
   "stats": {
     "total_roles": 1,
     "hot_roles": 0,
@@ -89,7 +89,7 @@
       "founded": 1996,
       "map_x": 58.2,
       "map_y": 60.6,
-      "website": "https://northzone.com/join",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -733,7 +733,7 @@
       "founded": 2011,
       "map_x": 41.0,
       "map_y": 16.2,
-      "website": "https://sapphireventures.com/careers",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -996,7 +996,7 @@
       "fund_map_x": 15.5,
       "fund_map_y": 44.1,
       "fund_initials": "BV",
-      "scraped_at": "2026-03-30T06:22:18.543396+00:00",
+      "scraped_at": "2026-03-30T16:00:09.369261+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
