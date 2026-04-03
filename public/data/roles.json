@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T20:04:36.292291+00:00",
+  "generated_at": "2026-04-03T02:09:04.222106+00:00",
   "stats": {
     "total_roles": 1,
     "hot_roles": 1,
@@ -29,7 +29,7 @@
           "title": "Associate, AI & Data Infrastructure",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/bessemerventurepartners/jobs/4673792005",
           "description": "<div class=\"content-intro\"><p>Bessemer Venture Partners is a global venture firm that partners with audacious founders building enduring and transformative businesses. With more than 145 IPOs and 300 portfolio companies across AI, health, consumer, enterprise, and frontier tech, Bessemer supports founders and CEOs from their early days through every stage of growth. &nbsp;Bessemer’s global portfolio includes Anthropic, Perplexity, Abridge, Canva, Pinterest, Shopify, Twilio, Yelp, LinkedIn, Pager",
@@ -987,7 +987,7 @@
       "posted_date": "2026-04-01T19:49:52-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Redwood City, California, United States, San Francisco, California, United States",
       "seniority": "Associate",
       "fund_focus": "",
@@ -996,7 +996,7 @@
       "fund_map_x": 15.5,
       "fund_map_y": 44.1,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-02T20:04:16.276395+00:00",
+      "scraped_at": "2026-04-03T02:08:43.438657+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
