@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T07:30:38.189550+00:00",
+  "generated_at": "2026-04-06T13:08:17.154628+00:00",
   "stats": {
     "total_roles": 1,
     "hot_roles": 1,
@@ -733,7 +733,7 @@
       "founded": 2011,
       "map_x": 41.0,
       "map_y": 16.2,
-      "website": "",
+      "website": "https://sapphireventures.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -996,7 +996,7 @@
       "fund_map_x": 15.5,
       "fund_map_y": 44.1,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-06T07:30:10.499837+00:00",
+      "scraped_at": "2026-04-06T13:07:43.283272+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
