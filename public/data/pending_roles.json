@@ -1,5 +1,50 @@
 {
-  "generated_at": "2026-04-11T12:57:13.742709+00:00",
-  "total_pending": 0,
-  "roles": []
+  "generated_at": "2026-04-11T18:44:26.688911+00:00",
+  "total_pending": 2,
+  "roles": [
+    {
+      "fund_id": "sapphire",
+      "fund_name": "Sapphire Ventures",
+      "title": "x/jobs/74028343-intern",
+      "description": "",
+      "source": "website",
+      "source_url": "https://sapphireventures.com/careers",
+      "posted_date": "",
+      "freshness": "",
+      "freshness_label": "",
+      "posted_ago": "",
+      "location": "London",
+      "seniority": "Analyst",
+      "fund_focus": "Growth",
+      "fund_neighborhood": "London",
+      "fund_aum": "$9B",
+      "fund_map_x": 41.0,
+      "fund_map_y": 16.2,
+      "fund_initials": "SA",
+      "scraped_at": "2026-04-11T18:43:28.307852+00:00",
+      "dedup_hash": "d210541cc000"
+    },
+    {
+      "fund_id": "sapphire",
+      "fund_name": "Sapphire Ventures",
+      "title": "/companies/openx/jobs/74028343-intern",
+      "description": "",
+      "source": "website",
+      "source_url": "https://sapphireventures.com/careers",
+      "posted_date": "",
+      "freshness": "",
+      "freshness_label": "",
+      "posted_ago": "",
+      "location": "London",
+      "seniority": "Analyst",
+      "fund_focus": "Growth",
+      "fund_neighborhood": "London",
+      "fund_aum": "$9B",
+      "fund_map_x": 41.0,
+      "fund_map_y": 16.2,
+      "fund_initials": "SA",
+      "scraped_at": "2026-04-11T18:43:28.307935+00:00",
+      "dedup_hash": "e321e8bd01d7"
+    }
+  ]
 }
