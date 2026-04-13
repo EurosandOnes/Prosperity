@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-06T08:23:39.423869+00:00",
-  "total_funds": 68,
+  "generated_at": "2026-04-13T05:49:40.538426+00:00",
+  "total_funds": 69,
   "funds": [
     {
       "name": "Index Ventures",
@@ -24,15 +24,15 @@
         "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602394+00:00",
-      "last_verified": "2026-04-06T08:13:32.602415+00:00",
+      "first_seen": "2026-04-13T05:40:52.676121+00:00",
+      "last_verified": "2026-04-13T05:40:52.676139+00:00",
       "map_x": 58.0,
       "map_y": 50.0
     },
     {
       "name": "Atomico",
       "website": "https://www.atomico.com",
-      "description": "",
+      "description": "Atomico is a venture capital firm headquartered in London, England founded by Niklas Zennström in 2006, making series A and onwards investments in technology companies.",
       "focus_stage": "Growth",
       "focus_sector": "",
       "location": "London",
@@ -47,12 +47,13 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
+        "seed_list",
         "gilion",
-        "seed_list"
+        "seedtable"
       ],
-      "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602444+00:00",
-      "last_verified": "2026-04-06T08:13:32.602448+00:00",
+      "confidence": 1.0,
+      "first_seen": "2026-04-13T05:40:52.676167+00:00",
+      "last_verified": "2026-04-13T05:40:52.676171+00:00",
       "map_x": 42.8,
       "map_y": 56.6
     },
@@ -74,12 +75,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "gilion",
-        "seed_list"
+        "seed_list",
+        "gilion"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602462+00:00",
-      "last_verified": "2026-04-06T08:13:32.602464+00:00",
+      "first_seen": "2026-04-13T05:40:52.676188+00:00",
+      "last_verified": "2026-04-13T05:40:52.676192+00:00",
       "map_x": 51.0,
       "map_y": 38.4
     },
@@ -105,8 +106,8 @@
         "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602473+00:00",
-      "last_verified": "2026-04-06T08:13:32.602474+00:00",
+      "first_seen": "2026-04-13T05:40:52.676204+00:00",
+      "last_verified": "2026-04-13T05:40:52.676207+00:00",
       "map_x": 58.2,
       "map_y": 60.6
     },
@@ -128,13 +129,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "gilion",
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
-      "confidence": 1.0,
-      "first_seen": "2026-04-06T08:13:32.602483+00:00",
-      "last_verified": "2026-04-06T08:13:32.602485+00:00",
+      "confidence": 0.6666666666666666,
+      "first_seen": "2026-04-13T05:40:52.676220+00:00",
+      "last_verified": "2026-04-13T05:40:52.676223+00:00",
       "map_x": 35.0,
       "map_y": 47.4
     },
@@ -160,8 +160,8 @@
         "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602493+00:00",
-      "last_verified": "2026-04-06T08:13:32.602494+00:00",
+      "first_seen": "2026-04-13T05:40:52.676235+00:00",
+      "last_verified": "2026-04-13T05:40:52.676240+00:00",
       "map_x": 64.3,
       "map_y": 40.8
     },
@@ -183,12 +183,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602501+00:00",
-      "last_verified": "2026-04-06T08:13:32.602502+00:00",
+      "first_seen": "2026-04-13T05:40:52.676255+00:00",
+      "last_verified": "2026-04-13T05:40:52.676257+00:00",
       "map_x": 45.2,
       "map_y": 68.2
     },
@@ -210,12 +210,11 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "gilion",
         "seed_list"
       ],
-      "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602511+00:00",
-      "last_verified": "2026-04-06T08:13:32.602512+00:00",
+      "confidence": 0.3333333333333333,
+      "first_seen": "2026-04-13T05:40:52.676266+00:00",
+      "last_verified": "2026-04-13T05:40:52.676268+00:00",
       "map_x": 40.4,
       "map_y": 31.8
     },
@@ -240,8 +239,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602520+00:00",
-      "last_verified": "2026-04-06T08:13:32.602522+00:00",
+      "first_seen": "2026-04-13T05:40:52.676275+00:00",
+      "last_verified": "2026-04-13T05:40:52.676277+00:00",
       "map_x": 71.1,
       "map_y": 57.5
     },
@@ -263,12 +262,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602529+00:00",
-      "last_verified": "2026-04-06T08:13:32.602531+00:00",
+      "first_seen": "2026-04-13T05:40:52.676285+00:00",
+      "last_verified": "2026-04-13T05:40:52.676286+00:00",
       "map_x": 27.7,
       "map_y": 59.4
     },
@@ -290,12 +289,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602539+00:00",
-      "last_verified": "2026-04-06T08:13:32.602540+00:00",
+      "first_seen": "2026-04-13T05:40:52.676293+00:00",
+      "last_verified": "2026-04-13T05:40:52.676295+00:00",
       "map_x": 60.8,
       "map_y": 26.3
     },
@@ -320,15 +319,15 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602548+00:00",
-      "last_verified": "2026-04-06T08:13:32.602550+00:00",
+      "first_seen": "2026-04-13T05:40:52.676303+00:00",
+      "last_verified": "2026-04-13T05:40:52.676305+00:00",
       "map_x": 58.6,
       "map_y": 76.4
     },
     {
       "name": "Blossom Capital",
       "website": "https://www.blossomcap.com",
-      "description": "",
+      "description": "A London-based venture capital firm that focuses on investing in series A rounds of European companies",
       "focus_stage": "Early Stage",
       "focus_sector": "",
       "location": "London",
@@ -343,11 +342,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
-      "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602557+00:00",
-      "last_verified": "2026-04-06T08:13:32.602559+00:00",
+      "confidence": 0.6666666666666666,
+      "first_seen": "2026-04-13T05:40:52.676312+00:00",
+      "last_verified": "2026-04-13T05:40:52.676313+00:00",
       "map_x": 24.2,
       "map_y": 35.5
     },
@@ -369,19 +369,19 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602566+00:00",
-      "last_verified": "2026-04-06T08:13:32.602567+00:00",
+      "first_seen": "2026-04-13T05:40:52.676320+00:00",
+      "last_verified": "2026-04-13T05:40:52.676322+00:00",
       "map_x": 80.6,
       "map_y": 42.9
     },
     {
       "name": "Molten Ventures",
       "website": "https://moltenventures.com",
-      "description": "",
+      "description": "Molten Ventures - previously Draper Esprit - is the first European tech-focused VC not tied to five-year cycles.",
       "focus_stage": "Growth",
       "focus_sector": "",
       "location": "London",
@@ -396,11 +396,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
-      "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602574+00:00",
-      "last_verified": "2026-04-06T08:13:32.602576+00:00",
+      "confidence": 0.6666666666666666,
+      "first_seen": "2026-04-13T05:40:52.676329+00:00",
+      "last_verified": "2026-04-13T05:40:52.676331+00:00",
       "map_x": 31.3,
       "map_y": 77.4
     },
@@ -426,8 +427,8 @@
         "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602582+00:00",
-      "last_verified": "2026-04-06T08:13:32.602584+00:00",
+      "first_seen": "2026-04-13T05:40:52.676337+00:00",
+      "last_verified": "2026-04-13T05:40:52.676338+00:00",
       "map_x": 45.0,
       "map_y": 15.4
     },
@@ -452,8 +453,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602591+00:00",
-      "last_verified": "2026-04-06T08:13:32.602593+00:00",
+      "first_seen": "2026-04-13T05:40:52.676345+00:00",
+      "last_verified": "2026-04-13T05:40:52.676347+00:00",
       "map_x": 77.1,
       "map_y": 72.1
     },
@@ -478,15 +479,15 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602601+00:00",
-      "last_verified": "2026-04-06T08:13:32.602603+00:00",
+      "first_seen": "2026-04-13T05:40:52.676354+00:00",
+      "last_verified": "2026-04-13T05:40:52.676356+00:00",
       "map_x": 15.1,
       "map_y": 52.0
     },
     {
       "name": "Hoxton Ventures",
       "website": "https://www.hoxtonventures.com",
-      "description": "Hoxton Ventures is an early stage technology venture capital firm that invests in mobile, internet and software startups. The company is based in London, United Kingdom.",
+      "description": "",
       "focus_stage": "Pre-seed / Seed",
       "focus_sector": "",
       "location": "London",
@@ -501,12 +502,11 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
         "seed_list"
       ],
-      "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602611+00:00",
-      "last_verified": "2026-04-06T08:13:32.602613+00:00",
+      "confidence": 0.3333333333333333,
+      "first_seen": "2026-04-13T05:40:52.676364+00:00",
+      "last_verified": "2026-04-13T05:40:52.676365+00:00",
       "map_x": 74.4,
       "map_y": 24.9
     },
@@ -531,8 +531,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602620+00:00",
-      "last_verified": "2026-04-06T08:13:32.602622+00:00",
+      "first_seen": "2026-04-13T05:40:52.676373+00:00",
+      "last_verified": "2026-04-13T05:40:52.676374+00:00",
       "map_x": 49.0,
       "map_y": 85.0
     },
@@ -557,8 +557,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602629+00:00",
-      "last_verified": "2026-04-06T08:13:32.602631+00:00",
+      "first_seen": "2026-04-13T05:40:52.676381+00:00",
+      "last_verified": "2026-04-13T05:40:52.676383+00:00",
       "map_x": 27.1,
       "map_y": 23.6
     },
@@ -583,8 +583,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602639+00:00",
-      "last_verified": "2026-04-06T08:13:32.602640+00:00",
+      "first_seen": "2026-04-13T05:40:52.676391+00:00",
+      "last_verified": "2026-04-13T05:40:52.676392+00:00",
       "map_x": 84.8,
       "map_y": 54.0
     },
@@ -602,15 +602,15 @@
       "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
-      "careers_url": "https://www.anthemis.com/careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602647+00:00",
-      "last_verified": "2026-04-06T08:13:32.602649+00:00",
+      "first_seen": "2026-04-13T05:40:52.676399+00:00",
+      "last_verified": "2026-04-13T05:40:52.676401+00:00",
       "map_x": 21.7,
       "map_y": 70.6
     },
@@ -635,8 +635,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602658+00:00",
-      "last_verified": "2026-04-06T08:13:32.602660+00:00",
+      "first_seen": "2026-04-13T05:40:52.676409+00:00",
+      "last_verified": "2026-04-13T05:40:52.676411+00:00",
       "map_x": 56.9,
       "map_y": 15.7
     },
@@ -661,8 +661,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602668+00:00",
-      "last_verified": "2026-04-06T08:13:32.602669+00:00",
+      "first_seen": "2026-04-13T05:40:52.676419+00:00",
+      "last_verified": "2026-04-13T05:40:52.676420+00:00",
       "map_x": 68.1,
       "map_y": 80.0
     },
@@ -687,8 +687,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602677+00:00",
-      "last_verified": "2026-04-06T08:13:32.602679+00:00",
+      "first_seen": "2026-04-13T05:40:52.676428+00:00",
+      "last_verified": "2026-04-13T05:40:52.676429+00:00",
       "map_x": 16.4,
       "map_y": 40.2
     },
@@ -713,8 +713,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602687+00:00",
-      "last_verified": "2026-04-06T08:13:32.602690+00:00",
+      "first_seen": "2026-04-13T05:40:52.676438+00:00",
+      "last_verified": "2026-04-13T05:40:52.676442+00:00",
       "map_x": 81.4,
       "map_y": 34.5
     },
@@ -736,12 +736,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602703+00:00",
-      "last_verified": "2026-04-06T08:13:32.602704+00:00",
+      "first_seen": "2026-04-13T05:40:52.676452+00:00",
+      "last_verified": "2026-04-13T05:40:52.676453+00:00",
       "map_x": 37.3,
       "map_y": 82.6
     },
@@ -763,12 +763,12 @@
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
-        "seedtable",
-        "seed_list"
+        "seed_list",
+        "seedtable"
       ],
       "confidence": 0.6666666666666666,
-      "first_seen": "2026-04-06T08:13:32.602732+00:00",
-      "last_verified": "2026-04-06T08:13:32.602735+00:00",
+      "first_seen": "2026-04-13T05:40:52.676461+00:00",
+      "last_verified": "2026-04-13T05:40:52.676463+00:00",
       "map_x": 37.3,
       "map_y": 17.4
     },
@@ -793,8 +793,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602742+00:00",
-      "last_verified": "2026-04-06T08:13:32.602744+00:00",
+      "first_seen": "2026-04-13T05:40:52.676470+00:00",
+      "last_verified": "2026-04-13T05:40:52.676472+00:00",
       "map_x": 81.4,
       "map_y": 65.4
     },
@@ -819,8 +819,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602751+00:00",
-      "last_verified": "2026-04-06T08:13:32.602753+00:00",
+      "first_seen": "2026-04-13T05:40:52.676479+00:00",
+      "last_verified": "2026-04-13T05:40:52.676480+00:00",
       "map_x": 16.4,
       "map_y": 59.9
     },
@@ -845,8 +845,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602760+00:00",
-      "last_verified": "2026-04-06T08:13:32.602762+00:00",
+      "first_seen": "2026-04-13T05:40:52.676487+00:00",
+      "last_verified": "2026-04-13T05:40:52.676489+00:00",
       "map_x": 68.0,
       "map_y": 20.0
     },
@@ -871,8 +871,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602769+00:00",
-      "last_verified": "2026-04-06T08:13:32.602771+00:00",
+      "first_seen": "2026-04-13T05:40:52.676496+00:00",
+      "last_verified": "2026-04-13T05:40:52.676498+00:00",
       "map_x": 57.0,
       "map_y": 84.3
     },
@@ -897,8 +897,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602779+00:00",
-      "last_verified": "2026-04-06T08:13:32.602781+00:00",
+      "first_seen": "2026-04-13T05:40:52.676506+00:00",
+      "last_verified": "2026-04-13T05:40:52.676508+00:00",
       "map_x": 21.7,
       "map_y": 29.5
     },
@@ -923,8 +923,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602788+00:00",
-      "last_verified": "2026-04-06T08:13:32.602790+00:00",
+      "first_seen": "2026-04-13T05:40:52.676515+00:00",
+      "last_verified": "2026-04-13T05:40:52.676516+00:00",
       "map_x": 84.8,
       "map_y": 46.0
     },
@@ -949,8 +949,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602798+00:00",
-      "last_verified": "2026-04-06T08:13:32.602800+00:00",
+      "first_seen": "2026-04-13T05:40:52.676524+00:00",
+      "last_verified": "2026-04-13T05:40:52.676525+00:00",
       "map_x": 27.1,
       "map_y": 76.5
     },
@@ -975,8 +975,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602807+00:00",
-      "last_verified": "2026-04-06T08:13:32.602808+00:00",
+      "first_seen": "2026-04-13T05:40:52.676532+00:00",
+      "last_verified": "2026-04-13T05:40:52.676533+00:00",
       "map_x": 49.0,
       "map_y": 15.0
     },
@@ -1001,8 +1001,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602816+00:00",
-      "last_verified": "2026-04-06T08:13:32.602817+00:00",
+      "first_seen": "2026-04-13T05:40:52.676540+00:00",
+      "last_verified": "2026-04-13T05:40:52.676542+00:00",
       "map_x": 74.4,
       "map_y": 75.1
     },
@@ -1027,8 +1027,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602825+00:00",
-      "last_verified": "2026-04-06T08:13:32.602826+00:00",
+      "first_seen": "2026-04-13T05:40:52.676549+00:00",
+      "last_verified": "2026-04-13T05:40:52.676551+00:00",
       "map_x": 15.1,
       "map_y": 48.0
     },
@@ -1053,8 +1053,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602833+00:00",
-      "last_verified": "2026-04-06T08:13:32.602835+00:00",
+      "first_seen": "2026-04-13T05:40:52.676558+00:00",
+      "last_verified": "2026-04-13T05:40:52.676559+00:00",
       "map_x": 77.1,
       "map_y": 27.8
     },
@@ -1079,8 +1079,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602842+00:00",
-      "last_verified": "2026-04-06T08:13:32.602844+00:00",
+      "first_seen": "2026-04-13T05:40:52.676566+00:00",
+      "last_verified": "2026-04-13T05:40:52.676568+00:00",
       "map_x": 45.1,
       "map_y": 84.7
     },
@@ -1105,8 +1105,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602851+00:00",
-      "last_verified": "2026-04-06T08:13:32.602853+00:00",
+      "first_seen": "2026-04-13T05:40:52.676575+00:00",
+      "last_verified": "2026-04-13T05:40:52.676577+00:00",
       "map_x": 30.2,
       "map_y": 21.1
     },
@@ -1131,8 +1131,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602860+00:00",
-      "last_verified": "2026-04-06T08:13:32.602862+00:00",
+      "first_seen": "2026-04-13T05:40:52.676584+00:00",
+      "last_verified": "2026-04-13T05:40:52.676586+00:00",
       "map_x": 84.1,
       "map_y": 57.9
     },
@@ -1157,8 +1157,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602868+00:00",
-      "last_verified": "2026-04-06T08:13:32.602870+00:00",
+      "first_seen": "2026-04-13T05:40:52.676592+00:00",
+      "last_verified": "2026-04-13T05:40:52.676594+00:00",
       "map_x": 19.5,
       "map_y": 67.3
     },
@@ -1183,8 +1183,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602877+00:00",
-      "last_verified": "2026-04-06T08:13:32.602879+00:00",
+      "first_seen": "2026-04-13T05:40:52.676601+00:00",
+      "last_verified": "2026-04-13T05:40:52.676602+00:00",
       "map_x": 60.8,
       "map_y": 16.7
     },
@@ -1209,8 +1209,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602885+00:00",
-      "last_verified": "2026-04-06T08:13:32.602887+00:00",
+      "first_seen": "2026-04-13T05:40:52.676608+00:00",
+      "last_verified": "2026-04-13T05:40:52.676610+00:00",
       "map_x": 64.6,
       "map_y": 81.8
     },
@@ -1226,7 +1226,7 @@
       "id": "general-catalyst",
       "initials": "GC",
       "lever_slug": "",
-      "greenhouse_slug": "general",
+      "greenhouse_slug": "generalcatalyst",
       "ashby_slug": "",
       "careers_url": "",
       "linkedin_url": "",
@@ -1235,8 +1235,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602894+00:00",
-      "last_verified": "2026-04-06T08:13:32.602896+00:00",
+      "first_seen": "2026-04-13T05:40:52.676617+00:00",
+      "last_verified": "2026-04-13T05:40:52.676619+00:00",
       "map_x": 17.7,
       "map_y": 36.4
     },
@@ -1261,8 +1261,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602902+00:00",
-      "last_verified": "2026-04-06T08:13:32.602904+00:00",
+      "first_seen": "2026-04-13T05:40:52.676625+00:00",
+      "last_verified": "2026-04-13T05:40:52.676627+00:00",
       "map_x": 82.9,
       "map_y": 38.2
     },
@@ -1287,8 +1287,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602912+00:00",
-      "last_verified": "2026-04-06T08:13:32.602914+00:00",
+      "first_seen": "2026-04-13T05:40:52.676635+00:00",
+      "last_verified": "2026-04-13T05:40:52.676636+00:00",
       "map_x": 33.7,
       "map_y": 81.0
     },
@@ -1313,8 +1313,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602922+00:00",
-      "last_verified": "2026-04-06T08:13:32.602924+00:00",
+      "first_seen": "2026-04-13T05:40:52.676644+00:00",
+      "last_verified": "2026-04-13T05:40:52.676645+00:00",
       "map_x": 41.0,
       "map_y": 16.2
     },
@@ -1339,8 +1339,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602931+00:00",
-      "last_verified": "2026-04-06T08:13:32.602932+00:00",
+      "first_seen": "2026-04-13T05:40:52.676652+00:00",
+      "last_verified": "2026-04-13T05:40:52.676653+00:00",
       "map_x": 79.5,
       "map_y": 68.9
     },
@@ -1365,8 +1365,8 @@
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602940+00:00",
-      "last_verified": "2026-04-06T08:13:32.602942+00:00",
+      "first_seen": "2026-04-13T05:40:52.676661+00:00",
+      "last_verified": "2026-04-13T05:40:52.676662+00:00",
       "map_x": 15.5,
       "map_y": 56.0
     },
@@ -1382,17 +1382,17 @@
       "id": "emerge-education",
       "initials": "EE",
       "lever_slug": "",
-      "greenhouse_slug": "",
+      "greenhouse_slug": "emerge",
       "ashby_slug": "",
-      "careers_url": "https://emerge.education/careers",
+      "careers_url": "",
       "linkedin_url": "",
       "twitter_handle": "",
       "sources": [
         "seed_list"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.602949+00:00",
-      "last_verified": "2026-04-06T08:13:32.602950+00:00",
+      "first_seen": "2026-04-13T05:40:52.676669+00:00",
+      "last_verified": "2026-04-13T05:40:52.676671+00:00",
       "map_x": 71.3,
       "map_y": 22.2
     },
@@ -1417,8 +1417,8 @@
         "gilion"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.966020+00:00",
-      "last_verified": "2026-04-06T08:13:32.966034+00:00",
+      "first_seen": "2026-04-13T05:40:52.965447+00:00",
+      "last_verified": "2026-04-13T05:40:52.965449+00:00",
       "map_x": 53.1,
       "map_y": 84.9
     },
@@ -1443,10 +1443,36 @@
         "gilion"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:32.966053+00:00",
-      "last_verified": "2026-04-06T08:13:32.966056+00:00",
+      "first_seen": "2026-04-13T05:40:52.965461+00:00",
+      "last_verified": "2026-04-13T05:40:52.965463+00:00",
       "map_x": 24.2,
       "map_y": 26.4
+    },
+    {
+      "name": "SEIS/EIS tax relief schemes",
+      "website": "https://www.british-business-bank.co.uk/finance-hub/business-guidance/preparing-to-raise-equity/seis-eis/)",
+      "description": "",
+      "focus_stage": "",
+      "focus_sector": "",
+      "location": "London",
+      "aum": "",
+      "founded": 0,
+      "id": "seis-eis-tax-relief-schemes",
+      "initials": "ST",
+      "lever_slug": "",
+      "greenhouse_slug": "",
+      "ashby_slug": "",
+      "careers_url": "",
+      "linkedin_url": "",
+      "twitter_handle": "",
+      "sources": [
+        "gilion"
+      ],
+      "confidence": 0.3333333333333333,
+      "first_seen": "2026-04-13T05:40:52.965493+00:00",
+      "last_verified": "2026-04-13T05:40:52.965495+00:00",
+      "map_x": 85.0,
+      "map_y": 49.9
     },
     {
       "name": "Recently Funded",
@@ -1469,10 +1495,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.506447+00:00",
-      "last_verified": "2026-04-06T08:13:33.506461+00:00",
-      "map_x": 85.0,
-      "map_y": 49.9
+      "first_seen": "2026-04-13T05:40:53.347129+00:00",
+      "last_verified": "2026-04-13T05:40:53.347143+00:00",
+      "map_x": 24.3,
+      "map_y": 73.7
     },
     {
       "name": "Raise",
@@ -1495,10 +1521,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.507281+00:00",
-      "last_verified": "2026-04-06T08:13:33.507285+00:00",
-      "map_x": 24.3,
-      "map_y": 73.7
+      "first_seen": "2026-04-13T05:40:53.347846+00:00",
+      "last_verified": "2026-04-13T05:40:53.347849+00:00",
+      "map_x": 52.9,
+      "map_y": 15.1
     },
     {
       "name": "Seedtable Raise",
@@ -1521,10 +1547,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.510391+00:00",
-      "last_verified": "2026-04-06T08:13:33.510395+00:00",
-      "map_x": 52.9,
-      "map_y": 15.1
+      "first_seen": "2026-04-13T05:40:53.350842+00:00",
+      "last_verified": "2026-04-13T05:40:53.350845+00:00",
+      "map_x": 71.4,
+      "map_y": 77.7
     },
     {
       "name": "List of 30 top London VCs",
@@ -1547,10 +1573,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.511036+00:00",
-      "last_verified": "2026-04-06T08:13:33.511039+00:00",
-      "map_x": 71.4,
-      "map_y": 77.7
+      "first_seen": "2026-04-13T05:40:53.351514+00:00",
+      "last_verified": "2026-04-13T05:40:53.351517+00:00",
+      "map_x": 15.5,
+      "map_y": 44.1
     },
     {
       "name": "Bessemer Venture Partners",
@@ -1573,62 +1599,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.514315+00:00",
-      "last_verified": "2026-04-06T08:13:33.514319+00:00",
-      "map_x": 15.5,
-      "map_y": 44.1
-    },
-    {
-      "name": "Sequoia Capital",
-      "website": "",
-      "description": "Sequoia Capital is a venture capital firm that has invested in companies like Google, Apple, Cisco, YouTube, AirBnB, and WhatsApp. The firm was founded in 1972 by Donald Valentine, and companies backed by Sequoia have created over $3.3 trillion dollars in market capitalization.",
-      "focus_stage": "",
-      "focus_sector": "",
-      "location": "London",
-      "aum": "",
-      "founded": 0,
-      "id": "sequoia",
-      "initials": "SE",
-      "lever_slug": "",
-      "greenhouse_slug": "",
-      "ashby_slug": "sequoia",
-      "careers_url": "",
-      "linkedin_url": "",
-      "twitter_handle": "",
-      "sources": [
-        "seedtable"
-      ],
-      "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.518456+00:00",
-      "last_verified": "2026-04-06T08:13:33.518461+00:00",
+      "first_seen": "2026-04-13T05:40:53.354765+00:00",
+      "last_verified": "2026-04-13T05:40:53.354768+00:00",
       "map_x": 79.4,
       "map_y": 31.0
-    },
-    {
-      "name": "Outward VC",
-      "website": "",
-      "description": "A venture capital firm in London that is focused on UK based start-ups in Fintech and Enterprise software",
-      "focus_stage": "",
-      "focus_sector": "",
-      "location": "London",
-      "aum": "",
-      "founded": 0,
-      "id": "outward",
-      "initials": "OV",
-      "lever_slug": "",
-      "greenhouse_slug": "",
-      "ashby_slug": "",
-      "careers_url": "",
-      "linkedin_url": "",
-      "twitter_handle": "",
-      "sources": [
-        "seedtable"
-      ],
-      "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.520038+00:00",
-      "last_verified": "2026-04-06T08:13:33.520042+00:00",
-      "map_x": 41.2,
-      "map_y": 83.9
     },
     {
       "name": "SoftBank Group",
@@ -1651,36 +1625,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.524379+00:00",
-      "last_verified": "2026-04-06T08:13:33.524383+00:00",
-      "map_x": 33.6,
-      "map_y": 19.1
-    },
-    {
-      "name": "OMERS Ventures",
-      "website": "",
-      "description": "OMERS Ventures is the venture investment arm of OMERS. It focuses on technology companies.",
-      "focus_stage": "",
-      "focus_sector": "",
-      "location": "London",
-      "aum": "",
-      "founded": 0,
-      "id": "omers",
-      "initials": "OM",
-      "lever_slug": "",
-      "greenhouse_slug": "",
-      "ashby_slug": "",
-      "careers_url": "",
-      "linkedin_url": "",
-      "twitter_handle": "",
-      "sources": [
-        "seedtable"
-      ],
-      "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.528721+00:00",
-      "last_verified": "2026-04-06T08:13:33.528726+00:00",
-      "map_x": 83.0,
-      "map_y": 61.7
+      "first_seen": "2026-04-13T05:40:53.360972+00:00",
+      "last_verified": "2026-04-13T05:40:53.360976+00:00",
+      "map_x": 41.2,
+      "map_y": 83.9
     },
     {
       "name": "Earlybird Venture Capital",
@@ -1693,7 +1641,7 @@
       "founded": 0,
       "id": "earlybird-venture",
       "initials": "EV",
-      "lever_slug": "earlybird",
+      "lever_slug": "",
       "greenhouse_slug": "",
       "ashby_slug": "",
       "careers_url": "",
@@ -1703,10 +1651,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.529608+00:00",
-      "last_verified": "2026-04-06T08:13:33.529611+00:00",
-      "map_x": 17.8,
-      "map_y": 63.7
+      "first_seen": "2026-04-13T05:40:53.365057+00:00",
+      "last_verified": "2026-04-13T05:40:53.365061+00:00",
+      "map_x": 33.6,
+      "map_y": 19.1
     },
     {
       "name": "RTP Global",
@@ -1729,8 +1677,60 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.531429+00:00",
-      "last_verified": "2026-04-06T08:13:33.531433+00:00",
+      "first_seen": "2026-04-13T05:40:53.368636+00:00",
+      "last_verified": "2026-04-13T05:40:53.368639+00:00",
+      "map_x": 83.0,
+      "map_y": 61.7
+    },
+    {
+      "name": "OMERS Ventures",
+      "website": "",
+      "description": "OMERS Ventures is the venture investment arm of OMERS. It focuses on technology companies.",
+      "focus_stage": "",
+      "focus_sector": "",
+      "location": "London",
+      "aum": "",
+      "founded": 0,
+      "id": "omers",
+      "initials": "OM",
+      "lever_slug": "",
+      "greenhouse_slug": "",
+      "ashby_slug": "",
+      "careers_url": "",
+      "linkedin_url": "",
+      "twitter_handle": "",
+      "sources": [
+        "seedtable"
+      ],
+      "confidence": 0.3333333333333333,
+      "first_seen": "2026-04-13T05:40:53.370790+00:00",
+      "last_verified": "2026-04-13T05:40:53.370793+00:00",
+      "map_x": 17.8,
+      "map_y": 63.7
+    },
+    {
+      "name": "Latitude",
+      "website": "",
+      "description": "Latitude is a venture capital fund based in London that partners with tech founders to tackle industry-wide problems. They invest at various stages, from early growth to advanced rounds, focusing on companies with real-world impact in areas like data, analytics, and AI. Notable investments include M",
+      "focus_stage": "",
+      "focus_sector": "",
+      "location": "London",
+      "aum": "",
+      "founded": 0,
+      "id": "latitude",
+      "initials": "LA",
+      "lever_slug": "",
+      "greenhouse_slug": "latitude",
+      "ashby_slug": "latitude",
+      "careers_url": "",
+      "linkedin_url": "",
+      "twitter_handle": "",
+      "sources": [
+        "seedtable"
+      ],
+      "confidence": 0.3333333333333333,
+      "first_seen": "2026-04-13T05:40:53.373505+00:00",
+      "last_verified": "2026-04-13T05:40:53.373509+00:00",
       "map_x": 64.5,
       "map_y": 18.1
     },
@@ -1755,10 +1755,36 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.535154+00:00",
-      "last_verified": "2026-04-06T08:13:33.535158+00:00",
+      "first_seen": "2026-04-13T05:40:53.374411+00:00",
+      "last_verified": "2026-04-13T05:40:53.374415+00:00",
       "map_x": 60.9,
       "map_y": 83.3
+    },
+    {
+      "name": "Semantic Ventures",
+      "website": "",
+      "description": "Semantic Ventures is a venture capital fund in London focusing on early-stage investments in the digital economy. They support companies building new infrastructure for data and digital transactions, particularly in cybersecurity, mobile tech, and blockchain. Their investments range from pre-seed to",
+      "focus_stage": "",
+      "focus_sector": "",
+      "location": "London",
+      "aum": "",
+      "founded": 0,
+      "id": "semantic",
+      "initials": "SE",
+      "lever_slug": "",
+      "greenhouse_slug": "",
+      "ashby_slug": "",
+      "careers_url": "",
+      "linkedin_url": "",
+      "twitter_handle": "",
+      "sources": [
+        "seedtable"
+      ],
+      "confidence": 0.3333333333333333,
+      "first_seen": "2026-04-13T05:40:53.376222+00:00",
+      "last_verified": "2026-04-13T05:40:53.376226+00:00",
+      "map_x": 19.5,
+      "map_y": 32.9
     },
     {
       "name": "Company Rankings",
@@ -1781,10 +1807,10 @@
         "seedtable"
       ],
       "confidence": 0.3333333333333333,
-      "first_seen": "2026-04-06T08:13:33.536082+00:00",
-      "last_verified": "2026-04-06T08:13:33.536086+00:00",
-      "map_x": 19.5,
-      "map_y": 32.9
+      "first_seen": "2026-04-13T05:40:53.377135+00:00",
+      "last_verified": "2026-04-13T05:40:53.377139+00:00",
+      "map_x": 84.1,
+      "map_y": 42.0
     }
   ]
 }
