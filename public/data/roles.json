@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-13T02:32:31.277235+00:00",
+  "generated_at": "2026-04-13T08:03:10.654028+00:00",
   "stats": {
-    "total_roles": 1,
+    "total_roles": 2,
     "hot_roles": 0,
-    "warm_roles": 1,
-    "funds_hiring": 1,
+    "warm_roles": 2,
+    "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
     ],
@@ -12,6 +12,31 @@
     "errors": []
   },
   "funds": {
+    "latitude": {
+      "id": "latitude",
+      "name": "Latitude",
+      "initials": "LA",
+      "focus": "",
+      "neighborhood": "London",
+      "aum": "",
+      "founded": 0,
+      "map_x": 64.5,
+      "map_y": 18.1,
+      "website": "",
+      "hiring": true,
+      "roles": [
+        {
+          "title": "Mission Operator - Pittsburgh, PA (Contract)",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "2 weeks ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7764862",
+          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p>When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors and compute systems, test operati",
+          "seniority": "Other"
+        }
+      ]
+    },
     "bessemer-venture": {
       "id": "bessemer-venture",
       "name": "Bessemer Venture Partners",
@@ -20,8 +45,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 15.5,
-      "map_y": 44.1,
+      "map_x": 79.4,
+      "map_y": 31.0,
       "website": "",
       "hiring": true,
       "roles": [
@@ -355,7 +380,7 @@
       "founded": 2010,
       "map_x": 21.7,
       "map_y": 70.6,
-      "website": "https://www.anthemis.com/careers",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -775,7 +800,7 @@
       "founded": 2014,
       "map_x": 71.3,
       "map_y": 22.2,
-      "website": "https://emerge.education/careers",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -807,6 +832,20 @@
       "hiring": false,
       "roles": []
     },
+    "seis-eis-tax-relief-schemes": {
+      "id": "seis-eis-tax-relief-schemes",
+      "name": "SEIS/EIS tax relief schemes",
+      "initials": "ST",
+      "focus": "",
+      "neighborhood": "London",
+      "aum": "",
+      "founded": 0,
+      "map_x": 85.0,
+      "map_y": 49.9,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
     "recently-funded": {
       "id": "recently-funded",
       "name": "Recently Funded",
@@ -815,8 +854,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 85.0,
-      "map_y": 49.9,
+      "map_x": 24.3,
+      "map_y": 73.7,
       "website": "",
       "hiring": false,
       "roles": []
@@ -829,8 +868,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 24.3,
-      "map_y": 73.7,
+      "map_x": 52.9,
+      "map_y": 15.1,
       "website": "",
       "hiring": false,
       "roles": []
@@ -843,8 +882,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 52.9,
-      "map_y": 15.1,
+      "map_x": 71.4,
+      "map_y": 77.7,
       "website": "",
       "hiring": false,
       "roles": []
@@ -857,36 +896,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 71.4,
-      "map_y": 77.7,
-      "website": "",
-      "hiring": false,
-      "roles": []
-    },
-    "sequoia": {
-      "id": "sequoia",
-      "name": "Sequoia Capital",
-      "initials": "SE",
-      "focus": "",
-      "neighborhood": "London",
-      "aum": "",
-      "founded": 0,
-      "map_x": 79.4,
-      "map_y": 31.0,
-      "website": "",
-      "hiring": false,
-      "roles": []
-    },
-    "outward": {
-      "id": "outward",
-      "name": "Outward VC",
-      "initials": "OV",
-      "focus": "",
-      "neighborhood": "London",
-      "aum": "",
-      "founded": 0,
-      "map_x": 41.2,
-      "map_y": 83.9,
+      "map_x": 15.5,
+      "map_y": 44.1,
       "website": "",
       "hiring": false,
       "roles": []
@@ -899,22 +910,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 33.6,
-      "map_y": 19.1,
-      "website": "",
-      "hiring": false,
-      "roles": []
-    },
-    "omers": {
-      "id": "omers",
-      "name": "OMERS Ventures",
-      "initials": "OM",
-      "focus": "",
-      "neighborhood": "London",
-      "aum": "",
-      "founded": 0,
-      "map_x": 83.0,
-      "map_y": 61.7,
+      "map_x": 41.2,
+      "map_y": 83.9,
       "website": "",
       "hiring": false,
       "roles": []
@@ -927,8 +924,8 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 17.8,
-      "map_y": 63.7,
+      "map_x": 33.6,
+      "map_y": 19.1,
       "website": "",
       "hiring": false,
       "roles": []
@@ -941,8 +938,22 @@
       "neighborhood": "London",
       "aum": "",
       "founded": 0,
-      "map_x": 64.5,
-      "map_y": 18.1,
+      "map_x": 83.0,
+      "map_y": 61.7,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
+    "omers": {
+      "id": "omers",
+      "name": "OMERS Ventures",
+      "initials": "OM",
+      "focus": "",
+      "neighborhood": "London",
+      "aum": "",
+      "founded": 0,
+      "map_x": 17.8,
+      "map_y": 63.7,
       "website": "",
       "hiring": false,
       "roles": []
@@ -961,10 +972,10 @@
       "hiring": false,
       "roles": []
     },
-    "company-rankings": {
-      "id": "company-rankings",
-      "name": "Company Rankings",
-      "initials": "CR",
+    "semantic": {
+      "id": "semantic",
+      "name": "Semantic Ventures",
+      "initials": "SE",
       "focus": "",
       "neighborhood": "London",
       "aum": "",
@@ -974,9 +985,45 @@
       "website": "",
       "hiring": false,
       "roles": []
+    },
+    "company-rankings": {
+      "id": "company-rankings",
+      "name": "Company Rankings",
+      "initials": "CR",
+      "focus": "",
+      "neighborhood": "London",
+      "aum": "",
+      "founded": 0,
+      "map_x": 84.1,
+      "map_y": 42.0,
+      "website": "",
+      "hiring": false,
+      "roles": []
     }
   },
   "roles": [
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Mission Operator - Pittsburgh, PA (Contract)",
+      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p>When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors and compute systems, test operati",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7764862",
+      "posted_date": "2026-03-29T09:50:44-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "2 weeks ago",
+      "location": "Pittsburgh, PA",
+      "seniority": "Other",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-04-13T08:03:02.057805+00:00",
+      "dedup_hash": "5302aa37e900"
+    },
     {
       "fund_id": "bessemer-venture",
       "fund_name": "Bessemer Venture Partners",
@@ -993,10 +1040,10 @@
       "fund_focus": "",
       "fund_neighborhood": "London",
       "fund_aum": "",
-      "fund_map_x": 15.5,
-      "fund_map_y": 44.1,
+      "fund_map_x": 79.4,
+      "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-13T02:32:08.902448+00:00",
+      "scraped_at": "2026-04-13T08:02:50.897455+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
