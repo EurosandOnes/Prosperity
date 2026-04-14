@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-13T19:15:27.270638+00:00",
+  "generated_at": "2026-04-14T02:26:55.607850+00:00",
   "stats": {
     "total_roles": 3,
-    "hot_roles": 1,
-    "warm_roles": 2,
+    "hot_roles": 2,
+    "warm_roles": 1,
     "funds_hiring": 3,
     "sources_used": [
       "greenhouse"
@@ -52,12 +52,12 @@
       "roles": [
         {
           "title": "Mission Operator - Pittsburgh, PA (Contract)",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "2 weeks ago",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
           "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7764862",
-          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p>When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors and compute systems, test operati",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
+          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
           "seniority": "Other"
         }
       ]
@@ -1032,21 +1032,21 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-04-13T19:14:23.240924+00:00",
+      "scraped_at": "2026-04-14T02:25:44.605799+00:00",
       "dedup_hash": "8a3bd01e8a7e"
     },
     {
       "fund_id": "latitude",
       "fund_name": "Latitude",
       "title": "Mission Operator - Pittsburgh, PA (Contract)",
-      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p>When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors and compute systems, test operati",
+      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
       "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7764862",
-      "posted_date": "2026-03-29T09:50:44-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "2 weeks ago",
-      "location": "Pittsburgh, PA",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
+      "posted_date": "2026-04-13T15:18:00-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Pittsburgh, PA ",
       "seniority": "Other",
       "fund_focus": "",
       "fund_neighborhood": "London",
@@ -1054,7 +1054,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-13T19:15:18.722275+00:00",
+      "scraped_at": "2026-04-14T02:26:46.109779+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1076,7 +1076,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-13T19:15:07.871760+00:00",
+      "scraped_at": "2026-04-14T02:26:33.933291+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
