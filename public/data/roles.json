@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T19:14:18.257456+00:00",
+  "generated_at": "2026-04-15T02:15:24.187410+00:00",
   "stats": {
     "total_roles": 3,
     "hot_roles": 2,
@@ -54,7 +54,7 @@
           "title": "Mission Operator - Pittsburgh, PA (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
@@ -1032,7 +1032,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-04-14T19:13:13.046500+00:00",
+      "scraped_at": "2026-04-15T02:14:21.353111+00:00",
       "dedup_hash": "8a3bd01e8a7e"
     },
     {
@@ -1045,7 +1045,7 @@
       "posted_date": "2026-04-13T15:18:00-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Pittsburgh, PA ",
       "seniority": "Other",
       "fund_focus": "",
@@ -1054,7 +1054,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-14T19:14:09.792010+00:00",
+      "scraped_at": "2026-04-15T02:15:15.778028+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1076,7 +1076,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-14T19:13:58.942689+00:00",
+      "scraped_at": "2026-04-15T02:15:05.278415+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
