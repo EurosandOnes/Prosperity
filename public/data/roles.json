@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T07:31:38.265098+00:00",
+  "generated_at": "2026-04-15T13:24:00.306897+00:00",
   "stats": {
     "total_roles": 3,
     "hot_roles": 2,
@@ -1032,7 +1032,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-04-15T07:30:33.187466+00:00",
+      "scraped_at": "2026-04-15T13:22:51.348252+00:00",
       "dedup_hash": "8a3bd01e8a7e"
     },
     {
@@ -1054,7 +1054,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-15T07:31:29.412693+00:00",
+      "scraped_at": "2026-04-15T13:23:51.136409+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1076,7 +1076,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-15T07:31:18.450997+00:00",
+      "scraped_at": "2026-04-15T13:23:39.434572+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
