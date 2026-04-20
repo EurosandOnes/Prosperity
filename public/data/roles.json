@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-20T02:32:40.638968+00:00",
+  "generated_at": "2026-04-20T08:06:49.948515+00:00",
   "stats": {
-    "total_roles": 6,
-    "hot_roles": 5,
+    "total_roles": 5,
+    "hot_roles": 4,
     "warm_roles": 1,
-    "funds_hiring": 3,
+    "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
     ],
@@ -12,31 +12,6 @@
     "errors": []
   },
   "funds": {
-    "general-catalyst": {
-      "id": "general-catalyst",
-      "name": "General Catalyst",
-      "initials": "GC",
-      "focus": "Multi-stage",
-      "neighborhood": "London",
-      "aum": "$25B",
-      "founded": 2000,
-      "map_x": 17.7,
-      "map_y": 36.4,
-      "website": "",
-      "hiring": true,
-      "roles": [
-        {
-          "title": "AP Lead",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003",
-          "description": "<p>Job Title: Accounts Payable and Treasury Manager</p>\n<p>Location: New York, NY</p>\n<p>General Catalyst is a dynamic and rapidly growing venture capital company seeking a highly skilled and experienced Accounting Manager to join our Management Company team.&nbsp;</p>\n<p>Job Description:</p>\n<p>As the AP and Treasury Manager in our growing organization, you will play a pivotal role in overseeing the Accounts Payable (AP) and Treasury functions. Reporting to the Management Company Controller, in",
-          "seniority": "Other"
-        }
-      ]
-    },
     "latitude": {
       "id": "latitude",
       "name": "Latitude",
@@ -281,7 +256,7 @@
       "founded": 2009,
       "map_x": 58.6,
       "map_y": 76.4,
-      "website": "https://notion.vc/jobs",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -435,7 +410,7 @@
       "founded": 2010,
       "map_x": 21.7,
       "map_y": 70.6,
-      "website": "",
+      "website": "https://www.anthemis.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -761,6 +736,20 @@
       "hiring": false,
       "roles": []
     },
+    "general-catalyst": {
+      "id": "general-catalyst",
+      "name": "General Catalyst",
+      "initials": "GC",
+      "focus": "Multi-stage",
+      "neighborhood": "London",
+      "aum": "$25B",
+      "founded": 2000,
+      "map_x": 17.7,
+      "map_y": 36.4,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
     "gv": {
       "id": "gv",
       "name": "GV",
@@ -841,7 +830,7 @@
       "founded": 2014,
       "map_x": 71.3,
       "map_y": 22.2,
-      "website": "",
+      "website": "https://emerge.education/careers",
       "hiring": false,
       "roles": []
     },
@@ -1044,28 +1033,6 @@
   },
   "roles": [
     {
-      "fund_id": "general-catalyst",
-      "fund_name": "General Catalyst",
-      "title": "AP Lead",
-      "description": "<p>Job Title: Accounts Payable and Treasury Manager</p>\n<p>Location: New York, NY</p>\n<p>General Catalyst is a dynamic and rapidly growing venture capital company seeking a highly skilled and experienced Accounting Manager to join our Management Company team.&nbsp;</p>\n<p>Job Description:</p>\n<p>As the AP and Treasury Manager in our growing organization, you will play a pivotal role in overseeing the Accounts Payable (AP) and Treasury functions. Reporting to the Management Company Controller, in",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003",
-      "posted_date": "2026-04-13T13:33:14-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "New York City",
-      "seniority": "Other",
-      "fund_focus": "Multi-stage",
-      "fund_neighborhood": "London",
-      "fund_aum": "$25B",
-      "fund_map_x": 17.7,
-      "fund_map_y": 36.4,
-      "fund_initials": "GC",
-      "scraped_at": "2026-04-20T02:31:28.454446+00:00",
-      "dedup_hash": "8a3bd01e8a7e"
-    },
-    {
       "fund_id": "latitude",
       "fund_name": "Latitude",
       "title": "Mission Operator - Pittsburgh, PA (Contract)",
@@ -1084,7 +1051,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T02:32:31.469971+00:00",
+      "scraped_at": "2026-04-20T08:06:40.894792+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1106,7 +1073,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T02:32:31.469150+00:00",
+      "scraped_at": "2026-04-20T08:06:40.893919+00:00",
       "dedup_hash": "ea03f63c451d"
     },
     {
@@ -1128,7 +1095,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T02:32:31.467284+00:00",
+      "scraped_at": "2026-04-20T08:06:40.891891+00:00",
       "dedup_hash": "efc441aa0136"
     },
     {
@@ -1150,7 +1117,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T02:32:31.468189+00:00",
+      "scraped_at": "2026-04-20T08:06:40.892905+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1172,7 +1139,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-20T02:32:19.691030+00:00",
+      "scraped_at": "2026-04-20T08:06:29.178357+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
