@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-04-13T05:49:40.541372+00:00",
+  "run_at": "2026-04-20T05:47:34.535410+00:00",
   "total_funds_discovered": 69,
-  "with_ats_detected": 16,
+  "with_ats_detected": 17,
   "with_linkedin": 0,
-  "with_careers_url": 11,
+  "with_careers_url": 12,
   "sources_scraped": [
     "gilion",
     "seedtable",
