@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-20T19:05:33.414162+00:00",
+  "generated_at": "2026-04-21T02:28:59.652820+00:00",
   "stats": {
     "total_roles": 5,
-    "hot_roles": 4,
-    "warm_roles": 1,
+    "hot_roles": 3,
+    "warm_roles": 2,
     "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
@@ -26,16 +26,6 @@
       "hiring": true,
       "roles": [
         {
-          "title": "Mission Operator - Pittsburgh, PA (Contract)",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
-          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
-          "seniority": "Other"
-        },
-        {
           "title": "Mission Analyst - Wittman, AZ (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
@@ -49,7 +39,7 @@
           "title": "Bench Technician Associate - Palo Alto, CA (contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "4 days ago",
+          "posted_ago": "5 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818214",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
@@ -59,11 +49,21 @@
           "title": "Bench Technician Associate - Pittsburgh, PA (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "4 days ago",
+          "posted_ago": "5 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7816212",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
           "seniority": "Associate"
+        },
+        {
+          "title": "Mission Operator - Pittsburgh, PA (Contract)",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
+          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+          "seniority": "Other"
         }
       ]
     },
@@ -1035,28 +1035,6 @@
     {
       "fund_id": "latitude",
       "fund_name": "Latitude",
-      "title": "Mission Operator - Pittsburgh, PA (Contract)",
-      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
-      "posted_date": "2026-04-13T15:18:00-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Pittsburgh, PA ",
-      "seniority": "Other",
-      "fund_focus": "",
-      "fund_neighborhood": "London",
-      "fund_aum": "",
-      "fund_map_x": 64.5,
-      "fund_map_y": 18.1,
-      "fund_initials": "LA",
-      "scraped_at": "2026-04-20T19:05:24.540836+00:00",
-      "dedup_hash": "5302aa37e900"
-    },
-    {
-      "fund_id": "latitude",
-      "fund_name": "Latitude",
       "title": "Mission Analyst - Wittman, AZ (Contract)",
       "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
       "source": "greenhouse",
@@ -1073,7 +1051,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T19:05:24.539869+00:00",
+      "scraped_at": "2026-04-21T02:28:49.787993+00:00",
       "dedup_hash": "ea03f63c451d"
     },
     {
@@ -1086,7 +1064,7 @@
       "posted_date": "2026-04-15T16:33:49-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "4 days ago",
+      "posted_ago": "5 days ago",
       "location": "Palo Alto, CA",
       "seniority": "Associate",
       "fund_focus": "",
@@ -1095,7 +1073,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T19:05:24.537705+00:00",
+      "scraped_at": "2026-04-21T02:28:49.785966+00:00",
       "dedup_hash": "efc441aa0136"
     },
     {
@@ -1108,7 +1086,7 @@
       "posted_date": "2026-04-15T16:35:32-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "4 days ago",
+      "posted_ago": "5 days ago",
       "location": "Pittsburgh, PA",
       "seniority": "Associate",
       "fund_focus": "",
@@ -1117,7 +1095,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-20T19:05:24.538754+00:00",
+      "scraped_at": "2026-04-21T02:28:49.786955+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1139,8 +1117,30 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-20T19:04:58.109142+00:00",
+      "scraped_at": "2026-04-21T02:28:34.817923+00:00",
       "dedup_hash": "0c2e0503e219"
+    },
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Mission Operator - Pittsburgh, PA (Contract)",
+      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
+      "posted_date": "2026-04-13T15:18:00-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Pittsburgh, PA ",
+      "seniority": "Other",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-04-21T02:28:49.788908+00:00",
+      "dedup_hash": "5302aa37e900"
     }
   ]
 }
