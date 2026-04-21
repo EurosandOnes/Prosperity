@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T13:25:01.229242+00:00",
+  "generated_at": "2026-04-21T19:12:00.824949+00:00",
   "stats": {
     "total_roles": 5,
     "hot_roles": 3,
@@ -29,7 +29,7 @@
           "title": "Mission Analyst - Wittman, AZ (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "5 days ago",
+          "posted_ago": "6 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818292",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
@@ -1042,7 +1042,7 @@
       "posted_date": "2026-04-15T14:32:56-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "5 days ago",
+      "posted_ago": "6 days ago",
       "location": "Wittman, AZ",
       "seniority": "Analyst",
       "fund_focus": "",
@@ -1051,7 +1051,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T13:24:52.397249+00:00",
+      "scraped_at": "2026-04-21T19:11:51.015947+00:00",
       "dedup_hash": "ea03f63c451d"
     },
     {
@@ -1073,7 +1073,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T13:24:52.395134+00:00",
+      "scraped_at": "2026-04-21T19:11:51.013872+00:00",
       "dedup_hash": "efc441aa0136"
     },
     {
@@ -1095,7 +1095,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T13:24:52.396187+00:00",
+      "scraped_at": "2026-04-21T19:11:51.014900+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1117,7 +1117,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-21T13:24:28.889857+00:00",
+      "scraped_at": "2026-04-21T19:11:38.793001+00:00",
       "dedup_hash": "0c2e0503e219"
     },
     {
@@ -1139,7 +1139,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T13:24:52.398138+00:00",
+      "scraped_at": "2026-04-21T19:11:51.016852+00:00",
       "dedup_hash": "5302aa37e900"
     }
   ]
