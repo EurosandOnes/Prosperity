@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-22T13:25:58.028777+00:00",
+  "generated_at": "2026-04-22T19:13:43.594640+00:00",
   "stats": {
     "total_roles": 5,
-    "hot_roles": 3,
-    "warm_roles": 2,
+    "hot_roles": 2,
+    "warm_roles": 3,
     "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
@@ -25,16 +25,6 @@
       "website": "",
       "hiring": true,
       "roles": [
-        {
-          "title": "Mission Analyst - Wittman, AZ (Contract)",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818292",
-          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
-          "seniority": "Analyst"
-        },
         {
           "title": "Bench Technician Associate - Palo Alto, CA (contract)",
           "freshness": "HOT",
@@ -64,6 +54,16 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
           "seniority": "Other"
+        },
+        {
+          "title": "Mission Analyst - Wittman, AZ (Contract)",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818292",
+          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+          "seniority": "Analyst"
         }
       ]
     },
@@ -1035,28 +1035,6 @@
     {
       "fund_id": "latitude",
       "fund_name": "Latitude",
-      "title": "Mission Analyst - Wittman, AZ (Contract)",
-      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818292",
-      "posted_date": "2026-04-15T14:32:56-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Wittman, AZ",
-      "seniority": "Analyst",
-      "fund_focus": "",
-      "fund_neighborhood": "London",
-      "fund_aum": "",
-      "fund_map_x": 64.5,
-      "fund_map_y": 18.1,
-      "fund_initials": "LA",
-      "scraped_at": "2026-04-22T13:25:49.348883+00:00",
-      "dedup_hash": "ea03f63c451d"
-    },
-    {
-      "fund_id": "latitude",
-      "fund_name": "Latitude",
       "title": "Bench Technician Associate - Palo Alto, CA (contract)",
       "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
       "source": "greenhouse",
@@ -1073,7 +1051,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-22T13:25:49.346824+00:00",
+      "scraped_at": "2026-04-22T19:13:34.142395+00:00",
       "dedup_hash": "efc441aa0136"
     },
     {
@@ -1095,7 +1073,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-22T13:25:49.347854+00:00",
+      "scraped_at": "2026-04-22T19:13:34.143403+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1117,7 +1095,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-22T13:25:37.389152+00:00",
+      "scraped_at": "2026-04-22T19:13:22.076243+00:00",
       "dedup_hash": "0c2e0503e219"
     },
     {
@@ -1139,8 +1117,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-22T13:25:49.349763+00:00",
+      "scraped_at": "2026-04-22T19:13:34.145344+00:00",
       "dedup_hash": "5302aa37e900"
+    },
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Mission Analyst - Wittman, AZ (Contract)",
+      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818292",
+      "posted_date": "2026-04-15T14:32:56-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Wittman, AZ",
+      "seniority": "Analyst",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-04-22T19:13:34.144451+00:00",
+      "dedup_hash": "ea03f63c451d"
     }
   ]
 }
