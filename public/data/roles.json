@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T19:12:00.824949+00:00",
+  "generated_at": "2026-04-22T02:26:19.801129+00:00",
   "stats": {
     "total_roles": 5,
     "hot_roles": 3,
@@ -39,7 +39,7 @@
           "title": "Bench Technician Associate - Palo Alto, CA (contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "5 days ago",
+          "posted_ago": "6 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7818214",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
@@ -49,7 +49,7 @@
           "title": "Bench Technician Associate - Pittsburgh, PA (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "5 days ago",
+          "posted_ago": "6 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7816212",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
@@ -1051,7 +1051,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T19:11:51.015947+00:00",
+      "scraped_at": "2026-04-22T02:26:11.537094+00:00",
       "dedup_hash": "ea03f63c451d"
     },
     {
@@ -1064,7 +1064,7 @@
       "posted_date": "2026-04-15T16:33:49-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "5 days ago",
+      "posted_ago": "6 days ago",
       "location": "Palo Alto, CA",
       "seniority": "Associate",
       "fund_focus": "",
@@ -1073,7 +1073,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T19:11:51.013872+00:00",
+      "scraped_at": "2026-04-22T02:26:11.535089+00:00",
       "dedup_hash": "efc441aa0136"
     },
     {
@@ -1086,7 +1086,7 @@
       "posted_date": "2026-04-15T16:35:32-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "5 days ago",
+      "posted_ago": "6 days ago",
       "location": "Pittsburgh, PA",
       "seniority": "Associate",
       "fund_focus": "",
@@ -1095,7 +1095,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T19:11:51.014900+00:00",
+      "scraped_at": "2026-04-22T02:26:11.536089+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1117,7 +1117,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-21T19:11:38.793001+00:00",
+      "scraped_at": "2026-04-22T02:26:00.668693+00:00",
       "dedup_hash": "0c2e0503e219"
     },
     {
@@ -1139,7 +1139,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-21T19:11:51.016852+00:00",
+      "scraped_at": "2026-04-22T02:26:11.537968+00:00",
       "dedup_hash": "5302aa37e900"
     }
   ]
