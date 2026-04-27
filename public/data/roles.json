@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T02:37:03.069100+00:00",
+  "generated_at": "2026-04-27T08:24:23.559598+00:00",
   "stats": {
     "total_roles": 4,
     "hot_roles": 3,
@@ -820,7 +820,7 @@
       "founded": 2014,
       "map_x": 71.3,
       "map_y": 22.2,
-      "website": "https://emerge.education/careers",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -1041,7 +1041,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-27T02:36:54.465599+00:00",
+      "scraped_at": "2026-04-27T08:24:12.498364+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1063,7 +1063,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-27T02:36:54.466620+00:00",
+      "scraped_at": "2026-04-27T08:24:12.499397+00:00",
       "dedup_hash": "ea03f63c451d"
     },
     {
@@ -1085,7 +1085,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-27T02:36:54.467416+00:00",
+      "scraped_at": "2026-04-27T08:24:12.500193+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1107,7 +1107,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-27T02:36:43.264969+00:00",
+      "scraped_at": "2026-04-27T08:23:58.468737+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
