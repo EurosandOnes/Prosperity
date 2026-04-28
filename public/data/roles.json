@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T08:25:31.235744+00:00",
+  "generated_at": "2026-04-28T14:03:55.799423+00:00",
   "stats": {
     "total_roles": 4,
     "hot_roles": 3,
@@ -36,16 +36,6 @@
           "seniority": "Associate"
         },
         {
-          "title": "Mission Operator - Pittsburgh, PA (Contract)",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "3 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
-          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
-          "seniority": "Other"
-        },
-        {
           "title": "Mission Analyst - Wittmann, AZ (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
@@ -54,6 +44,16 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7859212",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
           "seniority": "Analyst"
+        },
+        {
+          "title": "Mission Operator - Pittsburgh, PA (Contract)",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7861565",
+          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+          "seniority": "Other"
         }
       ]
     },
@@ -1041,30 +1041,8 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-28T08:25:22.716116+00:00",
+      "scraped_at": "2026-04-28T14:03:44.894778+00:00",
       "dedup_hash": "394f9fdec455"
-    },
-    {
-      "fund_id": "latitude",
-      "fund_name": "Latitude",
-      "title": "Mission Operator - Pittsburgh, PA (Contract)",
-      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7812456",
-      "posted_date": "2026-04-24T15:22:18-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "3 days ago",
-      "location": "Pittsburgh, PA ",
-      "seniority": "Other",
-      "fund_focus": "",
-      "fund_neighborhood": "London",
-      "fund_aum": "",
-      "fund_map_x": 64.5,
-      "fund_map_y": 18.1,
-      "fund_initials": "LA",
-      "scraped_at": "2026-04-28T08:25:22.718054+00:00",
-      "dedup_hash": "5302aa37e900"
     },
     {
       "fund_id": "latitude",
@@ -1085,8 +1063,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-04-28T08:25:22.717216+00:00",
+      "scraped_at": "2026-04-28T14:03:44.895978+00:00",
       "dedup_hash": "bd37db805794"
+    },
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Mission Operator - Pittsburgh, PA (Contract)",
+      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7861565",
+      "posted_date": "2026-04-28T08:31:16-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Pittsburgh, PA ",
+      "seniority": "Other",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-04-28T14:03:44.896871+00:00",
+      "dedup_hash": "5302aa37e900"
     },
     {
       "fund_id": "bessemer-venture",
@@ -1107,7 +1107,7 @@
       "fund_map_x": 79.4,
       "fund_map_y": 31.0,
       "fund_initials": "BV",
-      "scraped_at": "2026-04-28T08:25:11.415219+00:00",
+      "scraped_at": "2026-04-28T14:03:31.048773+00:00",
       "dedup_hash": "0c2e0503e219"
     }
   ]
