@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T08:33:01.334324+00:00",
+  "generated_at": "2026-05-01T10:07:38.311564+00:00",
   "stats": {
     "total_people": 28,
     "investment_team": 28,
@@ -19,7 +19,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:26:35.516941+00:00"
+      "last_updated": "2026-05-01T10:01:38.483064+00:00"
     },
     {
       "name": "a6876982",
@@ -32,7 +32,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:26:35.516964+00:00"
+      "last_updated": "2026-05-01T10:01:38.483083+00:00"
     },
     {
       "name": "b58a60230",
@@ -45,7 +45,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:26:35.516969+00:00"
+      "last_updated": "2026-05-01T10:01:38.483088+00:00"
     },
     {
       "name": "Nathan Benaich",
@@ -58,7 +58,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880471+00:00"
+      "last_updated": "2026-05-01T10:02:03.582748+00:00"
     },
     {
       "name": "Paula Pastor Castaño",
@@ -71,7 +71,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880486+00:00"
+      "last_updated": "2026-05-01T10:02:03.582762+00:00"
     },
     {
       "name": "Othmane Sebbouh",
@@ -84,7 +84,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880494+00:00"
+      "last_updated": "2026-05-01T10:02:03.582771+00:00"
     },
     {
       "name": "Nitarshan Rajkumar",
@@ -97,7 +97,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880497+00:00"
+      "last_updated": "2026-05-01T10:02:03.582774+00:00"
     },
     {
       "name": "Corina Gurau",
@@ -110,7 +110,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880500+00:00"
+      "last_updated": "2026-05-01T10:02:03.582778+00:00"
     },
     {
       "name": "Alex Chalmers",
@@ -123,7 +123,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880503+00:00"
+      "last_updated": "2026-05-01T10:02:03.582781+00:00"
     },
     {
       "name": "5364b985\nlinkedin",
@@ -136,7 +136,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:55.853723+00:00"
+      "last_updated": "2026-05-01T10:02:55.405107+00:00"
     },
     {
       "name": "linkedin",
@@ -149,7 +149,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:55.853761+00:00"
+      "last_updated": "2026-05-01T10:02:55.405146+00:00"
     },
     {
       "name": "adrianelloyd\nlinkedin",
@@ -162,7 +162,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:55.853746+00:00"
+      "last_updated": "2026-05-01T10:02:55.405130+00:00"
     },
     {
       "name": "uk\nlinkedin",
@@ -175,7 +175,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:55.853752+00:00"
+      "last_updated": "2026-05-01T10:02:55.405136+00:00"
     },
     {
       "name": "paulfifield75\nlinkedin",
@@ -188,7 +188,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:55.853764+00:00"
+      "last_updated": "2026-05-01T10:02:55.405149+00:00"
     },
     {
       "name": "Martin DavisChairman",
@@ -201,7 +201,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:28:03.465517+00:00"
+      "last_updated": "2026-05-01T10:03:03.077472+00:00"
     },
     {
       "name": "Matt Clifford",
@@ -214,7 +214,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:14.472175+00:00"
+      "last_updated": "2026-05-01T10:04:21.791125+00:00"
     },
     {
       "name": "Managing Partner",
@@ -227,7 +227,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602729+00:00"
+      "last_updated": "2026-05-01T10:04:38.662594+00:00"
     },
     {
       "name": "Emily KegelsPartner",
@@ -240,7 +240,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602732+00:00"
+      "last_updated": "2026-05-01T10:04:38.662598+00:00"
     },
     {
       "name": "Alexine CapiauPartner",
@@ -253,7 +253,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602735+00:00"
+      "last_updated": "2026-05-01T10:04:38.662601+00:00"
     },
     {
       "name": "Bram TrochOperations",
@@ -266,7 +266,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602739+00:00"
+      "last_updated": "2026-05-01T10:04:38.662605+00:00"
     },
     {
       "name": "Ruth De VitsStartup Lead",
@@ -279,7 +279,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602742+00:00"
+      "last_updated": "2026-05-01T10:04:38.662608+00:00"
     },
     {
       "name": "Deniz ÖzkanVenture Growth Manager",
@@ -292,7 +292,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602747+00:00"
+      "last_updated": "2026-05-01T10:04:38.662613+00:00"
     },
     {
       "name": "Bart Vander SandenFullstack Engineer",
@@ -305,7 +305,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602750+00:00"
+      "last_updated": "2026-05-01T10:04:38.662616+00:00"
     },
     {
       "name": "Xhun CedilloLegal Assistant",
@@ -318,7 +318,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602754+00:00"
+      "last_updated": "2026-05-01T10:04:38.662620+00:00"
     },
     {
       "name": "Svetlana AlmakaevaLegal Counsel",
@@ -331,7 +331,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602757+00:00"
+      "last_updated": "2026-05-01T10:04:38.662623+00:00"
     },
     {
       "name": "Board Member",
@@ -344,7 +344,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:29:31.602763+00:00"
+      "last_updated": "2026-05-01T10:04:38.662629+00:00"
     },
     {
       "name": "ure Partner\n\nLINKEDIN URLS FOUND ON PAGE",
@@ -357,7 +357,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:32:16.322876+00:00"
+      "last_updated": "2026-05-01T10:05:56.215390+00:00"
     },
     {
       "name": "Guy Kendall",
@@ -370,7 +370,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-04-01T08:27:01.880490+00:00"
+      "last_updated": "2026-05-01T10:02:03.582767+00:00"
     }
   ]
 }
