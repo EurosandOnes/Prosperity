@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-01T19:11:27.411645+00:00",
+  "generated_at": "2026-05-02T02:34:16.397775+00:00",
   "stats": {
-    "total_roles": 4,
+    "total_roles": 3,
     "hot_roles": 2,
-    "warm_roles": 2,
-    "funds_hiring": 2,
+    "warm_roles": 1,
+    "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
     ],
@@ -53,31 +53,6 @@
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7816212",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
-          "seniority": "Associate"
-        }
-      ]
-    },
-    "bessemer-venture": {
-      "id": "bessemer-venture",
-      "name": "Bessemer Venture Partners",
-      "initials": "BV",
-      "focus": "",
-      "neighborhood": "London",
-      "aum": "",
-      "founded": 0,
-      "map_x": 79.4,
-      "map_y": 31.0,
-      "website": "",
-      "hiring": true,
-      "roles": [
-        {
-          "title": "Associate, AI & Data Infrastructure",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "4 weeks ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/bessemerventurepartners/jobs/4673792005",
-          "description": "<div class=\"content-intro\"><p>Bessemer Venture Partners is a global venture firm that partners with audacious founders building enduring and transformative businesses. With more than 145 IPOs and 300 portfolio companies across AI, health, consumer, enterprise, and frontier tech, Bessemer supports founders and CEOs from their early days through every stage of growth. &nbsp;Bessemer’s global portfolio includes Anthropic, Perplexity, Abridge, Canva, Pinterest, Shopify, Twilio, Yelp, LinkedIn, Pager",
           "seniority": "Associate"
         }
       ]
@@ -922,6 +897,20 @@
       "hiring": false,
       "roles": []
     },
+    "bessemer-venture": {
+      "id": "bessemer-venture",
+      "name": "Bessemer Venture Partners",
+      "initials": "BV",
+      "focus": "",
+      "neighborhood": "London",
+      "aum": "",
+      "founded": 0,
+      "map_x": 79.4,
+      "map_y": 31.0,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
     "softbank-group": {
       "id": "softbank-group",
       "name": "SoftBank Group",
@@ -1041,7 +1030,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-01T19:11:19.131736+00:00",
+      "scraped_at": "2026-05-02T02:34:07.338356+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1063,30 +1052,8 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-01T19:11:19.130891+00:00",
+      "scraped_at": "2026-05-02T02:34:07.337582+00:00",
       "dedup_hash": "bd37db805794"
-    },
-    {
-      "fund_id": "bessemer-venture",
-      "fund_name": "Bessemer Venture Partners",
-      "title": "Associate, AI & Data Infrastructure",
-      "description": "<div class=\"content-intro\"><p>Bessemer Venture Partners is a global venture firm that partners with audacious founders building enduring and transformative businesses. With more than 145 IPOs and 300 portfolio companies across AI, health, consumer, enterprise, and frontier tech, Bessemer supports founders and CEOs from their early days through every stage of growth. &nbsp;Bessemer’s global portfolio includes Anthropic, Perplexity, Abridge, Canva, Pinterest, Shopify, Twilio, Yelp, LinkedIn, Pager",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/bessemerventurepartners/jobs/4673792005",
-      "posted_date": "2026-04-01T19:49:52-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "4 weeks ago",
-      "location": "Redwood City, California, United States, San Francisco, California, United States",
-      "seniority": "Associate",
-      "fund_focus": "",
-      "fund_neighborhood": "London",
-      "fund_aum": "",
-      "fund_map_x": 79.4,
-      "fund_map_y": 31.0,
-      "fund_initials": "BV",
-      "scraped_at": "2026-05-01T19:11:08.194595+00:00",
-      "dedup_hash": "0c2e0503e219"
     },
     {
       "fund_id": "latitude",
@@ -1107,7 +1074,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-01T19:11:19.129779+00:00",
+      "scraped_at": "2026-05-02T02:34:07.336550+00:00",
       "dedup_hash": "394f9fdec455"
     }
   ]
