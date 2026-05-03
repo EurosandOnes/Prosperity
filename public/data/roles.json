@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T13:07:41.495269+00:00",
+  "generated_at": "2026-05-03T19:00:02.046121+00:00",
   "stats": {
     "total_roles": 3,
     "hot_roles": 2,
@@ -39,7 +39,7 @@
           "title": "Mission Analyst - Wittmann, AZ (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "2 days ago",
+          "posted_ago": "3 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7871410",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
@@ -1030,7 +1030,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-03T13:07:33.340238+00:00",
+      "scraped_at": "2026-05-03T18:59:53.472333+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1043,7 +1043,7 @@
       "posted_date": "2026-04-30T12:04:46-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "2 days ago",
+      "posted_ago": "3 days ago",
       "location": "Wittmann, AZ",
       "seniority": "Analyst",
       "fund_focus": "",
@@ -1052,7 +1052,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-03T13:07:33.339347+00:00",
+      "scraped_at": "2026-05-03T18:59:53.471454+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1074,7 +1074,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-03T13:07:33.338233+00:00",
+      "scraped_at": "2026-05-03T18:59:53.470325+00:00",
       "dedup_hash": "394f9fdec455"
     }
   ]
