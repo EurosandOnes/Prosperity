@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T02:41:23.916738+00:00",
+  "generated_at": "2026-05-04T08:29:48.334286+00:00",
   "stats": {
     "total_roles": 3,
     "hot_roles": 2,
@@ -207,7 +207,7 @@
       "founded": 2007,
       "map_x": 60.8,
       "map_y": 26.3,
-      "website": "",
+      "website": "https://dawncapital.com/join",
       "hiring": false,
       "roles": []
     },
@@ -753,7 +753,7 @@
       "founded": 2011,
       "map_x": 41.0,
       "map_y": 16.2,
-      "website": "https://sapphireventures.com/careers",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -1030,7 +1030,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-04T02:41:15.708431+00:00",
+      "scraped_at": "2026-05-04T08:29:39.667702+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1052,7 +1052,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-04T02:41:15.707601+00:00",
+      "scraped_at": "2026-05-04T08:29:39.666928+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1074,7 +1074,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-04T02:41:15.706512+00:00",
+      "scraped_at": "2026-05-04T08:29:39.665883+00:00",
       "dedup_hash": "394f9fdec455"
     }
   ]
