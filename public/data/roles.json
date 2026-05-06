@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-05T19:19:17.488159+00:00",
+  "generated_at": "2026-05-06T02:40:29.473174+00:00",
   "stats": {
-    "total_roles": 5,
-    "hot_roles": 3,
+    "total_roles": 6,
+    "hot_roles": 4,
     "warm_roles": 2,
-    "funds_hiring": 1,
+    "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
     ],
@@ -29,7 +29,7 @@
           "title": "Mission Analyst - Wittmann, AZ (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7890305",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
@@ -74,6 +74,31 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7861565",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
           "seniority": "Other"
+        }
+      ]
+    },
+    "forward": {
+      "id": "forward",
+      "name": "Forward Partners",
+      "initials": "FO",
+      "focus": "Pre-seed / Seed",
+      "neighborhood": "London",
+      "aum": "£100M",
+      "founded": 2013,
+      "map_x": 30.2,
+      "map_y": 21.1,
+      "website": "",
+      "hiring": true,
+      "roles": [
+        {
+          "title": "VP of Engineering",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
+          "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
+          "seniority": "VP"
         }
       ]
     },
@@ -651,20 +676,6 @@
       "hiring": false,
       "roles": []
     },
-    "forward": {
-      "id": "forward",
-      "name": "Forward Partners",
-      "initials": "FO",
-      "focus": "Pre-seed / Seed",
-      "neighborhood": "London",
-      "aum": "£100M",
-      "founded": 2013,
-      "map_x": 30.2,
-      "map_y": 21.1,
-      "website": "",
-      "hiring": false,
-      "roles": []
-    },
     "ada": {
       "id": "ada",
       "name": "Ada Ventures",
@@ -1041,7 +1052,7 @@
       "posted_date": "2026-05-04T16:12:27-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Wittmann, AZ",
       "seniority": "Analyst",
       "fund_focus": "",
@@ -1050,7 +1061,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-05T19:19:08.778024+00:00",
+      "scraped_at": "2026-05-06T02:40:19.822038+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1072,7 +1083,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-05T19:19:08.780006+00:00",
+      "scraped_at": "2026-05-06T02:40:19.823936+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1094,8 +1105,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-05T19:19:08.781000+00:00",
+      "scraped_at": "2026-05-06T02:40:19.824887+00:00",
       "dedup_hash": "aac1c4188628"
+    },
+    {
+      "fund_id": "forward",
+      "fund_name": "Forward Partners",
+      "title": "VP of Engineering",
+      "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
+      "source": "greenhouse",
+      "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
+      "posted_date": "2026-05-05T16:53:33-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Austin, TX",
+      "seniority": "VP",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 30.2,
+      "fund_map_y": 21.1,
+      "fund_initials": "FO",
+      "scraped_at": "2026-05-06T02:39:08.500584+00:00",
+      "dedup_hash": "d10e7490bdca"
     },
     {
       "fund_id": "latitude",
@@ -1116,7 +1149,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-05T19:19:08.776860+00:00",
+      "scraped_at": "2026-05-06T02:40:19.820877+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1138,7 +1171,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-05T19:19:08.778938+00:00",
+      "scraped_at": "2026-05-06T02:40:19.822914+00:00",
       "dedup_hash": "5302aa37e900"
     }
   ]
