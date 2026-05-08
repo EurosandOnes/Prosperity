@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T19:44:41.965673+00:00",
+  "generated_at": "2026-05-08T02:46:58.222194+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 4,
@@ -29,7 +29,7 @@
           "title": "Mission Analyst - Wittmann, AZ (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "2 days ago",
+          "posted_ago": "3 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7890305",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
@@ -94,7 +94,7 @@
           "title": "VP of Engineering",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "1 day ago",
+          "posted_ago": "2 days ago",
           "source": "greenhouse",
           "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
           "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
@@ -1052,7 +1052,7 @@
       "posted_date": "2026-05-04T16:12:27-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "2 days ago",
+      "posted_ago": "3 days ago",
       "location": "Wittmann, AZ",
       "seniority": "Analyst",
       "fund_focus": "",
@@ -1061,7 +1061,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-07T19:44:33.337351+00:00",
+      "scraped_at": "2026-05-08T02:46:50.078620+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1083,7 +1083,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-07T19:44:33.340110+00:00",
+      "scraped_at": "2026-05-08T02:46:50.081457+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1096,7 +1096,7 @@
       "posted_date": "2026-05-05T16:53:33-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "1 day ago",
+      "posted_ago": "2 days ago",
       "location": "Austin, TX",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -1105,7 +1105,7 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-07T19:43:23.574593+00:00",
+      "scraped_at": "2026-05-08T02:45:49.439845+00:00",
       "dedup_hash": "d10e7490bdca"
     },
     {
@@ -1127,7 +1127,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-07T19:44:33.339222+00:00",
+      "scraped_at": "2026-05-08T02:46:50.080524+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1149,7 +1149,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-07T19:44:33.336232+00:00",
+      "scraped_at": "2026-05-08T02:46:50.077488+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1171,7 +1171,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-07T19:44:33.338238+00:00",
+      "scraped_at": "2026-05-08T02:46:50.079507+00:00",
       "dedup_hash": "5302aa37e900"
     }
   ]
