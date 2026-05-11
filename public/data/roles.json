@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T14:48:49.382176+00:00",
+  "generated_at": "2026-05-11T19:47:35.220770+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 5,
@@ -39,7 +39,7 @@
           "title": "Triage Associate I (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "5 days ago",
+          "posted_ago": "6 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
@@ -1061,7 +1061,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T14:48:39.531387+00:00",
+      "scraped_at": "2026-05-11T19:47:25.472033+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1074,7 +1074,7 @@
       "posted_date": "2026-05-05T15:07:42-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "5 days ago",
+      "posted_ago": "6 days ago",
       "location": "Pittsburgh, PA, Allen Park, MI, Palo Alto, CA",
       "seniority": "Associate",
       "fund_focus": "",
@@ -1083,7 +1083,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T14:48:39.533967+00:00",
+      "scraped_at": "2026-05-11T19:47:25.474891+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1105,7 +1105,7 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-11T14:47:22.671139+00:00",
+      "scraped_at": "2026-05-11T19:46:07.435281+00:00",
       "dedup_hash": "d10e7490bdca"
     },
     {
@@ -1127,7 +1127,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T14:48:39.533124+00:00",
+      "scraped_at": "2026-05-11T19:47:25.473951+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1149,7 +1149,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T14:48:39.532190+00:00",
+      "scraped_at": "2026-05-11T19:47:25.472912+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1171,7 +1171,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T14:48:39.530316+00:00",
+      "scraped_at": "2026-05-11T19:47:25.470879+00:00",
       "dedup_hash": "394f9fdec455"
     }
   ]
