@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T02:56:02.673529+00:00",
+  "generated_at": "2026-05-11T09:38:35.123255+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 5,
@@ -420,7 +420,7 @@
       "founded": 2010,
       "map_x": 21.7,
       "map_y": 70.6,
-      "website": "https://www.anthemis.com/careers",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -784,7 +784,7 @@
       "founded": 2011,
       "map_x": 41.0,
       "map_y": 16.2,
-      "website": "",
+      "website": "https://sapphireventures.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -1061,7 +1061,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T02:55:53.582270+00:00",
+      "scraped_at": "2026-05-11T09:38:26.657659+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1083,7 +1083,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T02:55:53.585168+00:00",
+      "scraped_at": "2026-05-11T09:38:26.660619+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1105,7 +1105,7 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-11T02:54:46.084662+00:00",
+      "scraped_at": "2026-05-11T09:37:16.621044+00:00",
       "dedup_hash": "d10e7490bdca"
     },
     {
@@ -1127,7 +1127,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T02:55:53.584208+00:00",
+      "scraped_at": "2026-05-11T09:38:26.659641+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1149,7 +1149,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T02:55:53.583172+00:00",
+      "scraped_at": "2026-05-11T09:38:26.658584+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1171,7 +1171,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-11T02:55:53.581100+00:00",
+      "scraped_at": "2026-05-11T09:38:26.656453+00:00",
       "dedup_hash": "394f9fdec455"
     }
   ]
