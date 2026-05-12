@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-12T14:21:12.926345+00:00",
+  "generated_at": "2026-05-12T19:51:24.358336+00:00",
   "stats": {
     "total_roles": 6,
-    "hot_roles": 4,
-    "warm_roles": 2,
+    "hot_roles": 3,
+    "warm_roles": 3,
     "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
@@ -12,6 +12,31 @@
     "errors": []
   },
   "funds": {
+    "forward": {
+      "id": "forward",
+      "name": "Forward Partners",
+      "initials": "FO",
+      "focus": "Pre-seed / Seed",
+      "neighborhood": "London",
+      "aum": "£100M",
+      "founded": 2013,
+      "map_x": 30.2,
+      "map_y": 21.1,
+      "website": "",
+      "hiring": true,
+      "roles": [
+        {
+          "title": "VP of Engineering",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "6 days ago",
+          "source": "greenhouse",
+          "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
+          "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
+          "seniority": "VP"
+        }
+      ]
+    },
     "latitude": {
       "id": "latitude",
       "name": "Latitude",
@@ -25,16 +50,6 @@
       "website": "",
       "hiring": true,
       "roles": [
-        {
-          "title": "Triage Associate I (Contract)",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
-          "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
-          "seniority": "Associate"
-        },
         {
           "title": "Triage Analyst I (Contract)",
           "freshness": "HOT",
@@ -74,31 +89,16 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7890305",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
           "seniority": "Analyst"
-        }
-      ]
-    },
-    "forward": {
-      "id": "forward",
-      "name": "Forward Partners",
-      "initials": "FO",
-      "focus": "Pre-seed / Seed",
-      "neighborhood": "London",
-      "aum": "£100M",
-      "founded": 2013,
-      "map_x": 30.2,
-      "map_y": 21.1,
-      "website": "",
-      "hiring": true,
-      "roles": [
+        },
         {
-          "title": "VP of Engineering",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
+          "title": "Triage Associate I (Contract)",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
           "source": "greenhouse",
-          "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
-          "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
-          "seniority": "VP"
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
+          "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
+          "seniority": "Associate"
         }
       ]
     },
@@ -1043,28 +1043,6 @@
   },
   "roles": [
     {
-      "fund_id": "latitude",
-      "fund_name": "Latitude",
-      "title": "Triage Associate I (Contract)",
-      "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
-      "posted_date": "2026-05-05T15:07:42-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Pittsburgh, PA, Allen Park, MI, Palo Alto, CA",
-      "seniority": "Associate",
-      "fund_focus": "",
-      "fund_neighborhood": "London",
-      "fund_aum": "",
-      "fund_map_x": 64.5,
-      "fund_map_y": 18.1,
-      "fund_initials": "LA",
-      "scraped_at": "2026-05-12T14:21:03.683633+00:00",
-      "dedup_hash": "aac1c4188628"
-    },
-    {
       "fund_id": "forward",
       "fund_name": "Forward Partners",
       "title": "VP of Engineering",
@@ -1083,7 +1061,7 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-12T14:19:35.583706+00:00",
+      "scraped_at": "2026-05-12T19:49:54.928748+00:00",
       "dedup_hash": "d10e7490bdca"
     },
     {
@@ -1105,7 +1083,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-12T14:21:03.682679+00:00",
+      "scraped_at": "2026-05-12T19:51:14.637506+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1127,7 +1105,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-12T14:21:03.681612+00:00",
+      "scraped_at": "2026-05-12T19:51:14.636485+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1149,7 +1127,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-12T14:21:03.679549+00:00",
+      "scraped_at": "2026-05-12T19:51:14.634373+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1171,8 +1149,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-12T14:21:03.680722+00:00",
+      "scraped_at": "2026-05-12T19:51:14.635599+00:00",
       "dedup_hash": "bd37db805794"
+    },
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Triage Associate I (Contract)",
+      "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
+      "posted_date": "2026-05-05T15:07:42-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Pittsburgh, PA, Allen Park, MI, Palo Alto, CA",
+      "seniority": "Associate",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-05-12T19:51:14.638443+00:00",
+      "dedup_hash": "aac1c4188628"
     }
   ]
 }
