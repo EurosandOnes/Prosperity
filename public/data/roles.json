@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-13T08:44:48.530444+00:00",
+  "generated_at": "2026-05-13T14:31:15.003525+00:00",
   "stats": {
     "total_roles": 6,
-    "hot_roles": 2,
-    "warm_roles": 4,
+    "hot_roles": 1,
+    "warm_roles": 5,
     "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
@@ -26,20 +26,10 @@
       "hiring": true,
       "roles": [
         {
-          "title": "Triage Analyst I (Contract)",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895259",
-          "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
-          "seniority": "Analyst"
-        },
-        {
           "title": "Mission Operator - Pittsburgh, PA (Contract)",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "4 days ago",
+          "posted_ago": "5 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7908438",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
@@ -74,6 +64,16 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
           "seniority": "Associate"
+        },
+        {
+          "title": "Triage Analyst I (Contract)",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895259",
+          "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
+          "seniority": "Analyst"
         }
       ]
     },
@@ -1045,28 +1045,6 @@
     {
       "fund_id": "latitude",
       "fund_name": "Latitude",
-      "title": "Triage Analyst I (Contract)",
-      "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895259",
-      "posted_date": "2026-05-06T09:49:17-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Pittsburgh, PA, Allen Park, MI, Palo Alto, CA",
-      "seniority": "Analyst",
-      "fund_focus": "",
-      "fund_neighborhood": "London",
-      "fund_aum": "",
-      "fund_map_x": 64.5,
-      "fund_map_y": 18.1,
-      "fund_initials": "LA",
-      "scraped_at": "2026-05-13T08:44:40.231778+00:00",
-      "dedup_hash": "b1afe587ee75"
-    },
-    {
-      "fund_id": "latitude",
-      "fund_name": "Latitude",
       "title": "Mission Operator - Pittsburgh, PA (Contract)",
       "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
       "source": "greenhouse",
@@ -1074,7 +1052,7 @@
       "posted_date": "2026-05-08T10:06:39-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "4 days ago",
+      "posted_ago": "5 days ago",
       "location": "Pittsburgh, PA ",
       "seniority": "Other",
       "fund_focus": "",
@@ -1083,7 +1061,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T08:44:40.230669+00:00",
+      "scraped_at": "2026-05-13T14:31:06.041478+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1105,7 +1083,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T08:44:40.228593+00:00",
+      "scraped_at": "2026-05-13T14:31:06.039435+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1127,7 +1105,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T08:44:40.229772+00:00",
+      "scraped_at": "2026-05-13T14:31:06.040626+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1149,7 +1127,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T08:44:40.232743+00:00",
+      "scraped_at": "2026-05-13T14:31:06.043358+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1171,8 +1149,30 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-13T08:43:32.352788+00:00",
+      "scraped_at": "2026-05-13T14:29:52.621595+00:00",
       "dedup_hash": "d10e7490bdca"
+    },
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Triage Analyst I (Contract)",
+      "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895259",
+      "posted_date": "2026-05-06T09:49:17-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Pittsburgh, PA, Allen Park, MI, Palo Alto, CA",
+      "seniority": "Analyst",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-05-13T14:31:06.042472+00:00",
+      "dedup_hash": "b1afe587ee75"
     }
   ]
 }
