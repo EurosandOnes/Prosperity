@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-13T19:55:06.347603+00:00",
+  "generated_at": "2026-05-14T02:55:32.936149+00:00",
   "stats": {
-    "total_roles": 6,
-    "hot_roles": 1,
+    "total_roles": 7,
+    "hot_roles": 2,
     "warm_roles": 5,
     "funds_hiring": 2,
     "sources_used": [
@@ -34,6 +34,16 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7908438",
           "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
           "seniority": "Other"
+        },
+        {
+          "title": "Mission Analyst - Palo Alto, CA (Contract)",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7922468",
+          "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+          "seniority": "Analyst"
         },
         {
           "title": "Bench Technician Associate - Pittsburgh, PA (Contract)",
@@ -1061,8 +1071,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T19:54:56.870128+00:00",
+      "scraped_at": "2026-05-14T02:55:24.865001+00:00",
       "dedup_hash": "5302aa37e900"
+    },
+    {
+      "fund_id": "latitude",
+      "fund_name": "Latitude",
+      "title": "Mission Analyst - Palo Alto, CA (Contract)",
+      "description": "<p><span style=\"font-weight: 400;\">Latitude AI (<a href=\"https://lat.ai/\">lat.ai</a>) develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">When you join the Latitude team, you’ll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors a",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7922468",
+      "posted_date": "2026-05-13T16:29:54-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Palo Alto, CA",
+      "seniority": "Analyst",
+      "fund_focus": "",
+      "fund_neighborhood": "London",
+      "fund_aum": "",
+      "fund_map_x": 64.5,
+      "fund_map_y": 18.1,
+      "fund_initials": "LA",
+      "scraped_at": "2026-05-14T02:55:24.863202+00:00",
+      "dedup_hash": "85336886bc81"
     },
     {
       "fund_id": "latitude",
@@ -1083,7 +1115,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T19:54:56.868234+00:00",
+      "scraped_at": "2026-05-14T02:55:24.861938+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1105,7 +1137,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T19:54:56.869323+00:00",
+      "scraped_at": "2026-05-14T02:55:24.864200+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1127,7 +1159,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T19:54:56.871893+00:00",
+      "scraped_at": "2026-05-14T02:55:24.866857+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1149,7 +1181,7 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-13T19:53:37.828750+00:00",
+      "scraped_at": "2026-05-14T02:54:17.182573+00:00",
       "dedup_hash": "d10e7490bdca"
     },
     {
@@ -1171,7 +1203,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-13T19:54:56.871054+00:00",
+      "scraped_at": "2026-05-14T02:55:24.865979+00:00",
       "dedup_hash": "b1afe587ee75"
     }
   ]
