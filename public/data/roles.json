@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-18T15:29:42.677294+00:00",
+  "generated_at": "2026-05-18T19:45:37.481317+00:00",
   "stats": {
     "total_roles": 7,
-    "hot_roles": 2,
-    "warm_roles": 5,
+    "hot_roles": 3,
+    "warm_roles": 4,
     "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
@@ -102,9 +102,9 @@
       "roles": [
         {
           "title": "VP of Engineering",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "1 week ago",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
           "source": "greenhouse",
           "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
           "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
@@ -1071,7 +1071,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-18T15:29:33.150279+00:00",
+      "scraped_at": "2026-05-18T19:45:28.952508+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1093,8 +1093,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-18T15:29:33.152230+00:00",
+      "scraped_at": "2026-05-18T19:45:28.954815+00:00",
       "dedup_hash": "5302aa37e900"
+    },
+    {
+      "fund_id": "forward",
+      "fund_name": "Forward Partners",
+      "title": "VP of Engineering",
+      "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
+      "source": "greenhouse",
+      "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
+      "posted_date": "2026-05-18T11:44:59-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Austin, TX",
+      "seniority": "VP",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 30.2,
+      "fund_map_y": 21.1,
+      "fund_initials": "FO",
+      "scraped_at": "2026-05-18T19:44:22.246591+00:00",
+      "dedup_hash": "d10e7490bdca"
     },
     {
       "fund_id": "latitude",
@@ -1115,7 +1137,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-18T15:29:33.148972+00:00",
+      "scraped_at": "2026-05-18T19:45:28.951215+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1137,7 +1159,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-18T15:29:33.151335+00:00",
+      "scraped_at": "2026-05-18T19:45:28.953960+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1159,30 +1181,8 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-18T15:29:33.154220+00:00",
+      "scraped_at": "2026-05-18T19:45:28.956691+00:00",
       "dedup_hash": "aac1c4188628"
-    },
-    {
-      "fund_id": "forward",
-      "fund_name": "Forward Partners",
-      "title": "VP of Engineering",
-      "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
-      "source": "greenhouse",
-      "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
-      "posted_date": "2026-05-05T16:53:33-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "1 week ago",
-      "location": "Austin, TX",
-      "seniority": "VP",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 30.2,
-      "fund_map_y": 21.1,
-      "fund_initials": "FO",
-      "scraped_at": "2026-05-18T15:28:23.985813+00:00",
-      "dedup_hash": "d10e7490bdca"
     },
     {
       "fund_id": "latitude",
@@ -1203,7 +1203,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-18T15:29:33.153273+00:00",
+      "scraped_at": "2026-05-18T19:45:28.955802+00:00",
       "dedup_hash": "b1afe587ee75"
     }
   ]
