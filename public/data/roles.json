@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T19:52:34.716524+00:00",
+  "generated_at": "2026-05-20T03:00:13.062930+00:00",
   "stats": {
     "total_roles": 8,
     "hot_roles": 8,
@@ -12,31 +12,6 @@
     "errors": []
   },
   "funds": {
-    "forward": {
-      "id": "forward",
-      "name": "Forward Partners",
-      "initials": "FO",
-      "focus": "Pre-seed / Seed",
-      "neighborhood": "London",
-      "aum": "£100M",
-      "founded": 2013,
-      "map_x": 30.2,
-      "map_y": 21.1,
-      "website": "https://forwardpartners.com/careers",
-      "hiring": true,
-      "roles": [
-        {
-          "title": "VP of Engineering",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "1 day ago",
-          "source": "greenhouse",
-          "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
-          "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
-          "seniority": "VP"
-        }
-      ]
-    },
     "latitude": {
       "id": "latitude",
       "name": "Latitude",
@@ -119,6 +94,31 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
           "seniority": "Associate"
+        }
+      ]
+    },
+    "forward": {
+      "id": "forward",
+      "name": "Forward Partners",
+      "initials": "FO",
+      "focus": "Pre-seed / Seed",
+      "neighborhood": "London",
+      "aum": "£100M",
+      "founded": 2013,
+      "map_x": 30.2,
+      "map_y": 21.1,
+      "website": "https://forwardpartners.com/careers",
+      "hiring": true,
+      "roles": [
+        {
+          "title": "VP of Engineering",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
+          "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
+          "seniority": "VP"
         }
       ]
     },
@@ -1063,28 +1063,6 @@
   },
   "roles": [
     {
-      "fund_id": "forward",
-      "fund_name": "Forward Partners",
-      "title": "VP of Engineering",
-      "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
-      "source": "greenhouse",
-      "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
-      "posted_date": "2026-05-18T11:44:59-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "1 day ago",
-      "location": "Austin, TX",
-      "seniority": "VP",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 30.2,
-      "fund_map_y": 21.1,
-      "fund_initials": "FO",
-      "scraped_at": "2026-05-19T19:51:23.716115+00:00",
-      "dedup_hash": "d10e7490bdca"
-    },
-    {
       "fund_id": "latitude",
       "fund_name": "Latitude",
       "title": "Bench Technician Associate - Pittsburgh, PA (Contract)",
@@ -1103,7 +1081,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.180869+00:00",
+      "scraped_at": "2026-05-20T03:00:03.651896+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1125,7 +1103,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.181903+00:00",
+      "scraped_at": "2026-05-20T03:00:03.653227+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1147,7 +1125,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.182737+00:00",
+      "scraped_at": "2026-05-20T03:00:03.654354+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1169,7 +1147,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.183435+00:00",
+      "scraped_at": "2026-05-20T03:00:03.655309+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1191,7 +1169,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.184270+00:00",
+      "scraped_at": "2026-05-20T03:00:03.656424+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1213,7 +1191,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.185078+00:00",
+      "scraped_at": "2026-05-20T03:00:03.657529+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1235,8 +1213,30 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-19T19:52:26.185801+00:00",
+      "scraped_at": "2026-05-20T03:00:03.658556+00:00",
       "dedup_hash": "aac1c4188628"
+    },
+    {
+      "fund_id": "forward",
+      "fund_name": "Forward Partners",
+      "title": "VP of Engineering",
+      "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
+      "source": "greenhouse",
+      "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
+      "posted_date": "2026-05-19T17:09:45-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Texas",
+      "seniority": "VP",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 30.2,
+      "fund_map_y": 21.1,
+      "fund_initials": "FO",
+      "scraped_at": "2026-05-20T02:58:55.173043+00:00",
+      "dedup_hash": "d10e7490bdca"
     }
   ]
 }
