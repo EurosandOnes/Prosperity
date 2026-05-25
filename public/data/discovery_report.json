@@ -1,7 +1,7 @@
 {
-  "run_at": "2026-05-18T07:01:14.806367+00:00",
+  "run_at": "2026-05-25T07:21:39.691191+00:00",
   "total_funds_discovered": 69,
-  "with_ats_detected": 17,
+  "with_ats_detected": 18,
   "with_linkedin": 0,
   "with_careers_url": 11,
   "sources_scraped": [
@@ -14,9 +14,9 @@
     {
       "name": "Atomico",
       "sources": [
-        "seed_list",
         "seedtable",
-        "gilion"
+        "gilion",
+        "seed_list"
       ],
       "confidence": 1.0,
       "ats": "atomico"
@@ -33,8 +33,8 @@
     {
       "name": "Balderton Capital",
       "sources": [
-        "seed_list",
-        "gilion"
+        "gilion",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -51,8 +51,8 @@
     {
       "name": "LocalGlobe",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -69,8 +69,8 @@
     {
       "name": "Accel",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -78,8 +78,8 @@
     {
       "name": "Felix Capital",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "felix"
@@ -87,8 +87,8 @@
     {
       "name": "Dawn Capital",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -96,8 +96,8 @@
     {
       "name": "Blossom Capital",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -105,8 +105,8 @@
     {
       "name": "Creandum",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -114,8 +114,8 @@
     {
       "name": "Molten Ventures",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -132,8 +132,8 @@
     {
       "name": "Augmentum Fintech",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
@@ -141,8 +141,8 @@
     {
       "name": "Talis Capital",
       "sources": [
-        "seed_list",
-        "seedtable"
+        "seedtable",
+        "seed_list"
       ],
       "confidence": 0.6666666666666666,
       "ats": "none"
