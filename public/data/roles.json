@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-25T03:37:10.952145+00:00",
+  "generated_at": "2026-05-25T10:03:52.491281+00:00",
   "stats": {
-    "total_roles": 8,
+    "total_roles": 10,
     "hot_roles": 8,
-    "warm_roles": 0,
-    "funds_hiring": 2,
+    "warm_roles": 2,
+    "funds_hiring": 3,
     "sources_used": [
       "greenhouse"
     ],
@@ -107,7 +107,7 @@
       "founded": 2013,
       "map_x": 30.2,
       "map_y": 21.1,
-      "website": "https://forwardpartners.com/careers",
+      "website": "",
       "hiring": true,
       "roles": [
         {
@@ -119,6 +119,41 @@
           "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
           "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
           "seniority": "VP"
+        }
+      ]
+    },
+    "general-catalyst": {
+      "id": "general-catalyst",
+      "name": "General Catalyst",
+      "initials": "GC",
+      "focus": "Multi-stage",
+      "neighborhood": "London",
+      "aum": "$25B",
+      "founded": 2000,
+      "map_x": 17.7,
+      "map_y": 36.4,
+      "website": "",
+      "hiring": true,
+      "roles": [
+        {
+          "title": "AP Lead",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "3 weeks ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003",
+          "description": "<h3><span style=\"font-size: 14pt;\"><strong>Who We Are</strong></span></h3>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond. With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthrop",
+          "seniority": "Other"
+        },
+        {
+          "title": "Senior Analyst, Portfolio Manager - GC Wealth",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7695529003",
+          "description": "<p><strong>Who We Are</strong></p>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond.</p>\n<p>With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthropic, Applied Intuition, Commure, G",
+          "seniority": "Analyst"
         }
       ]
     },
@@ -216,7 +251,7 @@
       "founded": 1983,
       "map_x": 45.2,
       "map_y": 68.2,
-      "website": "",
+      "website": "https://www.accel.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -440,7 +475,7 @@
       "founded": 2010,
       "map_x": 21.7,
       "map_y": 70.6,
-      "website": "",
+      "website": "https://www.anthemis.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -510,7 +545,7 @@
       "founded": 2018,
       "map_x": 37.3,
       "map_y": 82.6,
-      "website": "https://augmentum.vc/jobs",
+      "website": "",
       "hiring": false,
       "roles": []
     },
@@ -748,20 +783,6 @@
       "founded": 2012,
       "map_x": 64.6,
       "map_y": 81.8,
-      "website": "",
-      "hiring": false,
-      "roles": []
-    },
-    "general-catalyst": {
-      "id": "general-catalyst",
-      "name": "General Catalyst",
-      "initials": "GC",
-      "focus": "Multi-stage",
-      "neighborhood": "London",
-      "aum": "$25B",
-      "founded": 2000,
-      "map_x": 17.7,
-      "map_y": 36.4,
       "website": "",
       "hiring": false,
       "roles": []
@@ -1081,7 +1102,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.217432+00:00",
+      "scraped_at": "2026-05-25T10:03:44.129855+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1103,7 +1124,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.218799+00:00",
+      "scraped_at": "2026-05-25T10:03:44.133556+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1125,7 +1146,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.219953+00:00",
+      "scraped_at": "2026-05-25T10:03:44.134457+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1147,7 +1168,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.220922+00:00",
+      "scraped_at": "2026-05-25T10:03:44.135153+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1169,7 +1190,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.222056+00:00",
+      "scraped_at": "2026-05-25T10:03:44.135993+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1191,7 +1212,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.223185+00:00",
+      "scraped_at": "2026-05-25T10:03:44.136782+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1213,7 +1234,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T03:37:02.224226+00:00",
+      "scraped_at": "2026-05-25T10:03:44.137495+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1235,8 +1256,52 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-25T03:35:58.327737+00:00",
+      "scraped_at": "2026-05-25T10:02:40.681605+00:00",
       "dedup_hash": "d10e7490bdca"
+    },
+    {
+      "fund_id": "general-catalyst",
+      "fund_name": "General Catalyst",
+      "title": "AP Lead",
+      "description": "<h3><span style=\"font-size: 14pt;\"><strong>Who We Are</strong></span></h3>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond. With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthrop",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003",
+      "posted_date": "2026-04-30T14:51:03-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "3 weeks ago",
+      "location": "New York City",
+      "seniority": "Other",
+      "fund_focus": "Multi-stage",
+      "fund_neighborhood": "London",
+      "fund_aum": "$25B",
+      "fund_map_x": 17.7,
+      "fund_map_y": 36.4,
+      "fund_initials": "GC",
+      "scraped_at": "2026-05-25T10:02:54.184953+00:00",
+      "dedup_hash": "8a3bd01e8a7e"
+    },
+    {
+      "fund_id": "general-catalyst",
+      "fund_name": "General Catalyst",
+      "title": "Senior Analyst, Portfolio Manager - GC Wealth",
+      "description": "<p><strong>Who We Are</strong></p>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond.</p>\n<p>With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthropic, Applied Intuition, Commure, G",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7695529003",
+      "posted_date": "2026-05-11T12:11:36-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "San Francisco, CA | Bellevue, WA",
+      "seniority": "Analyst",
+      "fund_focus": "Multi-stage",
+      "fund_neighborhood": "London",
+      "fund_aum": "$25B",
+      "fund_map_x": 17.7,
+      "fund_map_y": 36.4,
+      "fund_initials": "GC",
+      "scraped_at": "2026-05-25T10:02:54.185555+00:00",
+      "dedup_hash": "6fc856c880c3"
     }
   ]
 }
