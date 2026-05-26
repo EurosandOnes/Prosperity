@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T19:29:22.303639+00:00",
+  "generated_at": "2026-05-26T02:56:31.180543+00:00",
   "stats": {
     "total_roles": 10,
     "hot_roles": 8,
@@ -114,7 +114,7 @@
           "title": "VP of Engineering",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "5 days ago",
+          "posted_ago": "6 days ago",
           "source": "greenhouse",
           "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
           "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
@@ -1102,7 +1102,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.826655+00:00",
+      "scraped_at": "2026-05-26T02:56:23.035639+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1124,7 +1124,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.827983+00:00",
+      "scraped_at": "2026-05-26T02:56:23.036933+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1146,7 +1146,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.829130+00:00",
+      "scraped_at": "2026-05-26T02:56:23.037973+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1168,7 +1168,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.830080+00:00",
+      "scraped_at": "2026-05-26T02:56:23.038862+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1190,7 +1190,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.831201+00:00",
+      "scraped_at": "2026-05-26T02:56:23.039911+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1212,7 +1212,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.832275+00:00",
+      "scraped_at": "2026-05-26T02:56:23.040922+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1234,7 +1234,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-25T19:29:13.833290+00:00",
+      "scraped_at": "2026-05-26T02:56:23.041866+00:00",
       "dedup_hash": "aac1c4188628"
     },
     {
@@ -1247,7 +1247,7 @@
       "posted_date": "2026-05-19T17:09:45-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "5 days ago",
+      "posted_ago": "6 days ago",
       "location": "Texas",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -1256,7 +1256,7 @@
       "fund_map_x": 30.2,
       "fund_map_y": 21.1,
       "fund_initials": "FO",
-      "scraped_at": "2026-05-25T19:28:11.448387+00:00",
+      "scraped_at": "2026-05-26T02:55:22.653232+00:00",
       "dedup_hash": "d10e7490bdca"
     },
     {
@@ -1278,7 +1278,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-05-25T19:28:25.173268+00:00",
+      "scraped_at": "2026-05-26T02:55:35.881063+00:00",
       "dedup_hash": "8a3bd01e8a7e"
     },
     {
@@ -1300,7 +1300,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-05-25T19:28:25.174038+00:00",
+      "scraped_at": "2026-05-26T02:55:35.881809+00:00",
       "dedup_hash": "6fc856c880c3"
     }
   ]
