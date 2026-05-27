@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-27T15:38:12.668728+00:00",
+  "generated_at": "2026-05-27T20:15:13.130871+00:00",
   "stats": {
-    "total_roles": 10,
+    "total_roles": 9,
     "hot_roles": 0,
-    "warm_roles": 10,
-    "funds_hiring": 3,
+    "warm_roles": 9,
+    "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
     ],
@@ -129,31 +129,6 @@
           "source_url": "https://job-boards.greenhouse.io/latitude/jobs/7895222",
           "description": "<p><span style=\"font-weight: 300; font-family: arial, helvetica, sans-serif;\">Latitude AI develops automated driving technologies, including L3, for Ford vehicles at scale. We’re driven by the opportunity to reimagine what it’s like to drive and make travel safer, less stressful, and more enjoyable for everyone.</span></p>\n<p><span style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-weight: 300;\">When you join the Latitude team, you’ll work alongside leading experts across machi",
           "seniority": "Associate"
-        }
-      ]
-    },
-    "forward": {
-      "id": "forward",
-      "name": "Forward Partners",
-      "initials": "FO",
-      "focus": "Pre-seed / Seed",
-      "neighborhood": "London",
-      "aum": "£100M",
-      "founded": 2013,
-      "map_x": 30.2,
-      "map_y": 21.1,
-      "website": "",
-      "hiring": true,
-      "roles": [
-        {
-          "title": "VP of Engineering",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "1 week ago",
-          "source": "greenhouse",
-          "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
-          "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
-          "seniority": "VP"
         }
       ]
     },
@@ -731,6 +706,20 @@
       "hiring": false,
       "roles": []
     },
+    "forward": {
+      "id": "forward",
+      "name": "Forward Partners",
+      "initials": "FO",
+      "focus": "Pre-seed / Seed",
+      "neighborhood": "London",
+      "aum": "£100M",
+      "founded": 2013,
+      "map_x": 30.2,
+      "map_y": 21.1,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
     "ada": {
       "id": "ada",
       "name": "Ada Ventures",
@@ -1102,7 +1091,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-05-27T15:37:08.173242+00:00",
+      "scraped_at": "2026-05-27T20:14:11.742797+00:00",
       "dedup_hash": "8a3bd01e8a7e"
     },
     {
@@ -1124,7 +1113,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-05-27T15:37:08.173991+00:00",
+      "scraped_at": "2026-05-27T20:14:11.743487+00:00",
       "dedup_hash": "6fc856c880c3"
     },
     {
@@ -1146,7 +1135,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.926988+00:00",
+      "scraped_at": "2026-05-27T20:15:03.860494+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1168,7 +1157,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.928302+00:00",
+      "scraped_at": "2026-05-27T20:15:03.861508+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1190,7 +1179,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.929465+00:00",
+      "scraped_at": "2026-05-27T20:15:03.862305+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1212,7 +1201,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.930441+00:00",
+      "scraped_at": "2026-05-27T20:15:03.862980+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1234,7 +1223,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.931562+00:00",
+      "scraped_at": "2026-05-27T20:15:03.863790+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1256,7 +1245,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.932642+00:00",
+      "scraped_at": "2026-05-27T20:15:03.864585+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1278,30 +1267,8 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-27T15:38:02.933675+00:00",
+      "scraped_at": "2026-05-27T20:15:03.865331+00:00",
       "dedup_hash": "aac1c4188628"
-    },
-    {
-      "fund_id": "forward",
-      "fund_name": "Forward Partners",
-      "title": "VP of Engineering",
-      "description": "<h2 data-section-id=\"1froeg\" data-start=\"210\" data-end=\"221\">About The Role</h2>\n<p data-start=\"223\" data-end=\"332\">As VP of Engineering, you own the technical direction, delivery, and culture of the engineering organization.</p>\n<p data-start=\"334\" data-end=\"635\">You’ll partner closely with the founders on company strategy, with product on what we build, and with customers on what we ship. Your job is to scale the team, sharpen execution, and ensure we continue to ship quickly without compromis",
-      "source": "greenhouse",
-      "source_url": "https://getfwd.com/careers?gh_jid=5129606007",
-      "posted_date": "2026-05-19T17:09:45-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "1 week ago",
-      "location": "Texas",
-      "seniority": "VP",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 30.2,
-      "fund_map_y": 21.1,
-      "fund_initials": "FO",
-      "scraped_at": "2026-05-27T15:36:52.525785+00:00",
-      "dedup_hash": "d10e7490bdca"
     }
   ]
 }
