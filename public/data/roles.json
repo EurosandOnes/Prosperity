@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-30T13:27:16.818657+00:00",
+  "generated_at": "2026-05-30T19:12:14.558371+00:00",
   "stats": {
-    "total_roles": 9,
+    "total_roles": 8,
     "hot_roles": 0,
-    "warm_roles": 9,
+    "warm_roles": 8,
     "funds_hiring": 2,
     "sources_used": [
       "greenhouse"
@@ -25,16 +25,6 @@
       "website": "",
       "hiring": true,
       "roles": [
-        {
-          "title": "AP Lead",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "4 weeks ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003",
-          "description": "<h3><span style=\"font-size: 14pt;\"><strong>Who We Are</strong></span></h3>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond. With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthrop",
-          "seniority": "Other"
-        },
         {
           "title": "Senior Analyst, Portfolio Manager - GC Wealth",
           "freshness": "WARM",
@@ -1075,28 +1065,6 @@
     {
       "fund_id": "general-catalyst",
       "fund_name": "General Catalyst",
-      "title": "AP Lead",
-      "description": "<h3><span style=\"font-size: 14pt;\"><strong>Who We Are</strong></span></h3>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond. With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthrop",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7691551003",
-      "posted_date": "2026-04-30T14:51:03-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "4 weeks ago",
-      "location": "New York City",
-      "seniority": "Other",
-      "fund_focus": "Multi-stage",
-      "fund_neighborhood": "London",
-      "fund_aum": "$25B",
-      "fund_map_x": 17.7,
-      "fund_map_y": 36.4,
-      "fund_initials": "GC",
-      "scraped_at": "2026-05-30T13:26:14.651894+00:00",
-      "dedup_hash": "8a3bd01e8a7e"
-    },
-    {
-      "fund_id": "general-catalyst",
-      "fund_name": "General Catalyst",
       "title": "Senior Analyst, Portfolio Manager - GC Wealth",
       "description": "<p><strong>Who We Are</strong></p>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond.</p>\n<p>With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthropic, Applied Intuition, Commure, G",
       "source": "greenhouse",
@@ -1113,7 +1081,7 @@
       "fund_map_x": 17.7,
       "fund_map_y": 36.4,
       "fund_initials": "GC",
-      "scraped_at": "2026-05-30T13:26:14.652733+00:00",
+      "scraped_at": "2026-05-30T19:11:15.484782+00:00",
       "dedup_hash": "6fc856c880c3"
     },
     {
@@ -1135,7 +1103,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.343040+00:00",
+      "scraped_at": "2026-05-30T19:12:05.781867+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1157,7 +1125,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.344338+00:00",
+      "scraped_at": "2026-05-30T19:12:05.783227+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1179,7 +1147,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.345436+00:00",
+      "scraped_at": "2026-05-30T19:12:05.784380+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1201,7 +1169,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.346342+00:00",
+      "scraped_at": "2026-05-30T19:12:05.785333+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1223,7 +1191,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.347394+00:00",
+      "scraped_at": "2026-05-30T19:12:05.786446+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1245,7 +1213,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.348399+00:00",
+      "scraped_at": "2026-05-30T19:12:05.787528+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1267,7 +1235,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-05-30T13:27:07.349335+00:00",
+      "scraped_at": "2026-05-30T19:12:05.788562+00:00",
       "dedup_hash": "aac1c4188628"
     }
   ]
