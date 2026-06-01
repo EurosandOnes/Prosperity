@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-01T03:48:07.269205+00:00",
+  "generated_at": "2026-06-01T11:30:34.044539+00:00",
   "stats": {
-    "total_roles": 8,
+    "total_roles": 7,
     "hot_roles": 0,
-    "warm_roles": 8,
-    "funds_hiring": 2,
+    "warm_roles": 7,
+    "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
     ],
@@ -12,31 +12,6 @@
     "errors": []
   },
   "funds": {
-    "general-catalyst": {
-      "id": "general-catalyst",
-      "name": "General Catalyst",
-      "initials": "GC",
-      "focus": "Multi-stage",
-      "neighborhood": "London",
-      "aum": "$25B",
-      "founded": 2000,
-      "map_x": 17.7,
-      "map_y": 36.4,
-      "website": "",
-      "hiring": true,
-      "roles": [
-        {
-          "title": "Senior Analyst, Portfolio Manager - GC Wealth",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "2 weeks ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7695529003",
-          "description": "<p><strong>Who We Are</strong></p>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond.</p>\n<p>With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthropic, Applied Intuition, Commure, G",
-          "seniority": "Analyst"
-        }
-      ]
-    },
     "latitude": {
       "id": "latitude",
       "name": "Latitude",
@@ -272,7 +247,7 @@
       "founded": 2007,
       "map_x": 60.8,
       "map_y": 26.3,
-      "website": "https://dawncapital.com/join",
+      "website": "https://dawncapital.com/jobs",
       "hiring": false,
       "roles": []
     },
@@ -706,7 +681,7 @@
       "founded": 2013,
       "map_x": 30.2,
       "map_y": 21.1,
-      "website": "",
+      "website": "https://forwardpartners.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -766,6 +741,20 @@
       "hiring": false,
       "roles": []
     },
+    "general-catalyst": {
+      "id": "general-catalyst",
+      "name": "General Catalyst",
+      "initials": "GC",
+      "focus": "Multi-stage",
+      "neighborhood": "London",
+      "aum": "$25B",
+      "founded": 2000,
+      "map_x": 17.7,
+      "map_y": 36.4,
+      "website": "",
+      "hiring": false,
+      "roles": []
+    },
     "gv": {
       "id": "gv",
       "name": "GV",
@@ -804,7 +793,7 @@
       "founded": 2011,
       "map_x": 41.0,
       "map_y": 16.2,
-      "website": "",
+      "website": "https://sapphireventures.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -1063,28 +1052,6 @@
   },
   "roles": [
     {
-      "fund_id": "general-catalyst",
-      "fund_name": "General Catalyst",
-      "title": "Senior Analyst, Portfolio Manager - GC Wealth",
-      "description": "<p><strong>Who We Are</strong></p>\n<p>General Catalyst is a global investment and transformation company that partners with the world’s most ambitious entrepreneurs to drive resilience and applied AI. We support founders with a long-term view who challenge the status quo, partnering with them from seed to growth stage and beyond.</p>\n<p>With offices in the U.S., Europe, and India, we have supported the growth of 800+ businesses, including Airbnb, Anduril, Anthropic, Applied Intuition, Commure, G",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/generalcatalyst/jobs/7695529003",
-      "posted_date": "2026-05-11T12:11:36-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "2 weeks ago",
-      "location": "San Francisco, CA | Bellevue, WA",
-      "seniority": "Analyst",
-      "fund_focus": "Multi-stage",
-      "fund_neighborhood": "London",
-      "fund_aum": "$25B",
-      "fund_map_x": 17.7,
-      "fund_map_y": 36.4,
-      "fund_initials": "GC",
-      "scraped_at": "2026-06-01T03:47:09.174598+00:00",
-      "dedup_hash": "6fc856c880c3"
-    },
-    {
       "fund_id": "latitude",
       "fund_name": "Latitude",
       "title": "Bench Technician Associate - Pittsburgh, PA (Contract)",
@@ -1103,7 +1070,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.746590+00:00",
+      "scraped_at": "2026-06-01T11:30:25.343581+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1125,7 +1092,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.747872+00:00",
+      "scraped_at": "2026-06-01T11:30:25.344898+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1147,7 +1114,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.748949+00:00",
+      "scraped_at": "2026-06-01T11:30:25.346010+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1169,7 +1136,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.749887+00:00",
+      "scraped_at": "2026-06-01T11:30:25.346972+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1191,7 +1158,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.750976+00:00",
+      "scraped_at": "2026-06-01T11:30:25.348084+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1213,7 +1180,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.752009+00:00",
+      "scraped_at": "2026-06-01T11:30:25.349188+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1235,7 +1202,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-01T03:47:58.752950+00:00",
+      "scraped_at": "2026-06-01T11:30:25.350213+00:00",
       "dedup_hash": "aac1c4188628"
     }
   ]
