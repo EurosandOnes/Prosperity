@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T13:30:00.934663+00:00",
+  "generated_at": "2026-06-06T19:24:14.141853+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 0,
@@ -1070,7 +1070,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.653107+00:00",
+      "scraped_at": "2026-06-06T19:24:05.963130+00:00",
       "dedup_hash": "394f9fdec455"
     },
     {
@@ -1092,7 +1092,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.654501+00:00",
+      "scraped_at": "2026-06-06T19:24:05.964486+00:00",
       "dedup_hash": "85336886bc81"
     },
     {
@@ -1114,7 +1114,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.655653+00:00",
+      "scraped_at": "2026-06-06T19:24:05.965635+00:00",
       "dedup_hash": "bd37db805794"
     },
     {
@@ -1136,7 +1136,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.656628+00:00",
+      "scraped_at": "2026-06-06T19:24:05.966534+00:00",
       "dedup_hash": "5302aa37e900"
     },
     {
@@ -1158,7 +1158,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.657808+00:00",
+      "scraped_at": "2026-06-06T19:24:05.967624+00:00",
       "dedup_hash": "b1afe587ee75"
     },
     {
@@ -1180,7 +1180,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.658967+00:00",
+      "scraped_at": "2026-06-06T19:24:05.968667+00:00",
       "dedup_hash": "38be3cae8c54"
     },
     {
@@ -1202,7 +1202,7 @@
       "fund_map_x": 64.5,
       "fund_map_y": 18.1,
       "fund_initials": "LA",
-      "scraped_at": "2026-06-06T13:29:51.660009+00:00",
+      "scraped_at": "2026-06-06T19:24:05.969636+00:00",
       "dedup_hash": "aac1c4188628"
     }
   ]
