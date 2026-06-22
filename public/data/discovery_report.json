@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-06-15T09:25:22.883519+00:00",
+  "run_at": "2026-06-22T09:02:26.719059+00:00",
   "total_funds_discovered": 56,
   "with_ats_detected": 13,
   "with_linkedin": 0,
-  "with_careers_url": 13,
+  "with_careers_url": 11,
   "sources_scraped": [
     "gilion",
     "seedtable",
@@ -14,8 +14,8 @@
     {
       "name": "Atomico",
       "sources": [
-        "gilion",
-        "seed_list"
+        "seed_list",
+        "gilion"
       ],
       "confidence": 1.0,
       "ats": "atomico"
@@ -23,8 +23,8 @@
     {
       "name": "Balderton Capital",
       "sources": [
-        "gilion",
-        "seed_list"
+        "seed_list",
+        "gilion"
       ],
       "confidence": 1.0,
       "ats": "none"
