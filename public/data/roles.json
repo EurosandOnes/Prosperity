@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-23T14:47:26.395312+00:00",
+  "generated_at": "2026-06-23T20:01:21.459630+00:00",
   "stats": {
     "total_roles": 10,
-    "hot_roles": 10,
-    "warm_roles": 0,
+    "hot_roles": 9,
+    "warm_roles": 1,
     "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
@@ -26,20 +26,10 @@
       "hiring": true,
       "roles": [
         {
-          "title": "Data Analyst",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
-          "seniority": "Analyst"
-        },
-        {
           "title": "Senior Data Platform Engineer",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4068819009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -49,7 +39,7 @@
           "title": "Data Engineer",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4068710009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -59,7 +49,7 @@
           "title": "Senior AI Engineer, Agentic Interactions",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4114639009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -69,7 +59,7 @@
           "title": "AI Engineer ",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4280882009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -79,7 +69,7 @@
           "title": "Vice President of Product Marketing",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4232867009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -89,7 +79,7 @@
           "title": "Senior Data Analyst",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -99,7 +89,7 @@
           "title": "Vice President of Engagement",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4064354009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -109,7 +99,7 @@
           "title": "Engagement Manager - Army, International",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4111297009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -119,11 +109,21 @@
           "title": "Vice President of Defense Sales",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
           "seniority": "VP"
+        },
+        {
+          "title": "Data Analyst",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
+          "seniority": "Analyst"
         }
       ]
     },
@@ -902,28 +902,6 @@
     {
       "fund_id": "air-street",
       "fund_name": "Air Street Capital",
-      "title": "Data Analyst",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
-      "posted_date": "2026-06-16T13:35:31-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Arlington, Virginia, United States",
-      "seniority": "Analyst",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.701862+00:00",
-      "dedup_hash": "062a3cbd6089"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
       "title": "Senior Data Platform Engineer",
       "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
       "source": "greenhouse",
@@ -931,7 +909,7 @@
       "posted_date": "2026-06-22T11:34:42-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Pittsburgh, Pennsylvania, United States",
       "seniority": "Platform",
       "fund_focus": "Pre-seed / Seed",
@@ -940,7 +918,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.707324+00:00",
+      "scraped_at": "2026-06-23T19:59:37.318650+00:00",
       "dedup_hash": "e9af281a3278"
     },
     {
@@ -953,7 +931,7 @@
       "posted_date": "2026-06-22T11:40:10-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Pittsburgh, Pennsylvania, United States",
       "seniority": "Other",
       "fund_focus": "Pre-seed / Seed",
@@ -962,7 +940,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.702894+00:00",
+      "scraped_at": "2026-06-23T19:59:37.314187+00:00",
       "dedup_hash": "f677422ee35f"
     },
     {
@@ -975,7 +953,7 @@
       "posted_date": "2026-06-22T11:48:37-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Pittsburgh, Pennsylvania, United States",
       "seniority": "Other",
       "fund_focus": "Pre-seed / Seed",
@@ -984,7 +962,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.705168+00:00",
+      "scraped_at": "2026-06-23T19:59:37.316460+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -997,7 +975,7 @@
       "posted_date": "2026-06-22T11:58:56-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Pittsburgh, Pennsylvania, United States",
       "seniority": "Other",
       "fund_focus": "Pre-seed / Seed",
@@ -1006,7 +984,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.700400+00:00",
+      "scraped_at": "2026-06-23T19:59:37.311685+00:00",
       "dedup_hash": "ce81fc16a36d"
     },
     {
@@ -1019,7 +997,7 @@
       "posted_date": "2026-06-22T12:13:28-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -1028,7 +1006,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.710114+00:00",
+      "scraped_at": "2026-06-23T19:59:37.321428+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -1041,7 +1019,7 @@
       "posted_date": "2026-06-22T12:15:43-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -1050,7 +1028,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.706370+00:00",
+      "scraped_at": "2026-06-23T19:59:37.317674+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -1063,7 +1041,7 @@
       "posted_date": "2026-06-22T12:42:17-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -1072,7 +1050,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.709299+00:00",
+      "scraped_at": "2026-06-23T19:59:37.320620+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1085,7 +1063,7 @@
       "posted_date": "2026-06-22T12:44:01-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -1094,7 +1072,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.704070+00:00",
+      "scraped_at": "2026-06-23T19:59:37.315347+00:00",
       "dedup_hash": "851d2afc6c24"
     },
     {
@@ -1107,7 +1085,7 @@
       "posted_date": "2026-06-22T12:52:39-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -1116,8 +1094,30 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-23T14:45:36.708284+00:00",
+      "scraped_at": "2026-06-23T19:59:37.319611+00:00",
       "dedup_hash": "a742fe884d70"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
+      "title": "Data Analyst",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
+      "posted_date": "2026-06-16T13:35:31-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Arlington, Virginia, United States",
+      "seniority": "Analyst",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-06-23T19:59:37.313126+00:00",
+      "dedup_hash": "062a3cbd6089"
     }
   ]
 }
