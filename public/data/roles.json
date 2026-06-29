@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-29T10:55:05.212465+00:00",
+  "generated_at": "2026-06-29T15:44:07.927957+00:00",
   "stats": {
     "total_roles": 9,
-    "hot_roles": 9,
-    "warm_roles": 0,
+    "hot_roles": 7,
+    "warm_roles": 2,
     "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
@@ -25,26 +25,6 @@
       "website": "",
       "hiring": true,
       "roles": [
-        {
-          "title": "Senior Data Platform Engineer",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4068819009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-          "seniority": "Platform"
-        },
-        {
-          "title": "Data Engineer",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4068710009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-          "seniority": "Other"
-        },
         {
           "title": "Senior AI Engineer, Agentic Interactions",
           "freshness": "HOT",
@@ -114,6 +94,26 @@
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
           "seniority": "Analyst"
+        },
+        {
+          "title": "Senior Data Platform Engineer",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4068819009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+          "seniority": "Platform"
+        },
+        {
+          "title": "Data Engineer",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4068710009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+          "seniority": "Other"
         }
       ]
     },
@@ -892,50 +892,6 @@
     {
       "fund_id": "air-street",
       "fund_name": "Air Street Capital",
-      "title": "Senior Data Platform Engineer",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4068819009",
-      "posted_date": "2026-06-22T11:34:42-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Pittsburgh, Pennsylvania, United States",
-      "seniority": "Platform",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.531605+00:00",
-      "dedup_hash": "e9af281a3278"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
-      "title": "Data Engineer",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4068710009",
-      "posted_date": "2026-06-22T11:40:10-04:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Pittsburgh, Pennsylvania, United States",
-      "seniority": "Other",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.528203+00:00",
-      "dedup_hash": "f677422ee35f"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
       "title": "Senior AI Engineer, Agentic Interactions",
       "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
       "source": "greenhouse",
@@ -952,7 +908,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.529382+00:00",
+      "scraped_at": "2026-06-29T15:42:13.913313+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -974,7 +930,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.525756+00:00",
+      "scraped_at": "2026-06-29T15:42:13.909521+00:00",
       "dedup_hash": "ce81fc16a36d"
     },
     {
@@ -996,7 +952,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.534434+00:00",
+      "scraped_at": "2026-06-29T15:42:13.918536+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -1018,7 +974,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.530626+00:00",
+      "scraped_at": "2026-06-29T15:42:13.914585+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -1040,7 +996,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.533615+00:00",
+      "scraped_at": "2026-06-29T15:42:13.917682+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1062,7 +1018,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.532578+00:00",
+      "scraped_at": "2026-06-29T15:42:13.916610+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -1084,8 +1040,52 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-06-29T10:53:11.527145+00:00",
+      "scraped_at": "2026-06-29T15:42:13.910963+00:00",
       "dedup_hash": "062a3cbd6089"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
+      "title": "Senior Data Platform Engineer",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4068819009",
+      "posted_date": "2026-06-22T11:34:42-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "seniority": "Platform",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-06-29T15:42:13.915610+00:00",
+      "dedup_hash": "e9af281a3278"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
+      "title": "Data Engineer",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4068710009",
+      "posted_date": "2026-06-22T11:40:10-04:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "seniority": "Other",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-06-29T15:42:13.912077+00:00",
+      "dedup_hash": "f677422ee35f"
     }
   ]
 }
