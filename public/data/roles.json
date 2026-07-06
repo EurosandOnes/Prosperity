@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-06T10:16:03.292507+00:00",
+  "generated_at": "2026-07-06T15:28:43.848489+00:00",
   "stats": {
     "total_roles": 8,
-    "hot_roles": 0,
-    "warm_roles": 8,
+    "hot_roles": 1,
+    "warm_roles": 7,
     "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
@@ -26,6 +26,16 @@
       "hiring": true,
       "roles": [
         {
+          "title": "AI Engineer",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4258895009",
+          "description": "<p>Company Description</p>\n<p>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we need. Today, the national security community and every branch of the military rely on ",
+          "seniority": "Other"
+        },
+        {
           "title": "Data Engineer",
           "freshness": "WARM",
           "freshness_label": "< 1 month",
@@ -42,16 +52,6 @@
           "posted_ago": "1 week ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4114639009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-          "seniority": "Other"
-        },
-        {
-          "title": "AI Engineer ",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "1 week ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4280882009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
           "seniority": "Other"
         },
@@ -882,6 +882,28 @@
     {
       "fund_id": "air-street",
       "fund_name": "Air Street Capital",
+      "title": "AI Engineer",
+      "description": "<p>Company Description</p>\n<p>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we need. Today, the national security community and every branch of the military rely on ",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4258895009",
+      "posted_date": "2026-07-06T11:24:19-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "seniority": "Other",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-07-06T15:26:39.635577+00:00",
+      "dedup_hash": "ce81fc16a36d"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
       "title": "Data Engineer",
       "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
       "source": "greenhouse",
@@ -898,7 +920,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.620286+00:00",
+      "scraped_at": "2026-07-06T15:26:39.638977+00:00",
       "dedup_hash": "f677422ee35f"
     },
     {
@@ -920,30 +942,8 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.621426+00:00",
+      "scraped_at": "2026-07-06T15:26:39.640062+00:00",
       "dedup_hash": "13d69a17a631"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
-      "title": "AI Engineer ",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4280882009",
-      "posted_date": "2026-06-22T11:58:56-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "1 week ago",
-      "location": "Pittsburgh, Pennsylvania, United States",
-      "seniority": "Other",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.617877+00:00",
-      "dedup_hash": "ce81fc16a36d"
     },
     {
       "fund_id": "air-street",
@@ -964,7 +964,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.625573+00:00",
+      "scraped_at": "2026-07-06T15:26:39.643944+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -986,7 +986,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.622691+00:00",
+      "scraped_at": "2026-07-06T15:26:39.641231+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -1008,7 +1008,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.624716+00:00",
+      "scraped_at": "2026-07-06T15:26:39.643165+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1030,7 +1030,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.623660+00:00",
+      "scraped_at": "2026-07-06T15:26:39.642174+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -1052,7 +1052,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-06T10:14:15.619245+00:00",
+      "scraped_at": "2026-07-06T15:26:39.637996+00:00",
       "dedup_hash": "062a3cbd6089"
     }
   ]
