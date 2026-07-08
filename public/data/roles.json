@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T14:00:36.147843+00:00",
+  "generated_at": "2026-07-08T19:23:57.414712+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 1,
@@ -29,7 +29,7 @@
           "title": "Data Analyst",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
@@ -879,7 +879,7 @@
       "posted_date": "2026-07-07T11:48:53-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -888,7 +888,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.053270+00:00",
+      "scraped_at": "2026-07-08T19:21:52.223727+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -910,7 +910,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.054143+00:00",
+      "scraped_at": "2026-07-08T19:21:52.224938+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -932,7 +932,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.049678+00:00",
+      "scraped_at": "2026-07-08T19:21:52.222277+00:00",
       "dedup_hash": "ce81fc16a36d"
     },
     {
@@ -954,7 +954,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.057127+00:00",
+      "scraped_at": "2026-07-08T19:21:52.229162+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -976,7 +976,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.055067+00:00",
+      "scraped_at": "2026-07-08T19:21:52.226228+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -998,7 +998,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.056552+00:00",
+      "scraped_at": "2026-07-08T19:21:52.228309+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1020,7 +1020,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-08T13:58:35.055797+00:00",
+      "scraped_at": "2026-07-08T19:21:52.227251+00:00",
       "dedup_hash": "a742fe884d70"
     }
   ]
