@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T02:46:47.111330+00:00",
+  "generated_at": "2026-07-10T09:33:06.185178+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 1,
@@ -888,7 +888,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.576453+00:00",
+      "scraped_at": "2026-07-10T09:31:06.679374+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -910,7 +910,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.577547+00:00",
+      "scraped_at": "2026-07-10T09:31:06.680536+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -932,7 +932,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.575072+00:00",
+      "scraped_at": "2026-07-10T09:31:06.677981+00:00",
       "dedup_hash": "ce81fc16a36d"
     },
     {
@@ -954,7 +954,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.581418+00:00",
+      "scraped_at": "2026-07-10T09:31:06.684719+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -976,7 +976,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.578738+00:00",
+      "scraped_at": "2026-07-10T09:31:06.681841+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -998,7 +998,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.580648+00:00",
+      "scraped_at": "2026-07-10T09:31:06.683883+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1020,7 +1020,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-10T02:44:56.579673+00:00",
+      "scraped_at": "2026-07-10T09:31:06.682840+00:00",
       "dedup_hash": "a742fe884d70"
     }
   ]
