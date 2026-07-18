@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T07:47:19.642748+00:00",
+  "generated_at": "2026-07-18T13:10:11.577014+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 0,
@@ -902,7 +902,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.458128+00:00",
+      "scraped_at": "2026-07-18T13:08:10.180826+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -924,7 +924,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.460539+00:00",
+      "scraped_at": "2026-07-18T13:08:10.183295+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -946,7 +946,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.461506+00:00",
+      "scraped_at": "2026-07-18T13:08:10.184281+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -968,7 +968,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.462538+00:00",
+      "scraped_at": "2026-07-18T13:08:10.185330+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -990,7 +990,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.459296+00:00",
+      "scraped_at": "2026-07-18T13:08:10.182025+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -1012,7 +1012,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.463364+00:00",
+      "scraped_at": "2026-07-18T13:08:10.186174+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -1034,7 +1034,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-18T07:45:25.456720+00:00",
+      "scraped_at": "2026-07-18T13:08:10.179349+00:00",
       "dedup_hash": "ce81fc16a36d"
     }
   ]
