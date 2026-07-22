@@ -1,28 +1,5 @@
 {
-  "generated_at": "2026-07-22T13:48:14.259690+00:00",
-  "total_pending": 1,
-  "roles": [
-    {
-      "fund_id": "sapphire",
-      "fund_name": "Sapphire Ventures",
-      "title": "x/jobs/87099509-fp-a-analyst",
-      "description": "",
-      "source": "website",
-      "source_url": "https://sapphireventures.com/careers",
-      "posted_date": "",
-      "freshness": "",
-      "freshness_label": "",
-      "posted_ago": "",
-      "location": "London",
-      "seniority": "Analyst",
-      "fund_focus": "Growth",
-      "fund_neighborhood": "London",
-      "fund_aum": "$9B",
-      "fund_map_x": 41.0,
-      "fund_map_y": 16.2,
-      "fund_initials": "SA",
-      "scraped_at": "2026-07-22T13:47:55.001410+00:00",
-      "dedup_hash": "ac611df2435f"
-    }
-  ]
+  "generated_at": "2026-07-22T19:14:59.384962+00:00",
+  "total_pending": 0,
+  "roles": []
 }
