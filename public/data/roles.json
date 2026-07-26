@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T02:33:28.079230+00:00",
+  "generated_at": "2026-07-26T08:25:06.290494+00:00",
   "stats": {
     "total_roles": 8,
     "hot_roles": 8,
@@ -912,7 +912,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.845480+00:00",
+      "scraped_at": "2026-07-26T08:23:05.635863+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -934,7 +934,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.842874+00:00",
+      "scraped_at": "2026-07-26T08:23:05.633319+00:00",
       "dedup_hash": "ce81fc16a36d"
     },
     {
@@ -956,7 +956,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.847711+00:00",
+      "scraped_at": "2026-07-26T08:23:05.638129+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -978,7 +978,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.848647+00:00",
+      "scraped_at": "2026-07-26T08:23:05.639084+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -1000,7 +1000,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.852269+00:00",
+      "scraped_at": "2026-07-26T08:23:05.642666+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1022,7 +1022,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.844331+00:00",
+      "scraped_at": "2026-07-26T08:23:05.634710+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -1044,7 +1044,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.846722+00:00",
+      "scraped_at": "2026-07-26T08:23:05.637118+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -1066,7 +1066,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-07-26T02:31:36.853097+00:00",
+      "scraped_at": "2026-07-26T08:23:05.643526+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
