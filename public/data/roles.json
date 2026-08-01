@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T13:16:18.752457+00:00",
+  "generated_at": "2026-08-01T19:07:16.629594+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 0,
@@ -902,7 +902,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.094791+00:00",
+      "scraped_at": "2026-08-01T19:05:06.412026+00:00",
       "dedup_hash": "13d69a17a631"
     },
     {
@@ -924,7 +924,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.097176+00:00",
+      "scraped_at": "2026-08-01T19:05:06.414217+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -946,7 +946,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.098132+00:00",
+      "scraped_at": "2026-08-01T19:05:06.415121+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -968,7 +968,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.099219+00:00",
+      "scraped_at": "2026-08-01T19:05:06.416099+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -990,7 +990,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.093423+00:00",
+      "scraped_at": "2026-08-01T19:05:06.410691+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -1012,7 +1012,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.096096+00:00",
+      "scraped_at": "2026-08-01T19:05:06.413244+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -1034,7 +1034,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-01T13:14:15.100062+00:00",
+      "scraped_at": "2026-08-01T19:05:06.416884+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
