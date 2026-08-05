@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-05T14:04:52.343873+00:00",
+  "generated_at": "2026-08-05T19:28:20.932425+00:00",
   "stats": {
     "total_roles": 6,
-    "hot_roles": 0,
-    "warm_roles": 6,
+    "hot_roles": 2,
+    "warm_roles": 4,
     "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
@@ -25,6 +25,26 @@
       "website": "",
       "hiring": true,
       "roles": [
+        {
+          "title": "Data Analyst",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+          "seniority": "Analyst"
+        },
+        {
+          "title": "Senior Data Analyst",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+          "seniority": "Analyst"
+        },
         {
           "title": "Senior Vice President, Human Resources",
           "freshness": "WARM",
@@ -54,26 +74,6 @@
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4064354009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
           "seniority": "VP"
-        },
-        {
-          "title": "Data Analyst",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "1 week ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
-          "seniority": "Analyst"
-        },
-        {
-          "title": "Senior Data Analyst",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "1 week ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-          "seniority": "Analyst"
         },
         {
           "title": "Vice President of Product Marketing",
@@ -876,6 +876,50 @@
     {
       "fund_id": "air-street",
       "fund_name": "Air Street Capital",
+      "title": "Data Analyst",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
+      "posted_date": "2026-08-05T12:05:31-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Arlington, Virginia, United States",
+      "seniority": "Analyst",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-08-05T19:26:21.769578+00:00",
+      "dedup_hash": "062a3cbd6089"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
+      "title": "Senior Data Analyst",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
+      "posted_date": "2026-08-05T14:19:18-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Arlington, Virginia, United States",
+      "seniority": "Analyst",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-08-05T19:26:21.770977+00:00",
+      "dedup_hash": "30085ea76f74"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
       "title": "Senior Vice President, Human Resources",
       "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>\n<p>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for",
       "source": "greenhouse",
@@ -892,7 +936,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-05T14:02:40.732287+00:00",
+      "scraped_at": "2026-08-05T19:26:21.771891+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -914,7 +958,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-05T14:02:40.733276+00:00",
+      "scraped_at": "2026-08-05T19:26:21.772722+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -936,52 +980,8 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-05T14:02:40.737974+00:00",
+      "scraped_at": "2026-08-05T19:26:21.773616+00:00",
       "dedup_hash": "7576face2880"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
-      "title": "Data Analyst",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Govini transforms Defense Acquisition from an outdated manual process to a software-driven strategic advantage for the United States. Our flagship product, Ark, supports Supply Chain, Science and Technology, Production, Sustainment, Logistics, and Modernization teams with AI-enabled Applications and best-in-class data to more rapidly imagine, develop, and field the capabilities we nee",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
-      "posted_date": "2026-07-23T15:36:13-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "1 week ago",
-      "location": "Arlington, Virginia, United States",
-      "seniority": "Analyst",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-08-05T14:02:40.729695+00:00",
-      "dedup_hash": "062a3cbd6089"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
-      "title": "Senior Data Analyst",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
-      "posted_date": "2026-07-23T15:41:56-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "1 week ago",
-      "location": "Arlington, Virginia, United States",
-      "seniority": "Analyst",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-08-05T14:02:40.731242+00:00",
-      "dedup_hash": "30085ea76f74"
     },
     {
       "fund_id": "air-street",
@@ -1002,7 +1002,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-05T14:02:40.738888+00:00",
+      "scraped_at": "2026-08-05T19:26:21.774348+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
