@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T01:29:15.154168+00:00",
+  "generated_at": "2026-08-10T07:29:14.255053+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 2,
@@ -405,7 +405,7 @@
       "founded": 2010,
       "map_x": 21.7,
       "map_y": 70.6,
-      "website": "",
+      "website": "https://www.anthemis.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -699,7 +699,7 @@
       "founded": 2018,
       "map_x": 60.8,
       "map_y": 16.7,
-      "website": "",
+      "website": "https://giantventures.com/careers",
       "hiring": false,
       "roles": []
     },
@@ -857,10 +857,10 @@
       "hiring": false,
       "roles": []
     },
-    "the-database-vcs-check-daily": {
-      "id": "the-database-vcs-check-daily",
-      "name": "The database VCs check daily",
-      "initials": "DV",
+    "the-funding-rounds-that-matter-weekly": {
+      "id": "the-funding-rounds-that-matter-weekly",
+      "name": "The funding rounds that matter, weekly",
+      "initials": "FR",
       "focus": "",
       "neighborhood": "London",
       "aum": "",
@@ -892,7 +892,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-10T01:27:19.440775+00:00",
+      "scraped_at": "2026-08-10T07:27:06.801129+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -914,7 +914,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-10T01:27:19.441956+00:00",
+      "scraped_at": "2026-08-10T07:27:06.802252+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -936,7 +936,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-10T01:27:19.442718+00:00",
+      "scraped_at": "2026-08-10T07:27:06.802963+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -958,7 +958,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-10T01:27:19.443408+00:00",
+      "scraped_at": "2026-08-10T07:27:06.803608+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -980,7 +980,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-10T01:27:19.444160+00:00",
+      "scraped_at": "2026-08-10T07:27:06.804281+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1002,7 +1002,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-10T01:27:19.444778+00:00",
+      "scraped_at": "2026-08-10T07:27:06.804828+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
