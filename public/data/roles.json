@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-11T12:59:46.296538+00:00",
+  "generated_at": "2026-08-11T19:01:03.828154+00:00",
   "stats": {
     "total_roles": 6,
-    "hot_roles": 2,
-    "warm_roles": 4,
+    "hot_roles": 3,
+    "warm_roles": 3,
     "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
@@ -29,7 +29,7 @@
           "title": "Data Analyst",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "4 days ago",
+          "posted_ago": "5 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -39,11 +39,21 @@
           "title": "Senior Data Analyst",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "4 days ago",
+          "posted_ago": "5 days ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
           "seniority": "Analyst"
+        },
+        {
+          "title": "Vice President of Defense Sales",
+          "freshness": "HOT",
+          "freshness_label": "< 1 week",
+          "posted_ago": "today",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+          "seniority": "VP"
         },
         {
           "title": "Senior Vice President, Human Resources",
@@ -53,16 +63,6 @@
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4278398009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>\n<p>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for",
-          "seniority": "VP"
-        },
-        {
-          "title": "Vice President of Defense Sales",
-          "freshness": "WARM",
-          "freshness_label": "< 1 month",
-          "posted_ago": "2 weeks ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
           "seniority": "VP"
         },
         {
@@ -883,7 +883,7 @@
       "posted_date": "2026-08-06T10:30:23-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "4 days ago",
+      "posted_ago": "5 days ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -892,7 +892,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-11T12:57:48.954270+00:00",
+      "scraped_at": "2026-08-11T18:58:58.963903+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -905,7 +905,7 @@
       "posted_date": "2026-08-06T10:31:10-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "4 days ago",
+      "posted_ago": "5 days ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -914,8 +914,30 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-11T12:57:48.955852+00:00",
+      "scraped_at": "2026-08-11T18:58:58.965427+00:00",
       "dedup_hash": "30085ea76f74"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
+      "title": "Vice President of Defense Sales",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
+      "posted_date": "2026-08-11T11:10:49-04:00",
+      "freshness": "HOT",
+      "freshness_label": "< 1 week",
+      "posted_ago": "today",
+      "location": "Arlington, Virginia, United States",
+      "seniority": "VP",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-08-11T18:58:58.967501+00:00",
+      "dedup_hash": "a742fe884d70"
     },
     {
       "fund_id": "air-street",
@@ -936,30 +958,8 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-11T12:57:48.956905+00:00",
+      "scraped_at": "2026-08-11T18:58:58.966524+00:00",
       "dedup_hash": "59a0e3eac806"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
-      "title": "Vice President of Defense Sales",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
-      "posted_date": "2026-07-23T15:31:12-04:00",
-      "freshness": "WARM",
-      "freshness_label": "< 1 month",
-      "posted_ago": "2 weeks ago",
-      "location": "Arlington, Virginia, United States",
-      "seniority": "VP",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-08-11T12:57:48.957905+00:00",
-      "dedup_hash": "a742fe884d70"
     },
     {
       "fund_id": "air-street",
@@ -980,7 +980,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-11T12:57:48.958959+00:00",
+      "scraped_at": "2026-08-11T18:58:58.968549+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1002,7 +1002,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-11T12:57:48.959809+00:00",
+      "scraped_at": "2026-08-11T18:58:58.969401+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
