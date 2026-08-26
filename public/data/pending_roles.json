@@ -1,5 +1,28 @@
 {
-  "generated_at": "2026-08-26T06:44:59.986972+00:00",
-  "total_pending": 0,
-  "roles": []
+  "generated_at": "2026-08-26T12:47:40.844756+00:00",
+  "total_pending": 1,
+  "roles": [
+    {
+      "fund_id": "sapphire",
+      "fund_name": "Sapphire Ventures",
+      "title": "x/jobs/91178920-business-intelligence-data-analyst",
+      "description": "",
+      "source": "website",
+      "source_url": "https://sapphireventures.com/careers",
+      "posted_date": "",
+      "freshness": "",
+      "freshness_label": "",
+      "posted_ago": "",
+      "location": "London",
+      "seniority": "Analyst",
+      "fund_focus": "Growth",
+      "fund_neighborhood": "London",
+      "fund_aum": "$9B",
+      "fund_map_x": 41.0,
+      "fund_map_y": 16.2,
+      "fund_initials": "SA",
+      "scraped_at": "2026-08-26T12:47:20.333180+00:00",
+      "dedup_hash": "71376a22966c"
+    }
+  ]
 }
