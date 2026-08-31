@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T03:31:36.024888+00:00",
+  "generated_at": "2026-08-31T12:41:11.583490+00:00",
   "stats": {
     "total_roles": 3,
     "hot_roles": 0,
@@ -827,10 +827,10 @@
       "hiring": false,
       "roles": []
     },
-    "researching-who-backs-these-rounds": {
-      "id": "researching-who-backs-these-rounds",
-      "name": "Researching who backs these rounds?",
-      "initials": "RW",
+    "save-this-to-a-working-list-free": {
+      "id": "save-this-to-a-working-list-free",
+      "name": "Save this to a working list — free",
+      "initials": "ST",
       "focus": "",
       "neighborhood": "London",
       "aum": "",
@@ -862,7 +862,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-31T03:29:45.400820+00:00",
+      "scraped_at": "2026-08-31T12:39:05.747656+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -884,7 +884,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-31T03:29:45.397212+00:00",
+      "scraped_at": "2026-08-31T12:39:05.745031+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -906,7 +906,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-08-31T03:29:45.398771+00:00",
+      "scraped_at": "2026-08-31T12:39:05.746205+00:00",
       "dedup_hash": "30085ea76f74"
     }
   ]
