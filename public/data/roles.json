@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T02:49:08.748287+00:00",
+  "generated_at": "2026-09-02T10:38:05.910043+00:00",
   "stats": {
     "total_roles": 3,
     "hot_roles": 0,
@@ -862,7 +862,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-02T02:47:03.283679+00:00",
+      "scraped_at": "2026-09-02T10:36:02.656962+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -884,7 +884,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-02T02:47:03.279963+00:00",
+      "scraped_at": "2026-09-02T10:36:02.653333+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -906,7 +906,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-02T02:47:03.281538+00:00",
+      "scraped_at": "2026-09-02T10:36:02.654943+00:00",
       "dedup_hash": "30085ea76f74"
     }
   ]
