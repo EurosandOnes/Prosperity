@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T20:31:00.385188+00:00",
+  "generated_at": "2026-09-04T02:52:35.910759+00:00",
   "total_pending": 1,
   "roles": [
     {
@@ -21,7 +21,7 @@
       "fund_map_x": 41.0,
       "fund_map_y": 16.2,
       "fund_initials": "SA",
-      "scraped_at": "2026-09-03T20:30:41.848227+00:00",
+      "scraped_at": "2026-09-04T02:52:15.251819+00:00",
       "dedup_hash": "ead9a6be8f3d"
     }
   ]
