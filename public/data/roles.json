@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T10:35:53.159373+00:00",
+  "generated_at": "2026-09-04T15:46:59.944319+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 6,
@@ -8,7 +8,7 @@
     "sources_used": [
       "greenhouse"
     ],
-    "pending_review": 1,
+    "pending_review": 0,
     "errors": []
   },
   "funds": {
@@ -29,7 +29,7 @@
           "title": "Data Analyst",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077374009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -39,7 +39,7 @@
           "title": "Senior Data Analyst",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4077199009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery,",
@@ -49,7 +49,7 @@
           "title": "Senior Vice President, Human Resources",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4278398009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>\n<p>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for",
@@ -59,7 +59,7 @@
           "title": "Vice President of Defense Sales",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -69,7 +69,7 @@
           "title": "Vice President of Engagement",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4064354009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -79,7 +79,7 @@
           "title": "Vice President of Product Marketing",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4232867009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -883,7 +883,7 @@
       "posted_date": "2026-09-03T11:43:41-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -892,7 +892,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-04T10:33:49.777267+00:00",
+      "scraped_at": "2026-09-04T15:44:50.826699+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -905,7 +905,7 @@
       "posted_date": "2026-09-03T11:43:41-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "Analyst",
       "fund_focus": "Pre-seed / Seed",
@@ -914,7 +914,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-04T10:33:49.778846+00:00",
+      "scraped_at": "2026-09-04T15:44:50.828008+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -927,7 +927,7 @@
       "posted_date": "2026-09-03T11:43:41-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -936,7 +936,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-04T10:33:49.779905+00:00",
+      "scraped_at": "2026-09-04T15:44:50.828819+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -949,7 +949,7 @@
       "posted_date": "2026-09-03T11:43:41-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -958,7 +958,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-04T10:33:49.780881+00:00",
+      "scraped_at": "2026-09-04T15:44:50.829565+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -971,7 +971,7 @@
       "posted_date": "2026-09-03T11:43:41-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -980,7 +980,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-04T10:33:49.781937+00:00",
+      "scraped_at": "2026-09-04T15:44:50.830424+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -993,7 +993,7 @@
       "posted_date": "2026-09-03T11:43:41-04:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -1002,7 +1002,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-04T10:33:49.782765+00:00",
+      "scraped_at": "2026-09-04T15:44:50.831094+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
