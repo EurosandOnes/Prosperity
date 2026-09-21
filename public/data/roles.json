@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T03:16:11.278632+00:00",
+  "generated_at": "2026-09-21T11:59:33.918694+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 1,
@@ -856,20 +856,6 @@
       "website": "",
       "hiring": false,
       "roles": []
-    },
-    "join-40-000-founders-investors": {
-      "id": "join-40-000-founders-investors",
-      "name": "Join 40,000+ founders & investors",
-      "initials": "J4",
-      "focus": "",
-      "neighborhood": "London",
-      "aum": "",
-      "founded": 0,
-      "map_x": 24.3,
-      "map_y": 73.7,
-      "website": "",
-      "hiring": false,
-      "roles": []
     }
   },
   "roles": [
@@ -892,7 +878,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-21T03:14:12.467092+00:00",
+      "scraped_at": "2026-09-21T11:57:42.650385+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -914,7 +900,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-21T03:14:12.468655+00:00",
+      "scraped_at": "2026-09-21T11:57:42.651942+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -936,7 +922,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-21T03:14:12.469694+00:00",
+      "scraped_at": "2026-09-21T11:57:42.652966+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -958,7 +944,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-21T03:14:12.470637+00:00",
+      "scraped_at": "2026-09-21T11:57:42.653896+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -980,7 +966,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-21T03:14:12.471653+00:00",
+      "scraped_at": "2026-09-21T11:57:42.654910+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -1002,7 +988,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-21T03:14:12.472438+00:00",
+      "scraped_at": "2026-09-21T11:57:42.655709+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
