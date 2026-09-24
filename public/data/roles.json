@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T03:05:49.848212+00:00",
+  "generated_at": "2026-09-24T11:07:50.935643+00:00",
   "stats": {
     "total_roles": 6,
     "hot_roles": 6,
@@ -878,7 +878,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-24T03:03:58.046438+00:00",
+      "scraped_at": "2026-09-24T11:05:48.210322+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -900,7 +900,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-24T03:03:58.047982+00:00",
+      "scraped_at": "2026-09-24T11:05:48.211993+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -922,7 +922,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-24T03:03:58.049003+00:00",
+      "scraped_at": "2026-09-24T11:05:48.213098+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -944,7 +944,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-24T03:03:58.049952+00:00",
+      "scraped_at": "2026-09-24T11:05:48.214112+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -966,7 +966,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-24T03:03:58.050994+00:00",
+      "scraped_at": "2026-09-24T11:05:48.215198+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -988,7 +988,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-09-24T03:03:58.051817+00:00",
+      "scraped_at": "2026-09-24T11:05:48.216051+00:00",
       "dedup_hash": "e3f554231b87"
     }
   ]
