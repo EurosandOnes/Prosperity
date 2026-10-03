@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T11:07:14.080421+00:00",
+  "generated_at": "2026-10-03T15:44:44.038926+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 1,
@@ -888,7 +888,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.453477+00:00",
+      "scraped_at": "2026-10-03T15:42:33.589819+00:00",
       "dedup_hash": "4e2f57fbca31"
     },
     {
@@ -910,7 +910,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.448718+00:00",
+      "scraped_at": "2026-10-03T15:42:33.585458+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -932,7 +932,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.450314+00:00",
+      "scraped_at": "2026-10-03T15:42:33.586994+00:00",
       "dedup_hash": "30085ea76f74"
     },
     {
@@ -954,7 +954,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.451389+00:00",
+      "scraped_at": "2026-10-03T15:42:33.587947+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -976,7 +976,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.452324+00:00",
+      "scraped_at": "2026-10-03T15:42:33.588818+00:00",
       "dedup_hash": "a742fe884d70"
     },
     {
@@ -998,7 +998,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.455325+00:00",
+      "scraped_at": "2026-10-03T15:42:33.591478+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -1020,7 +1020,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-10-03T11:05:14.454523+00:00",
+      "scraped_at": "2026-10-03T15:42:33.590754+00:00",
       "dedup_hash": "7576face2880"
     }
   ]
