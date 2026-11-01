@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:46:35.055524+00:00",
+  "generated_at": "2026-11-01T11:04:51.561775+00:00",
   "stats": {
     "total_people": 29,
     "investment_team": 29,
@@ -32,7 +32,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:03.690387+00:00"
+      "last_updated": "2026-11-01T10:59:42.225787+00:00"
     },
     {
       "name": "b58a60230",
@@ -45,7 +45,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:03.690392+00:00"
+      "last_updated": "2026-11-01T10:59:42.225792+00:00"
     },
     {
       "name": "Nathan Benaich",
@@ -58,7 +58,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:31.129805+00:00"
+      "last_updated": "2026-11-01T11:00:07.336446+00:00"
     },
     {
       "name": "Paula Pastor Castaño",
@@ -71,7 +71,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:31.129821+00:00"
+      "last_updated": "2026-11-01T11:00:07.336460+00:00"
     },
     {
       "name": "Othmane Sebbouh",
@@ -84,7 +84,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:31.129826+00:00"
+      "last_updated": "2026-11-01T11:00:07.336465+00:00"
     },
     {
       "name": "Nitarshan Rajkumar",
@@ -97,7 +97,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:31.129830+00:00"
+      "last_updated": "2026-11-01T11:00:07.336468+00:00"
     },
     {
       "name": "Corina Gurau",
@@ -110,7 +110,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:31.129833+00:00"
+      "last_updated": "2026-11-01T11:00:07.336471+00:00"
     },
     {
       "name": "Alex Chalmers",
@@ -123,7 +123,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:31.129836+00:00"
+      "last_updated": "2026-11-01T11:00:07.336475+00:00"
     },
     {
       "name": "5364b985\nlinkedin",
@@ -136,7 +136,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:42:23.607939+00:00"
+      "last_updated": "2026-11-01T11:01:03.979104+00:00"
     },
     {
       "name": "linkedin",
@@ -149,7 +149,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:42:23.607973+00:00"
+      "last_updated": "2026-11-01T11:01:03.979135+00:00"
     },
     {
       "name": "adrianelloyd\nlinkedin",
@@ -170,12 +170,12 @@
       "seniority": "Other",
       "fund_id": "episode-1",
       "fund_name": "Episode 1",
-      "linkedin_url": "https://linkedin.com/in/dominic-l-074055100",
+      "linkedin_url": "https://linkedin.com/in/paul-mcnabb-92b6177",
       "twitter_handle": "",
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:42:23.607967+00:00"
+      "last_updated": "2026-11-01T11:01:03.979138+00:00"
     },
     {
       "name": "paulfifield75\nlinkedin",
@@ -201,7 +201,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:42:31.385123+00:00"
+      "last_updated": "2026-11-01T11:01:11.748888+00:00"
     },
     {
       "name": "Matt Clifford",
@@ -214,7 +214,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:44:26.329280+00:00"
+      "last_updated": "2026-11-01T11:02:22.631468+00:00"
     },
     {
       "name": "Managing Partner",
@@ -357,7 +357,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:45:40.131732+00:00"
+      "last_updated": "2026-11-01T11:03:39.318681+00:00"
     },
     {
       "name": "Guy Kendall",
@@ -383,7 +383,7 @@
       "is_investment_team": true,
       "source": "team_page_regex",
       "team_page_url": "",
-      "last_updated": "2026-10-01T10:41:03.690366+00:00"
+      "last_updated": "2026-11-01T10:59:42.225768+00:00"
     }
   ]
 }
