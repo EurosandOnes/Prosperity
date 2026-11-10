@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-10T14:20:22.009463+00:00",
+  "generated_at": "2026-11-10T22:51:45.841495+00:00",
   "stats": {
     "total_roles": 5,
-    "hot_roles": 2,
-    "warm_roles": 3,
+    "hot_roles": 1,
+    "warm_roles": 4,
     "funds_hiring": 1,
     "sources_used": [
       "greenhouse"
@@ -26,20 +26,10 @@
       "hiring": true,
       "roles": [
         {
-          "title": "Vice President of Growth - Defense",
-          "freshness": "HOT",
-          "freshness_label": "< 1 week",
-          "posted_ago": "6 days ago",
-          "source": "greenhouse",
-          "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
-          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-          "seniority": "VP"
-        },
-        {
           "title": "Vice President of Design ",
           "freshness": "HOT",
           "freshness_label": "< 1 week",
-          "posted_ago": "today",
+          "posted_ago": "1 day ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4422066009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
@@ -72,6 +62,16 @@
           "posted_ago": "1 week ago",
           "source": "greenhouse",
           "source_url": "https://job-boards.greenhouse.io/air/jobs/4232867009",
+          "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+          "seniority": "VP"
+        },
+        {
+          "title": "Vice President of Growth - Defense",
+          "freshness": "WARM",
+          "freshness_label": "< 1 month",
+          "posted_ago": "1 week ago",
+          "source": "greenhouse",
+          "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
           "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
           "seniority": "VP"
         }
@@ -852,28 +852,6 @@
     {
       "fund_id": "air-street",
       "fund_name": "Air Street Capital",
-      "title": "Vice President of Growth - Defense",
-      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
-      "source": "greenhouse",
-      "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
-      "posted_date": "2026-11-03T10:54:01-05:00",
-      "freshness": "HOT",
-      "freshness_label": "< 1 week",
-      "posted_ago": "6 days ago",
-      "location": "Arlington, Virginia, United States",
-      "seniority": "VP",
-      "fund_focus": "Pre-seed / Seed",
-      "fund_neighborhood": "London",
-      "fund_aum": "£100M",
-      "fund_map_x": 56.9,
-      "fund_map_y": 15.7,
-      "fund_initials": "AS",
-      "scraped_at": "2026-11-10T14:18:21.925831+00:00",
-      "dedup_hash": "1c430095d5b5"
-    },
-    {
-      "fund_id": "air-street",
-      "fund_name": "Air Street Capital",
       "title": "Vice President of Design ",
       "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
       "source": "greenhouse",
@@ -881,7 +859,7 @@
       "posted_date": "2026-11-09T16:31:30-05:00",
       "freshness": "HOT",
       "freshness_label": "< 1 week",
-      "posted_ago": "today",
+      "posted_ago": "1 day ago",
       "location": "Arlington, Virginia, United States; Pittsburgh, Pennsylvania, United States; Remote; San Francisco, California, United States",
       "seniority": "VP",
       "fund_focus": "Pre-seed / Seed",
@@ -890,7 +868,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-10T14:18:21.923969+00:00",
+      "scraped_at": "2026-11-10T22:49:41.190474+00:00",
       "dedup_hash": "4e2f57fbca31"
     },
     {
@@ -912,7 +890,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-10T14:18:21.922690+00:00",
+      "scraped_at": "2026-11-10T22:49:41.189492+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -934,7 +912,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-10T14:18:21.924975+00:00",
+      "scraped_at": "2026-11-10T22:49:41.191223+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -956,8 +934,30 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-10T14:18:21.926578+00:00",
+      "scraped_at": "2026-11-10T22:49:41.192462+00:00",
       "dedup_hash": "e3f554231b87"
+    },
+    {
+      "fund_id": "air-street",
+      "fund_name": "Air Street Capital",
+      "title": "Vice President of Growth - Defense",
+      "description": "<div class=\"section page-centered\" data-qa=\"job-description\">\n<h2><strong>Company Description</strong></h2>\n<div>Air is the leader in Enterprise Readiness. Our mission is to establish readiness as a real-time condition that is continuously achieved. Today, a dangerous Readiness Gap exists between what the front line needs and what is delivered. Our AI-native platform, Air Enterprise Readiness, aligns development, production, delivery, and sustainment into one coordinated execution system for gov",
+      "source": "greenhouse",
+      "source_url": "https://job-boards.greenhouse.io/air/jobs/4059064009",
+      "posted_date": "2026-11-03T10:54:01-05:00",
+      "freshness": "WARM",
+      "freshness_label": "< 1 month",
+      "posted_ago": "1 week ago",
+      "location": "Arlington, Virginia, United States",
+      "seniority": "VP",
+      "fund_focus": "Pre-seed / Seed",
+      "fund_neighborhood": "London",
+      "fund_aum": "£100M",
+      "fund_map_x": 56.9,
+      "fund_map_y": 15.7,
+      "fund_initials": "AS",
+      "scraped_at": "2026-11-10T22:49:41.191883+00:00",
+      "dedup_hash": "1c430095d5b5"
     }
   ]
 }
