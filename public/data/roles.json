@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T01:31:42.336910+00:00",
+  "generated_at": "2026-11-27T16:08:32.141748+00:00",
   "stats": {
     "total_roles": 7,
     "hot_roles": 3,
@@ -888,7 +888,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.227697+00:00",
+      "scraped_at": "2026-11-27T16:06:36.629049+00:00",
       "dedup_hash": "d9ca2e90a226"
     },
     {
@@ -910,7 +910,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.225632+00:00",
+      "scraped_at": "2026-11-27T16:06:36.626803+00:00",
       "dedup_hash": "96de1b0f34ee"
     },
     {
@@ -932,7 +932,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.224814+00:00",
+      "scraped_at": "2026-11-27T16:06:36.625896+00:00",
       "dedup_hash": "062a3cbd6089"
     },
     {
@@ -954,7 +954,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.226168+00:00",
+      "scraped_at": "2026-11-27T16:06:36.627368+00:00",
       "dedup_hash": "59a0e3eac806"
     },
     {
@@ -976,7 +976,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.227248+00:00",
+      "scraped_at": "2026-11-27T16:06:36.628542+00:00",
       "dedup_hash": "7576face2880"
     },
     {
@@ -998,7 +998,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.228090+00:00",
+      "scraped_at": "2026-11-27T16:06:36.631725+00:00",
       "dedup_hash": "e3f554231b87"
     },
     {
@@ -1020,7 +1020,7 @@
       "fund_map_x": 56.9,
       "fund_map_y": 15.7,
       "fund_initials": "AS",
-      "scraped_at": "2026-11-27T01:29:36.226732+00:00",
+      "scraped_at": "2026-11-27T16:06:36.627985+00:00",
       "dedup_hash": "4e2f57fbca31"
     }
   ]
